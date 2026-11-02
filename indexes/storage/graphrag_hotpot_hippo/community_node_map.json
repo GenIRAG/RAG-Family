@@ -1,0 +1,756 @@
+{
+  "2016": [
+    {
+      "level": 0,
+      "cluster": "0"
+    }
+  ],
+  "doctor strange": [
+    {
+      "level": 0,
+      "cluster": "0"
+    }
+  ],
+  "benedict cumberbatch": [
+    {
+      "level": 0,
+      "cluster": "0"
+    }
+  ],
+  "benedict wong": [
+    {
+      "level": 0,
+      "cluster": "0"
+    }
+  ],
+  "benjamin bratt": [
+    {
+      "level": 0,
+      "cluster": "0"
+    }
+  ],
+  "chiwetel ejiofor": [
+    {
+      "level": 0,
+      "cluster": "0"
+    }
+  ],
+  "mads mikkelsen": [
+    {
+      "level": 0,
+      "cluster": "0"
+    }
+  ],
+  "marvel cinematic universe": [
+    {
+      "level": 0,
+      "cluster": "0"
+    }
+  ],
+  "marvel studios": [
+    {
+      "level": 0,
+      "cluster": "0"
+    }
+  ],
+  "michael stuhlbarg": [
+    {
+      "level": 0,
+      "cluster": "0"
+    }
+  ],
+  "rachel mcadams": [
+    {
+      "level": 0,
+      "cluster": "0"
+    }
+  ],
+  "scott adkins": [
+    {
+      "level": 0,
+      "cluster": "0"
+    }
+  ],
+  "stephen strange": [
+    {
+      "level": 0,
+      "cluster": "0"
+    }
+  ],
+  "tilda swinton": [
+    {
+      "level": 0,
+      "cluster": "0"
+    }
+  ],
+  "walt disney studios motion pictures": [
+    {
+      "level": 0,
+      "cluster": "0"
+    }
+  ],
+  "300": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "7"
+    }
+  ],
+  "tyler bates": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "7"
+    }
+  ],
+  "action and horror genres": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "8"
+    }
+  ],
+  "marilyn manson": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "8"
+    }
+  ],
+  "dawn of the dead": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "7"
+    }
+  ],
+  "film scoring": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "7"
+    }
+  ],
+  "guardians of the galaxy": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "9"
+    }
+  ],
+  "james gunn": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "9"
+    }
+  ],
+  "guardians of the galaxy vol  2": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "9"
+    }
+  ],
+  "heaven upside down": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "8"
+    }
+  ],
+  "john wick": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "7"
+    }
+  ],
+  "the pale emperor": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "8"
+    }
+  ],
+  "music production": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "7"
+    }
+  ],
+  "neil marshall": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "7"
+    }
+  ],
+  "rob zombie": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "7"
+    }
+  ],
+  "sucker punch": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "7"
+    }
+  ],
+  "william friedkin": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "7"
+    }
+  ],
+  "zack snyder": [
+    {
+      "level": 0,
+      "cluster": "1"
+    },
+    {
+      "level": 1,
+      "cluster": "7"
+    }
+  ],
+  "2012": [
+    {
+      "level": 0,
+      "cluster": "2"
+    },
+    {
+      "level": 1,
+      "cluster": "10"
+    }
+  ],
+  "sinister": [
+    {
+      "level": 0,
+      "cluster": "2"
+    },
+    {
+      "level": 1,
+      "cluster": "10"
+    }
+  ],
+  "american": [
+    {
+      "level": 0,
+      "cluster": "2"
+    },
+    {
+      "level": 1,
+      "cluster": "11"
+    }
+  ],
+  "scott derrickson": [
+    {
+      "level": 0,
+      "cluster": "2"
+    },
+    {
+      "level": 1,
+      "cluster": "11"
+    }
+  ],
+  "c  robert cargill": [
+    {
+      "level": 0,
+      "cluster": "2"
+    },
+    {
+      "level": 1,
+      "cluster": "10"
+    }
+  ],
+  "ellison oswalt": [
+    {
+      "level": 0,
+      "cluster": "2"
+    },
+    {
+      "level": 1,
+      "cluster": "12"
+    }
+  ],
+  "ethan hawke": [
+    {
+      "level": 0,
+      "cluster": "2"
+    },
+    {
+      "level": 1,
+      "cluster": "12"
+    }
+  ],
+  "home movies": [
+    {
+      "level": 0,
+      "cluster": "2"
+    },
+    {
+      "level": 1,
+      "cluster": "12"
+    }
+  ],
+  "horror films": [
+    {
+      "level": 0,
+      "cluster": "2"
+    },
+    {
+      "level": 1,
+      "cluster": "11"
+    }
+  ],
+  "the exorcism of emily rose": [
+    {
+      "level": 0,
+      "cluster": "2"
+    },
+    {
+      "level": 1,
+      "cluster": "11"
+    }
+  ],
+  "american television sitcom": [
+    {
+      "level": 0,
+      "cluster": "3"
+    },
+    {
+      "level": 1,
+      "cluster": "13"
+    }
+  ],
+  "meet corliss archer": [
+    {
+      "level": 0,
+      "cluster": "3"
+    },
+    {
+      "level": 1,
+      "cluster": "13"
+    }
+  ],
+  "april 1954": [
+    {
+      "level": 0,
+      "cluster": "3"
+    },
+    {
+      "level": 1,
+      "cluster": "13"
+    }
+  ],
+  "august 10  1951": [
+    {
+      "level": 0,
+      "cluster": "3"
+    },
+    {
+      "level": 1,
+      "cluster": "13"
+    }
+  ],
+  "december 1954": [
+    {
+      "level": 0,
+      "cluster": "3"
+    },
+    {
+      "level": 1,
+      "cluster": "13"
+    }
+  ],
+  "janet waldo": [
+    {
+      "level": 0,
+      "cluster": "3"
+    },
+    {
+      "level": 1,
+      "cluster": "14"
+    }
+  ],
+  "josie": [
+    {
+      "level": 0,
+      "cluster": "3"
+    },
+    {
+      "level": 1,
+      "cluster": "14"
+    }
+  ],
+  "josie and the pussycats": [
+    {
+      "level": 0,
+      "cluster": "3"
+    },
+    {
+      "level": 1,
+      "cluster": "14"
+    }
+  ],
+  "judy jetson": [
+    {
+      "level": 0,
+      "cluster": "3"
+    },
+    {
+      "level": 1,
+      "cluster": "14"
+    }
+  ],
+  "nancy": [
+    {
+      "level": 0,
+      "cluster": "3"
+    },
+    {
+      "level": 1,
+      "cluster": "14"
+    }
+  ],
+  "penelope pitstop": [
+    {
+      "level": 0,
+      "cluster": "3"
+    },
+    {
+      "level": 1,
+      "cluster": "14"
+    }
+  ],
+  "shazzan": [
+    {
+      "level": 0,
+      "cluster": "3"
+    },
+    {
+      "level": 1,
+      "cluster": "14"
+    }
+  ],
+  "the jetsons": [
+    {
+      "level": 0,
+      "cluster": "3"
+    },
+    {
+      "level": 1,
+      "cluster": "14"
+    }
+  ],
+  "july 13  1951": [
+    {
+      "level": 0,
+      "cluster": "3"
+    },
+    {
+      "level": 1,
+      "cluster": "13"
+    }
+  ],
+  "2014": [
+    {
+      "level": 0,
+      "cluster": "4"
+    }
+  ],
+  "deliver us from evil": [
+    {
+      "level": 0,
+      "cluster": "4"
+    }
+  ],
+  "beware the night": [
+    {
+      "level": 0,
+      "cluster": "4"
+    }
+  ],
+  "dgar ram rez": [
+    {
+      "level": 0,
+      "cluster": "4"
+    }
+  ],
+  "eric bana": [
+    {
+      "level": 0,
+      "cluster": "4"
+    }
+  ],
+  "horror film": [
+    {
+      "level": 0,
+      "cluster": "4"
+    }
+  ],
+  "jerry bruckheimer": [
+    {
+      "level": 0,
+      "cluster": "4"
+    }
+  ],
+  "joel mchale": [
+    {
+      "level": 0,
+      "cluster": "4"
+    }
+  ],
+  "lisa collier cool": [
+    {
+      "level": 0,
+      "cluster": "4"
+    }
+  ],
+  "olivia munn": [
+    {
+      "level": 0,
+      "cluster": "4"
+    }
+  ],
+  "ralph sarchie": [
+    {
+      "level": 0,
+      "cluster": "4"
+    }
+  ],
+  "sean harris": [
+    {
+      "level": 0,
+      "cluster": "4"
+    }
+  ],
+  "california": [
+    {
+      "level": 0,
+      "cluster": "5"
+    },
+    {
+      "level": 1,
+      "cluster": "15"
+    }
+  ],
+  "los angeles": [
+    {
+      "level": 0,
+      "cluster": "5"
+    },
+    {
+      "level": 1,
+      "cluster": "15"
+    }
+  ],
+  "charles craft": [
+    {
+      "level": 0,
+      "cluster": "5"
+    },
+    {
+      "level": 1,
+      "cluster": "16"
+    }
+  ],
+  "flipper s new adventure": [
+    {
+      "level": 0,
+      "cluster": "5"
+    },
+    {
+      "level": 1,
+      "cluster": "17"
+    }
+  ],
+  "hampshire": [
+    {
+      "level": 0,
+      "cluster": "5"
+    },
+    {
+      "level": 1,
+      "cluster": "16"
+    }
+  ],
+  "highway patrol": [
+    {
+      "level": 0,
+      "cluster": "5"
+    },
+    {
+      "level": 1,
+      "cluster": "16"
+    }
+  ],
+  "hollywood": [
+    {
+      "level": 0,
+      "cluster": "5"
+    },
+    {
+      "level": 1,
+      "cluster": "16"
+    }
+  ],
+  "painting the town": [
+    {
+      "level": 0,
+      "cluster": "5"
+    },
+    {
+      "level": 1,
+      "cluster": "16"
+    }
+  ],
+  "racket squad": [
+    {
+      "level": 0,
+      "cluster": "5"
+    },
+    {
+      "level": 1,
+      "cluster": "16"
+    }
+  ],
+  "science fiction theatre": [
+    {
+      "level": 0,
+      "cluster": "5"
+    },
+    {
+      "level": 1,
+      "cluster": "16"
+    }
+  ],
+  "sea hunt": [
+    {
+      "level": 0,
+      "cluster": "5"
+    },
+    {
+      "level": 1,
+      "cluster": "18"
+    }
+  ],
+  "flipper": [
+    {
+      "level": 0,
+      "cluster": "5"
+    },
+    {
+      "level": 1,
+      "cluster": "17"
+    }
+  ],
+  "lloyd bridges": [
+    {
+      "level": 0,
+      "cluster": "5"
+    },
+    {
+      "level": 1,
+      "cluster": "18"
+    }
+  ],
+  "adam collis": [
+    {
+      "level": 0,
+      "cluster": "6"
+    }
+  ],
+  "duke university": [
+    {
+      "level": 0,
+      "cluster": "6"
+    }
+  ],
+  "hundred percent": [
+    {
+      "level": 0,
+      "cluster": "6"
+    }
+  ],
+  "love in the ruins": [
+    {
+      "level": 0,
+      "cluster": "6"
+    }
+  ],
+  "university of california  los angeles": [
+    {
+      "level": 0,
+      "cluster": "6"
+    }
+  ],
+  "university of southern california": [
+    {
+      "level": 0,
+      "cluster": "6"
+    }
+  ],
+  "eric koyanagi": [
+    {
+      "level": 0,
+      "cluster": "6"
+    }
+  ]
+}

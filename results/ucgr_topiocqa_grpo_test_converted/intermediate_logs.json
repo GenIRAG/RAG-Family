@@ -1,0 +1,1251 @@
+[
+  {
+    "id": "test_0",
+    "question": "When will the new dunkirk film be released on dvd?",
+    "golden_answers": [
+      "Dunkirk (2017 film): Release"
+    ],
+    "pred": "Dunkirk (2017 film): Introduction",
+    "metric_scores": {
+      "acc4r": 0.0,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@3": 0.6309
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "10178690",
+            "contents": "Dunkirk (2017 film): Introduction",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Introduction",
+              "raw_retrieval_text": " Dunkirk (2017 film): Introduction </retrieve>",
+              "retrieval_pid": "10178690",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.032800182700157166
+          },
+          {
+            "id": "10178697",
+            "contents": "Dunkirk (2017 film): Release",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Release",
+              "raw_retrieval_text": " Dunkirk (2017 film): Release </retrieve>",
+              "retrieval_pid": "10178697",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.09356405586004257
+          },
+          {
+            "id": "1068353",
+            "contents": "Dynamite: Introduction",
+            "metadata": {
+              "retrieval_text": "Dynamite: Introduction",
+              "raw_retrieval_text": " Dynamite: Introduction </retrieve>",
+              "retrieval_pid": "1068353",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -2.2493491172790527
+          },
+          {
+            "id": "1068356",
+            "contents": "Dynamite: Storage considerations",
+            "metadata": {
+              "retrieval_text": "Dynamite: Storage considerations",
+              "raw_retrieval_text": " Dynamite: Storage considerations </retrieve>",
+              "retrieval_pid": "1068356",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -3.394097328186035
+          },
+          {
+            "id": "10178697",
+            "contents": "Dunkirk (2017 film): Release",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Release",
+              "raw_retrieval_text": " Dunkirk (2017 film): Release </retrieve>",
+              "retrieval_pid": "10178697",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -76923080.0
+          }
+        ],
+        "scores": [
+          -0.032800182700157166,
+          -0.09356405586004257,
+          -2.2493491172790527,
+          -3.394097328186035,
+          -76923080.0
+        ],
+        "metadata": {
+          "strategy": "ucgr",
+          "mode": "direct_constrained",
+          "query": "When will the new dunkirk film be released on dvd?",
+          "prompt_messages": [
+            {
+              "role": "system",
+              "content": ""
+            },
+            {
+              "role": "user",
+              "content": "Given a query and its context, your task is provide a concise Wikipedia Page title and Section title to answer this query.\n\nContext:\nNone\n\nQuery: When will the new dunkirk film be released on dvd?\nResponse: "
+            }
+          ],
+          "retrieval_texts": {
+            "Dunkirk (2017 film): Introduction": -0.032800182700157166,
+            "Dunkirk (2017 film): Release": -76923080.0,
+            "Dynamite: Introduction": -2.2493491172790527,
+            "Dynamite: Storage considerations": -3.394097328186035
+          },
+          "raw_retrieval_texts": {
+            " Dunkirk (2017 film): Introduction </retrieve>": -0.032800182700157166,
+            " Dunkirk (2017 film): Release </retrieve>": -76923080.0,
+            " Dynamite: Introduction </retrieve>": -2.2493491172790527,
+            " Dynamite: Storage considerations </retrieve>": -3.394097328186035
+          },
+          "retrieval_results": {
+            "10178690": -0.032800182700157166,
+            "10178697": -76923080.0,
+            "1068353": -2.2493491172790527,
+            "1068356": -3.394097328186035
+          },
+          "second_stage_num_beams": 5,
+          "second_stage_top_k": 5,
+          "forced_bos_token_id": 128000
+        }
+      }
+    },
+    "per_elapsed": 7.7631
+  },
+  {
+    "id": "test_1",
+    "question": "What is this film about?",
+    "golden_answers": [
+      "Dunkirk (2017 film): Introduction"
+    ],
+    "pred": "Dunkirk (2017 film): Introduction",
+    "metric_scores": {
+      "acc4r": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@3": 1.0
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "10178690",
+            "contents": "Dunkirk (2017 film): Introduction",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Introduction",
+              "raw_retrieval_text": " Dunkirk (2017 film): Introduction </retrieve>",
+              "retrieval_pid": "10178690",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -1.8278557263329276e-06
+          },
+          {
+            "id": "10178694",
+            "contents": "Dunkirk (2017 film): Filming",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Filming",
+              "raw_retrieval_text": " Dunkirk (2017 film): Filming </retrieve>",
+              "retrieval_pid": "10178694",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.825322151184082
+          },
+          {
+            "id": "1068353",
+            "contents": "Dynamite: Introduction",
+            "metadata": {
+              "retrieval_text": "Dynamite: Introduction",
+              "raw_retrieval_text": " Dynamite: Introduction </retrieve>",
+              "retrieval_pid": "1068353",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -2.314453125
+          },
+          {
+            "id": "1068356",
+            "contents": "Dynamite: Storage considerations",
+            "metadata": {
+              "retrieval_text": "Dynamite: Storage considerations",
+              "raw_retrieval_text": " Dynamite: Storage considerations </retrieve>",
+              "retrieval_pid": "1068356",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -4.484953880310059
+          },
+          {
+            "id": "10178694",
+            "contents": "Dunkirk (2017 film): Filming",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Filming",
+              "raw_retrieval_text": " Dunkirk (2017 film): Filming </retrieve>",
+              "retrieval_pid": "10178694",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -71428568.0
+          }
+        ],
+        "scores": [
+          -1.8278557263329276e-06,
+          -0.825322151184082,
+          -2.314453125,
+          -4.484953880310059,
+          -71428568.0
+        ],
+        "metadata": {
+          "strategy": "ucgr",
+          "mode": "direct_constrained",
+          "query": "What is this film about?",
+          "prompt_messages": [
+            {
+              "role": "system",
+              "content": ""
+            },
+            {
+              "role": "user",
+              "content": "Given a query and its context, your task is provide a concise Wikipedia Page title and Section title to answer this query.\n\nContext:\nQ1: When will the new dunkirk film be released on dvd?\nA1: 18 December 2017.\n\nQuery: What is this film about?\nResponse: "
+            }
+          ],
+          "retrieval_texts": {
+            "Dunkirk (2017 film): Introduction": -1.8278557263329276e-06,
+            "Dunkirk (2017 film): Filming": -71428568.0,
+            "Dynamite: Introduction": -2.314453125,
+            "Dynamite: Storage considerations": -4.484953880310059
+          },
+          "raw_retrieval_texts": {
+            " Dunkirk (2017 film): Introduction </retrieve>": -1.8278557263329276e-06,
+            " Dunkirk (2017 film): Filming </retrieve>": -71428568.0,
+            " Dynamite: Introduction </retrieve>": -2.314453125,
+            " Dynamite: Storage considerations </retrieve>": -4.484953880310059
+          },
+          "retrieval_results": {
+            "10178690": -1.8278557263329276e-06,
+            "10178694": -71428568.0,
+            "1068353": -2.314453125,
+            "1068356": -4.484953880310059
+          },
+          "second_stage_num_beams": 5,
+          "second_stage_top_k": 5,
+          "forced_bos_token_id": 128000
+        }
+      }
+    },
+    "per_elapsed": 7.8361
+  },
+  {
+    "id": "test_2",
+    "question": "Can you mention a few members of the cast?",
+    "golden_answers": [
+      "Dunkirk (2017 film): Introduction"
+    ],
+    "pred": "Dunkirk (2017 film): Introduction",
+    "metric_scores": {
+      "acc4r": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@3": 1.0
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "10178690",
+            "contents": "Dunkirk (2017 film): Introduction",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Introduction",
+              "raw_retrieval_text": " Dunkirk (2017 film): Introduction </retrieve>",
+              "retrieval_pid": "10178690",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -9.744799172040075e-06
+          },
+          {
+            "id": "10178694",
+            "contents": "Dunkirk (2017 film): Filming",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Filming",
+              "raw_retrieval_text": " Dunkirk (2017 film): Filming </retrieve>",
+              "retrieval_pid": "10178694",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.6971244215965271
+          },
+          {
+            "id": "12244399",
+            "contents": "History of the United Kingdom during the First World War: Asquith as prime minister",
+            "metadata": {
+              "retrieval_text": "History of the United Kingdom during the First World War: Asquith as prime minister",
+              "raw_retrieval_text": " History of the United Kingdom during the First World War: Asquith as prime minister </retrieve>",
+              "retrieval_pid": "12244399",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.7007487416267395
+          },
+          {
+            "id": "12244398",
+            "contents": "History of the United Kingdom during the First World War: Introduction",
+            "metadata": {
+              "retrieval_text": "History of the United Kingdom during the First World War: Introduction",
+              "raw_retrieval_text": " History of the United Kingdom during the First World War: Introduction </retrieve>",
+              "retrieval_pid": "12244398",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.9002014398574829
+          },
+          {
+            "id": "13520764",
+            "contents": "History of Sesame Street: Introduction",
+            "metadata": {
+              "retrieval_text": "History of Sesame Street: Introduction",
+              "raw_retrieval_text": " History of Sesame Street: Introduction </retrieve>",
+              "retrieval_pid": "13520764",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -2.763375997543335
+          }
+        ],
+        "scores": [
+          -9.744799172040075e-06,
+          -0.6971244215965271,
+          -0.7007487416267395,
+          -0.9002014398574829,
+          -2.763375997543335
+        ],
+        "metadata": {
+          "strategy": "ucgr",
+          "mode": "direct_constrained",
+          "query": "Can you mention a few members of the cast?",
+          "prompt_messages": [
+            {
+              "role": "system",
+              "content": ""
+            },
+            {
+              "role": "user",
+              "content": "Given a query and its context, your task is provide a concise Wikipedia Page title and Section title to answer this query.\n\nContext:\nQ1: When will the new dunkirk film be released on dvd?\nA1: 18 December 2017.\nQ2: What is this film about?\nA2: Dunkirk evacuation of World War II.\n\nQuery: Can you mention a few members of the cast?\nResponse: "
+            }
+          ],
+          "retrieval_texts": {
+            "Dunkirk (2017 film): Introduction": -9.744799172040075e-06,
+            "Dunkirk (2017 film): Filming": -0.6971244215965271,
+            "History of the United Kingdom during the First World War: Asquith as prime minister": -0.7007487416267395,
+            "History of the United Kingdom during the First World War: Introduction": -0.9002014398574829,
+            "History of Sesame Street: Introduction": -2.763375997543335
+          },
+          "raw_retrieval_texts": {
+            " Dunkirk (2017 film): Introduction </retrieve>": -9.744799172040075e-06,
+            " Dunkirk (2017 film): Filming </retrieve>": -0.6971244215965271,
+            " History of the United Kingdom during the First World War: Asquith as prime minister </retrieve>": -0.7007487416267395,
+            " History of the United Kingdom during the First World War: Introduction </retrieve>": -0.9002014398574829,
+            " History of Sesame Street: Introduction </retrieve>": -2.763375997543335
+          },
+          "retrieval_results": {
+            "10178690": -9.744799172040075e-06,
+            "10178694": -0.6971244215965271,
+            "12244399": -0.7007487416267395,
+            "12244398": -0.9002014398574829,
+            "13520764": -2.763375997543335
+          },
+          "second_stage_num_beams": 5,
+          "second_stage_top_k": 5,
+          "forced_bos_token_id": 128000
+        }
+      }
+    },
+    "per_elapsed": 11.342
+  },
+  {
+    "id": "test_3",
+    "question": "Where was it shot?",
+    "golden_answers": [
+      "Dunkirk (2017 film): Filming"
+    ],
+    "pred": "Dunkirk (2017 film): Filming",
+    "metric_scores": {
+      "acc4r": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@3": 1.0
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "10178694",
+            "contents": "Dunkirk (2017 film): Filming",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Filming",
+              "raw_retrieval_text": " Dunkirk (2017 film): Filming </retrieve>",
+              "retrieval_pid": "10178694",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.0007052001892589033
+          },
+          {
+            "id": "10178690",
+            "contents": "Dunkirk (2017 film): Introduction",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Introduction",
+              "raw_retrieval_text": " Dunkirk (2017 film): Introduction </retrieve>",
+              "retrieval_pid": "10178690",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.39138898253440857
+          },
+          {
+            "id": "12244399",
+            "contents": "History of the United Kingdom during the First World War: Asquith as prime minister",
+            "metadata": {
+              "retrieval_text": "History of the United Kingdom during the First World War: Asquith as prime minister",
+              "raw_retrieval_text": " History of the United Kingdom during the First World War: Asquith as prime minister </retrieve>",
+              "retrieval_pid": "12244399",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.8838021159172058
+          },
+          {
+            "id": "12244398",
+            "contents": "History of the United Kingdom during the First World War: Introduction",
+            "metadata": {
+              "retrieval_text": "History of the United Kingdom during the First World War: Introduction",
+              "raw_retrieval_text": " History of the United Kingdom during the First World War: Introduction </retrieve>",
+              "retrieval_pid": "12244398",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -1.0167611837387085
+          },
+          {
+            "id": "13520764",
+            "contents": "History of Sesame Street: Introduction",
+            "metadata": {
+              "retrieval_text": "History of Sesame Street: Introduction",
+              "raw_retrieval_text": " History of Sesame Street: Introduction </retrieve>",
+              "retrieval_pid": "13520764",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -2.920513153076172
+          }
+        ],
+        "scores": [
+          -0.0007052001892589033,
+          -0.39138898253440857,
+          -0.8838021159172058,
+          -1.0167611837387085,
+          -2.920513153076172
+        ],
+        "metadata": {
+          "strategy": "ucgr",
+          "mode": "direct_constrained",
+          "query": "Where was it shot?",
+          "prompt_messages": [
+            {
+              "role": "system",
+              "content": ""
+            },
+            {
+              "role": "user",
+              "content": "Given a query and its context, your task is provide a concise Wikipedia Page title and Section title to answer this query.\n\nContext:\nQ1: When will the new dunkirk film be released on dvd?\nA1: 18 December 2017.\nQ2: What is this film about?\nA2: Dunkirk evacuation of World War II.\nQ3: Can you mention a few members of the cast?\nA3: Fionn Whitehead, Tom Glynn-Carney, Jack Lowden, Harry Styles.\n\nQuery: Where was it shot?\nResponse: "
+            }
+          ],
+          "retrieval_texts": {
+            "Dunkirk (2017 film): Filming": -0.0007052001892589033,
+            "Dunkirk (2017 film): Introduction": -0.39138898253440857,
+            "History of the United Kingdom during the First World War: Asquith as prime minister": -0.8838021159172058,
+            "History of the United Kingdom during the First World War: Introduction": -1.0167611837387085,
+            "History of Sesame Street: Introduction": -2.920513153076172
+          },
+          "raw_retrieval_texts": {
+            " Dunkirk (2017 film): Filming </retrieve>": -0.0007052001892589033,
+            " Dunkirk (2017 film): Introduction </retrieve>": -0.39138898253440857,
+            " History of the United Kingdom during the First World War: Asquith as prime minister </retrieve>": -0.8838021159172058,
+            " History of the United Kingdom during the First World War: Introduction </retrieve>": -1.0167611837387085,
+            " History of Sesame Street: Introduction </retrieve>": -2.920513153076172
+          },
+          "retrieval_results": {
+            "10178694": -0.0007052001892589033,
+            "10178690": -0.39138898253440857,
+            "12244399": -0.8838021159172058,
+            "12244398": -1.0167611837387085,
+            "13520764": -2.920513153076172
+          },
+          "second_stage_num_beams": 5,
+          "second_stage_top_k": 5,
+          "forced_bos_token_id": 128000
+        }
+      }
+    },
+    "per_elapsed": 12.0828
+  },
+  {
+    "id": "test_4",
+    "question": "Can you tell me anything about the latter place's past?",
+    "golden_answers": [
+      "Urk: History / Lordship of Urk en Emmeloord"
+    ],
+    "pred": "Urk: History / Lordship of Urk en Emmeloord",
+    "metric_scores": {
+      "acc4r": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@3": 1.0
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "17243949",
+            "contents": "Urk: History / Lordship of Urk en Emmeloord",
+            "metadata": {
+              "retrieval_text": "Urk: History / Lordship of Urk en Emmeloord",
+              "raw_retrieval_text": " Urk: History / Lordship of Urk en Emmeloord </retrieve>",
+              "retrieval_pid": "17243949",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -1.2649288692045957e-06
+          },
+          {
+            "id": "12244399",
+            "contents": "History of the United Kingdom during the First World War: Asquith as prime minister",
+            "metadata": {
+              "retrieval_text": "History of the United Kingdom during the First World War: Asquith as prime minister",
+              "raw_retrieval_text": " History of the United Kingdom during the First World War: Asquith as prime minister </retrieve>",
+              "retrieval_pid": "12244399",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.5890774726867676
+          },
+          {
+            "id": "12244398",
+            "contents": "History of the United Kingdom during the First World War: Introduction",
+            "metadata": {
+              "retrieval_text": "History of the United Kingdom during the First World War: Introduction",
+              "raw_retrieval_text": " History of the United Kingdom during the First World War: Introduction </retrieve>",
+              "retrieval_pid": "12244398",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.6820182800292969
+          },
+          {
+            "id": "17243950",
+            "contents": "Urk: Economy",
+            "metadata": {
+              "retrieval_text": "Urk: Economy",
+              "raw_retrieval_text": " Urk: Economy </retrieve>",
+              "retrieval_pid": "17243950",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -1.9335966110229492
+          },
+          {
+            "id": "13520764",
+            "contents": "History of Sesame Street: Introduction",
+            "metadata": {
+              "retrieval_text": "History of Sesame Street: Introduction",
+              "raw_retrieval_text": " History of Sesame Street: Introduction </retrieve>",
+              "retrieval_pid": "13520764",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -2.6254756450653076
+          }
+        ],
+        "scores": [
+          -1.2649288692045957e-06,
+          -0.5890774726867676,
+          -0.6820182800292969,
+          -1.9335966110229492,
+          -2.6254756450653076
+        ],
+        "metadata": {
+          "strategy": "ucgr",
+          "mode": "direct_constrained",
+          "query": "Can you tell me anything about the latter place's past?",
+          "prompt_messages": [
+            {
+              "role": "system",
+              "content": ""
+            },
+            {
+              "role": "user",
+              "content": "Given a query and its context, your task is provide a concise Wikipedia Page title and Section title to answer this query.\n\nContext:\nQ1: When will the new dunkirk film be released on dvd?\nA1: 18 December 2017.\nQ2: What is this film about?\nA2: Dunkirk evacuation of World War II.\nQ3: Can you mention a few members of the cast?\nA3: Fionn Whitehead, Tom Glynn-Carney, Jack Lowden, Harry Styles.\nQ4: Where was it shot?\nA4: Dunkirk and Urk, Netherlands.\n\nQuery: Can you tell me anything about the latter place's past?\nResponse: "
+            }
+          ],
+          "retrieval_texts": {
+            "Urk: History / Lordship of Urk en Emmeloord": -1.2649288692045957e-06,
+            "History of the United Kingdom during the First World War: Asquith as prime minister": -0.5890774726867676,
+            "History of the United Kingdom during the First World War: Introduction": -0.6820182800292969,
+            "Urk: Economy": -1.9335966110229492,
+            "History of Sesame Street: Introduction": -2.6254756450653076
+          },
+          "raw_retrieval_texts": {
+            " Urk: History / Lordship of Urk en Emmeloord </retrieve>": -1.2649288692045957e-06,
+            " History of the United Kingdom during the First World War: Asquith as prime minister </retrieve>": -0.5890774726867676,
+            " History of the United Kingdom during the First World War: Introduction </retrieve>": -0.6820182800292969,
+            " Urk: Economy </retrieve>": -1.9335966110229492,
+            " History of Sesame Street: Introduction </retrieve>": -2.6254756450653076
+          },
+          "retrieval_results": {
+            "17243949": -1.2649288692045957e-06,
+            "12244399": -0.5890774726867676,
+            "12244398": -0.6820182800292969,
+            "17243950": -1.9335966110229492,
+            "13520764": -2.6254756450653076
+          },
+          "second_stage_num_beams": 5,
+          "second_stage_top_k": 5,
+          "forced_bos_token_id": 128000
+        }
+      }
+    },
+    "per_elapsed": 13.4484
+  },
+  {
+    "id": "test_5",
+    "question": "What does the economy of this place depend upon?",
+    "golden_answers": [
+      "Urk: Economy"
+    ],
+    "pred": "Urk: Economy",
+    "metric_scores": {
+      "acc4r": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@3": 1.0
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "17243950",
+            "contents": "Urk: Economy",
+            "metadata": {
+              "retrieval_text": "Urk: Economy",
+              "raw_retrieval_text": " Urk: Economy </retrieve>",
+              "retrieval_pid": "17243950",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -4.112666374567198e-06
+          },
+          {
+            "id": "17243949",
+            "contents": "Urk: History / Lordship of Urk en Emmeloord",
+            "metadata": {
+              "retrieval_text": "Urk: History / Lordship of Urk en Emmeloord",
+              "raw_retrieval_text": " Urk: History / Lordship of Urk en Emmeloord </retrieve>",
+              "retrieval_pid": "17243949",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.694446325302124
+          },
+          {
+            "id": "10178690",
+            "contents": "Dunkirk (2017 film): Introduction",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Introduction",
+              "raw_retrieval_text": " Dunkirk (2017 film): Introduction </retrieve>",
+              "retrieval_pid": "10178690",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.8702766299247742
+          },
+          {
+            "id": "10178697",
+            "contents": "Dunkirk (2017 film): Release",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Release",
+              "raw_retrieval_text": " Dunkirk (2017 film): Release </retrieve>",
+              "retrieval_pid": "10178697",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -1.490936279296875
+          },
+          {
+            "id": "17243949",
+            "contents": "Urk: History / Lordship of Urk en Emmeloord",
+            "metadata": {
+              "retrieval_text": "Urk: History / Lordship of Urk en Emmeloord",
+              "raw_retrieval_text": " Urk: History / Lordship of Urk en Emmeloord </retrieve>",
+              "retrieval_pid": "17243949",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -52631580.0
+          }
+        ],
+        "scores": [
+          -4.112666374567198e-06,
+          -0.694446325302124,
+          -0.8702766299247742,
+          -1.490936279296875,
+          -52631580.0
+        ],
+        "metadata": {
+          "strategy": "ucgr",
+          "mode": "direct_constrained",
+          "query": "What does the economy of this place depend upon?",
+          "prompt_messages": [
+            {
+              "role": "system",
+              "content": ""
+            },
+            {
+              "role": "user",
+              "content": "Given a query and its context, your task is provide a concise Wikipedia Page title and Section title to answer this query.\n\nContext:\nQ1: When will the new dunkirk film be released on dvd?\nA1: 18 December 2017.\nQ2: What is this film about?\nA2: Dunkirk evacuation of World War II.\nQ3: Can you mention a few members of the cast?\nA3: Fionn Whitehead, Tom Glynn-Carney, Jack Lowden, Harry Styles.\nQ4: Where was it shot?\nA4: Dunkirk and Urk, Netherlands.\nQ5: Can you tell me anything about the latter place's past?\nA5: Until 1475 the High and Low Lordship of Urk and Emmeloord was in the hands of the Van Kuinre family.\n\nQuery: What does the economy of this place depend upon?\nResponse: "
+            }
+          ],
+          "retrieval_texts": {
+            "Urk: Economy": -4.112666374567198e-06,
+            "Urk: History / Lordship of Urk en Emmeloord": -52631580.0,
+            "Dunkirk (2017 film): Introduction": -0.8702766299247742,
+            "Dunkirk (2017 film): Release": -1.490936279296875
+          },
+          "raw_retrieval_texts": {
+            " Urk: Economy </retrieve>": -4.112666374567198e-06,
+            " Urk: History / Lordship of Urk en Emmeloord </retrieve>": -52631580.0,
+            " Dunkirk (2017 film): Introduction </retrieve>": -0.8702766299247742,
+            " Dunkirk (2017 film): Release </retrieve>": -1.490936279296875
+          },
+          "retrieval_results": {
+            "17243950": -4.112666374567198e-06,
+            "17243949": -52631580.0,
+            "10178690": -0.8702766299247742,
+            "10178697": -1.490936279296875
+          },
+          "second_stage_num_beams": 5,
+          "second_stage_top_k": 5,
+          "forced_bos_token_id": 128000
+        }
+      }
+    },
+    "per_elapsed": 13.2911
+  },
+  {
+    "id": "test_6",
+    "question": "Is there any waterbody nearby ?",
+    "golden_answers": [
+      "Urk: Economy"
+    ],
+    "pred": "Urk: History / Lordship of Urk en Emmeloord",
+    "metric_scores": {
+      "acc4r": 0.0,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@3": 0.6309
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "17243949",
+            "contents": "Urk: History / Lordship of Urk en Emmeloord",
+            "metadata": {
+              "retrieval_text": "Urk: History / Lordship of Urk en Emmeloord",
+              "raw_retrieval_text": " Urk: History / Lordship of Urk en Emmeloord </retrieve>",
+              "retrieval_pid": "17243949",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.03850975260138512
+          },
+          {
+            "id": "17243950",
+            "contents": "Urk: Economy",
+            "metadata": {
+              "retrieval_text": "Urk: Economy",
+              "raw_retrieval_text": " Urk: Economy </retrieve>",
+              "retrieval_pid": "17243950",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.08664694428443909
+          },
+          {
+            "id": "10178690",
+            "contents": "Dunkirk (2017 film): Introduction",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Introduction",
+              "raw_retrieval_text": " Dunkirk (2017 film): Introduction </retrieve>",
+              "retrieval_pid": "10178690",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.8898270726203918
+          },
+          {
+            "id": "10178694",
+            "contents": "Dunkirk (2017 film): Filming",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Filming",
+              "raw_retrieval_text": " Dunkirk (2017 film): Filming </retrieve>",
+              "retrieval_pid": "10178694",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.9335584044456482
+          },
+          {
+            "id": "17243949",
+            "contents": "Urk: History / Lordship of Urk en Emmeloord",
+            "metadata": {
+              "retrieval_text": "Urk: History / Lordship of Urk en Emmeloord",
+              "raw_retrieval_text": " Urk: History / Lordship of Urk en Emmeloord </retrieve>",
+              "retrieval_pid": "17243949",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -52631580.0
+          }
+        ],
+        "scores": [
+          -0.03850975260138512,
+          -0.08664694428443909,
+          -0.8898270726203918,
+          -0.9335584044456482,
+          -52631580.0
+        ],
+        "metadata": {
+          "strategy": "ucgr",
+          "mode": "direct_constrained",
+          "query": "Is there any waterbody nearby ?",
+          "prompt_messages": [
+            {
+              "role": "system",
+              "content": ""
+            },
+            {
+              "role": "user",
+              "content": "Given a query and its context, your task is provide a concise Wikipedia Page title and Section title to answer this query.\n\nContext:\nQ1: When will the new dunkirk film be released on dvd?\nA1: 18 December 2017.\nQ2: What is this film about?\nA2: Dunkirk evacuation of World War II.\nQ3: Can you mention a few members of the cast?\nA3: Fionn Whitehead, Tom Glynn-Carney, Jack Lowden, Harry Styles.\nQ4: Where was it shot?\nA4: Dunkirk and Urk, Netherlands.\nQ5: Can you tell me anything about the latter place's past?\nA5: Until 1475 the High and Low Lordship of Urk and Emmeloord was in the hands of the Van Kuinre family.\nQ6: What does the economy of this place depend upon?\nA6: Fishery.\n\nQuery: Is there any waterbody nearby ?\nResponse: "
+            }
+          ],
+          "retrieval_texts": {
+            "Urk: History / Lordship of Urk en Emmeloord": -52631580.0,
+            "Urk: Economy": -0.08664694428443909,
+            "Dunkirk (2017 film): Introduction": -0.8898270726203918,
+            "Dunkirk (2017 film): Filming": -0.9335584044456482
+          },
+          "raw_retrieval_texts": {
+            " Urk: History / Lordship of Urk en Emmeloord </retrieve>": -52631580.0,
+            " Urk: Economy </retrieve>": -0.08664694428443909,
+            " Dunkirk (2017 film): Introduction </retrieve>": -0.8898270726203918,
+            " Dunkirk (2017 film): Filming </retrieve>": -0.9335584044456482
+          },
+          "retrieval_results": {
+            "17243949": -52631580.0,
+            "17243950": -0.08664694428443909,
+            "10178690": -0.8898270726203918,
+            "10178694": -0.9335584044456482
+          },
+          "second_stage_num_beams": 5,
+          "second_stage_top_k": 5,
+          "forced_bos_token_id": 128000
+        }
+      }
+    },
+    "per_elapsed": 14.9726
+  },
+  {
+    "id": "test_7",
+    "question": "What kind of marine organisms are found in this sea?",
+    "golden_answers": [
+      "North Sea: Fish and shellfish"
+    ],
+    "pred": "North Sea: Fish and shellfish",
+    "metric_scores": {
+      "acc4r": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@3": 1.0
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "17482936",
+            "contents": "North Sea: Fish and shellfish",
+            "metadata": {
+              "retrieval_text": "North Sea: Fish and shellfish",
+              "raw_retrieval_text": " North Sea: Fish and shellfish </retrieve>",
+              "retrieval_pid": "17482936",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -1.2679469136855914e-06
+          },
+          {
+            "id": "17243949",
+            "contents": "Urk: History / Lordship of Urk en Emmeloord",
+            "metadata": {
+              "retrieval_text": "Urk: History / Lordship of Urk en Emmeloord",
+              "raw_retrieval_text": " Urk: History / Lordship of Urk en Emmeloord </retrieve>",
+              "retrieval_pid": "17243949",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.7712438702583313
+          },
+          {
+            "id": "17482948",
+            "contents": "North Sea: Whaling",
+            "metadata": {
+              "retrieval_text": "North Sea: Whaling",
+              "raw_retrieval_text": " North Sea: Whaling </retrieve>",
+              "retrieval_pid": "17482948",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -1.26157546043396
+          },
+          {
+            "id": "17243950",
+            "contents": "Urk: Economy",
+            "metadata": {
+              "retrieval_text": "Urk: Economy",
+              "raw_retrieval_text": " Urk: Economy </retrieve>",
+              "retrieval_pid": "17243950",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -1.696236252784729
+          },
+          {
+            "id": "17243949",
+            "contents": "Urk: History / Lordship of Urk en Emmeloord",
+            "metadata": {
+              "retrieval_text": "Urk: History / Lordship of Urk en Emmeloord",
+              "raw_retrieval_text": " Urk: History / Lordship of Urk en Emmeloord </retrieve>",
+              "retrieval_pid": "17243949",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -52631580.0
+          }
+        ],
+        "scores": [
+          -1.2679469136855914e-06,
+          -0.7712438702583313,
+          -1.26157546043396,
+          -1.696236252784729,
+          -52631580.0
+        ],
+        "metadata": {
+          "strategy": "ucgr",
+          "mode": "direct_constrained",
+          "query": "What kind of marine organisms are found in this sea?",
+          "prompt_messages": [
+            {
+              "role": "system",
+              "content": ""
+            },
+            {
+              "role": "user",
+              "content": "Given a query and its context, your task is provide a concise Wikipedia Page title and Section title to answer this query.\n\nContext:\nQ1: When will the new dunkirk film be released on dvd?\nA1: 18 December 2017.\nQ2: What is this film about?\nA2: Dunkirk evacuation of World War II.\nQ3: Can you mention a few members of the cast?\nA3: Fionn Whitehead, Tom Glynn-Carney, Jack Lowden, Harry Styles.\nQ4: Where was it shot?\nA4: Dunkirk and Urk, Netherlands.\nQ5: Can you tell me anything about the latter place's past?\nA5: Until 1475 the High and Low Lordship of Urk and Emmeloord was in the hands of the Van Kuinre family.\nQ6: What does the economy of this place depend upon?\nA6: Fishery.\nQ7: Is there any waterbody nearby ?\nA7: North Sea.\n\nQuery: What kind of marine organisms are found in this sea?\nResponse: "
+            }
+          ],
+          "retrieval_texts": {
+            "North Sea: Fish and shellfish": -1.2679469136855914e-06,
+            "Urk: History / Lordship of Urk en Emmeloord": -52631580.0,
+            "North Sea: Whaling": -1.26157546043396,
+            "Urk: Economy": -1.696236252784729
+          },
+          "raw_retrieval_texts": {
+            " North Sea: Fish and shellfish </retrieve>": -1.2679469136855914e-06,
+            " Urk: History / Lordship of Urk en Emmeloord </retrieve>": -52631580.0,
+            " North Sea: Whaling </retrieve>": -1.26157546043396,
+            " Urk: Economy </retrieve>": -1.696236252784729
+          },
+          "retrieval_results": {
+            "17482936": -1.2679469136855914e-06,
+            "17243949": -52631580.0,
+            "17482948": -1.26157546043396,
+            "17243950": -1.696236252784729
+          },
+          "second_stage_num_beams": 5,
+          "second_stage_top_k": 5,
+          "forced_bos_token_id": 128000
+        }
+      }
+    },
+    "per_elapsed": 14.7646
+  },
+  {
+    "id": "test_8",
+    "question": "What kind of minerals are found in this sea?",
+    "golden_answers": [
+      "North Sea: Mineral resources"
+    ],
+    "pred": "North Sea: Fish and shellfish",
+    "metric_scores": {
+      "acc4r": 0.0,
+      "recall@5": 1.0,
+      "mrr@5": 0.5,
+      "ndcg@3": 0.6309
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "17482936",
+            "contents": "North Sea: Fish and shellfish",
+            "metadata": {
+              "retrieval_text": "North Sea: Fish and shellfish",
+              "raw_retrieval_text": " North Sea: Fish and shellfish </retrieve>",
+              "retrieval_pid": "17482936",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.030041653662919998
+          },
+          {
+            "id": "17482949",
+            "contents": "North Sea: Mineral resources",
+            "metadata": {
+              "retrieval_text": "North Sea: Mineral resources",
+              "raw_retrieval_text": " North Sea: Mineral resources </retrieve>",
+              "retrieval_pid": "17482949",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.14088423550128937
+          },
+          {
+            "id": "10178694",
+            "contents": "Dunkirk (2017 film): Filming",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Filming",
+              "raw_retrieval_text": " Dunkirk (2017 film): Filming </retrieve>",
+              "retrieval_pid": "10178694",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -1.5125874280929565
+          },
+          {
+            "id": "10178690",
+            "contents": "Dunkirk (2017 film): Introduction",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Introduction",
+              "raw_retrieval_text": " Dunkirk (2017 film): Introduction </retrieve>",
+              "retrieval_pid": "10178690",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -1.612594723701477
+          },
+          {
+            "id": "10178694",
+            "contents": "Dunkirk (2017 film): Filming",
+            "metadata": {
+              "retrieval_text": "Dunkirk (2017 film): Filming",
+              "raw_retrieval_text": " Dunkirk (2017 film): Filming </retrieve>",
+              "retrieval_pid": "10178694",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -71428568.0
+          }
+        ],
+        "scores": [
+          -0.030041653662919998,
+          -0.14088423550128937,
+          -1.5125874280929565,
+          -1.612594723701477,
+          -71428568.0
+        ],
+        "metadata": {
+          "strategy": "ucgr",
+          "mode": "direct_constrained",
+          "query": "What kind of minerals are found in this sea?",
+          "prompt_messages": [
+            {
+              "role": "system",
+              "content": ""
+            },
+            {
+              "role": "user",
+              "content": "Given a query and its context, your task is provide a concise Wikipedia Page title and Section title to answer this query.\n\nContext:\nQ1: When will the new dunkirk film be released on dvd?\nA1: 18 December 2017.\nQ2: What is this film about?\nA2: Dunkirk evacuation of World War II.\nQ3: Can you mention a few members of the cast?\nA3: Fionn Whitehead, Tom Glynn-Carney, Jack Lowden, Harry Styles.\nQ4: Where was it shot?\nA4: Dunkirk and Urk, Netherlands.\nQ5: Can you tell me anything about the latter place's past?\nA5: Until 1475 the High and Low Lordship of Urk and Emmeloord was in the hands of the Van Kuinre family.\nQ6: What does the economy of this place depend upon?\nA6: Fishery.\nQ7: Is there any waterbody nearby ?\nA7: North Sea.\nQ8: What kind of marine organisms are found in this sea?\nA8: Cod, haddock, whiting, saithe, plaice, sole, mackerel, herring, pouting, sprat, and sandeel.\n\nQuery: What kind of minerals are found in this sea?\nResponse: "
+            }
+          ],
+          "retrieval_texts": {
+            "North Sea: Fish and shellfish": -0.030041653662919998,
+            "North Sea: Mineral resources": -0.14088423550128937,
+            "Dunkirk (2017 film): Filming": -71428568.0,
+            "Dunkirk (2017 film): Introduction": -1.612594723701477
+          },
+          "raw_retrieval_texts": {
+            " North Sea: Fish and shellfish </retrieve>": -0.030041653662919998,
+            " North Sea: Mineral resources </retrieve>": -0.14088423550128937,
+            " Dunkirk (2017 film): Filming </retrieve>": -71428568.0,
+            " Dunkirk (2017 film): Introduction </retrieve>": -1.612594723701477
+          },
+          "retrieval_results": {
+            "17482936": -0.030041653662919998,
+            "17482949": -0.14088423550128937,
+            "10178694": -71428568.0,
+            "10178690": -1.612594723701477
+          },
+          "second_stage_num_beams": 5,
+          "second_stage_top_k": 5,
+          "forced_bos_token_id": 128000
+        }
+      }
+    },
+    "per_elapsed": 15.0029
+  },
+  {
+    "id": "test_9",
+    "question": "Does this place experiences any natural hazards?",
+    "golden_answers": [
+      "North Sea: Storm tides"
+    ],
+    "pred": "North Sea: Storm tides",
+    "metric_scores": {
+      "acc4r": 1.0,
+      "recall@5": 1.0,
+      "mrr@5": 1.0,
+      "ndcg@3": 1.0
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "17482933",
+            "contents": "North Sea: Storm tides",
+            "metadata": {
+              "retrieval_text": "North Sea: Storm tides",
+              "raw_retrieval_text": " North Sea: Storm tides </retrieve>",
+              "retrieval_pid": "17482933",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -1.848849205998704e-05
+          },
+          {
+            "id": "17243949",
+            "contents": "Urk: History / Lordship of Urk en Emmeloord",
+            "metadata": {
+              "retrieval_text": "Urk: History / Lordship of Urk en Emmeloord",
+              "raw_retrieval_text": " Urk: History / Lordship of Urk en Emmeloord </retrieve>",
+              "retrieval_pid": "17243949",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -0.5238815546035767
+          },
+          {
+            "id": "17482948",
+            "contents": "North Sea: Whaling",
+            "metadata": {
+              "retrieval_text": "North Sea: Whaling",
+              "raw_retrieval_text": " North Sea: Whaling </retrieve>",
+              "retrieval_pid": "17482948",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -1.0185389518737793
+          },
+          {
+            "id": "17243950",
+            "contents": "Urk: Economy",
+            "metadata": {
+              "retrieval_text": "Urk: Economy",
+              "raw_retrieval_text": " Urk: Economy </retrieve>",
+              "retrieval_pid": "17243950",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -1.9176656007766724
+          },
+          {
+            "id": "17243949",
+            "contents": "Urk: History / Lordship of Urk en Emmeloord",
+            "metadata": {
+              "retrieval_text": "Urk: History / Lordship of Urk en Emmeloord",
+              "raw_retrieval_text": " Urk: History / Lordship of Urk en Emmeloord </retrieve>",
+              "retrieval_pid": "17243949",
+              "strategy": "ucgr",
+              "mode": "direct_constrained"
+            },
+            "score": -52631580.0
+          }
+        ],
+        "scores": [
+          -1.848849205998704e-05,
+          -0.5238815546035767,
+          -1.0185389518737793,
+          -1.9176656007766724,
+          -52631580.0
+        ],
+        "metadata": {
+          "strategy": "ucgr",
+          "mode": "direct_constrained",
+          "query": "Does this place experiences any natural hazards?",
+          "prompt_messages": [
+            {
+              "role": "system",
+              "content": ""
+            },
+            {
+              "role": "user",
+              "content": "Given a query and its context, your task is provide a concise Wikipedia Page title and Section title to answer this query.\n\nContext:\nQ1: When will the new dunkirk film be released on dvd?\nA1: 18 December 2017.\nQ2: What is this film about?\nA2: Dunkirk evacuation of World War II.\nQ3: Can you mention a few members of the cast?\nA3: Fionn Whitehead, Tom Glynn-Carney, Jack Lowden, Harry Styles.\nQ4: Where was it shot?\nA4: Dunkirk and Urk, Netherlands.\nQ5: Can you tell me anything about the latter place's past?\nA5: Until 1475 the High and Low Lordship of Urk and Emmeloord was in the hands of the Van Kuinre family.\nQ6: What does the economy of this place depend upon?\nA6: Fishery.\nQ7: Is there any waterbody nearby ?\nA7: North Sea.\nQ8: What kind of marine organisms are found in this sea?\nA8: Cod, haddock, whiting, saithe, plaice, sole, mackerel, herring, pouting, sprat, and sandeel.\nQ9: What kind of minerals are found in this sea?\nA9: Sand, gravel and rolled pieces of amber.\n\nQuery: Does this place experiences any natural hazards?\nResponse: "
+            }
+          ],
+          "retrieval_texts": {
+            "North Sea: Storm tides": -1.848849205998704e-05,
+            "Urk: History / Lordship of Urk en Emmeloord": -52631580.0,
+            "North Sea: Whaling": -1.0185389518737793,
+            "Urk: Economy": -1.9176656007766724
+          },
+          "raw_retrieval_texts": {
+            " North Sea: Storm tides </retrieve>": -1.848849205998704e-05,
+            " Urk: History / Lordship of Urk en Emmeloord </retrieve>": -52631580.0,
+            " North Sea: Whaling </retrieve>": -1.0185389518737793,
+            " Urk: Economy </retrieve>": -1.9176656007766724
+          },
+          "retrieval_results": {
+            "17482933": -1.848849205998704e-05,
+            "17243949": -52631580.0,
+            "17482948": -1.0185389518737793,
+            "17243950": -1.9176656007766724
+          },
+          "second_stage_num_beams": 5,
+          "second_stage_top_k": 5,
+          "forced_bos_token_id": 128000
+        }
+      }
+    },
+    "per_elapsed": 17.4028
+  }
+]

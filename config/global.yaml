@@ -1,0 +1,42 @@
+global:
+  hf_mirror: "YOUR_MIRROR_URL"
+  seed: 2024
+  models:
+    BM25Model:
+      k1: 1.5
+      b: 0.75
+    HFEncoder:
+      model_name: "BAAI/bge-base-en-v1.5"
+    OpenAIGenerator:
+      model_name: "gpt-4o-mini-2024-07-18"
+      api_key: ""
+      base_url: "YOUR_BASE_URL_FOR_OPENAI"
+    DeepSeekGenerator:
+      model_name: "deepseek-v4-flash"
+      api_key: ""
+      base_url: "YOUR_BASE_URL_FOR_DEEPSEEK"
+    HFDecoder:
+      model_name: "UCGR"
+      model_path: "modelList/UCGR"
+      device_map: "cpu"
+      use_fp16: false
+      torch_dtype: "float32"
+    HFReranker:
+      model_name: "BAAI/bge-reranker-base"
+    LLMLingua2Model:
+      model_name: "microsoft/llmlingua-2-xlm-roberta-large-meetingbank"
+      device_map: "cpu"
+      use_llmlingua2: true
+    LLMLinguaModel:
+      model_name: "Qwen/Qwen2.5-0.5B-Instruct"
+      # model_name: "NousResearch/Llama-2-7b-hf"
+      device_map: "cpu"
+
+pipeline_type: "naive"
+
+evaluation:
+  show_progress: true
+  save_dir: "results"
+  save_metric: true
+  verbose: true
+  print_results: true

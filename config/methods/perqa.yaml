@@ -1,0 +1,42 @@
+index:
+  paths:
+    bm25_index_path: "indexes/storage/BM25Model_2wikimultihopqa_t1_c1200"
+
+inference:
+  perqa:
+    max_answer_num: 1
+    plan_similarity_model: "BAAI/bge-base-en-v1.5"
+
+roles:
+  retriever:
+    BM25Model:
+      top_k: 5
+  reasoner:
+    OpenAIGenerator:
+      answer_reasoner:
+        prompt_names:
+          bridge_aggregate: "perqa_bridge_aggregate"
+          comparison_aggregate: "perqa_comparison_aggregate"
+        max_tokens: 256
+        temperature: 0.0
+      planner_reasoner:
+        prompt_names:
+          type_system: "perqa_type_system"
+          bridge_system: "perqa_bridge_system"
+          comparison_system: "perqa_comparison_system"
+        max_tokens: 256
+        temperature: 0.0
+      executor_reasoner:
+        prompt_name: "perqa_rag_qa"
+        max_tokens: 256
+        temperature: 0.0
+
+evaluation:
+  data_file: "data/evalute/2wikimultihopqa_t1.jsonl"
+  sample_num: 3
+  random_sample: false
+  metrics:
+    - "f1"
+    - "plan_score"
+    - "step_score"
+    - "pse_g"

@@ -1,0 +1,77 @@
+paths:
+  storage_dir: "indexes/storage"
+  corpus_path: "data/hotpot_hippo.jsonl"
+
+
+chunking:
+  enable_chunking: true
+  chunk_size: 1200
+  overlap_token_size: 100
+
+
+build_index:
+  indexing_model: "HFEncoder"
+
+
+dense:
+  faiss_type: "FLAT"
+  faiss_nlist: 1024
+  faiss_nprobe: 10
+  faiss_hnsw_m: 32
+  faiss_ef_search: 64
+
+
+bm25:
+  k1: 1.5
+  b: 0.75
+
+
+fm:
+  hf_model: "modelList/UCGR"
+  jobs: 8
+  forced_bos_token_id: 128000
+  lowercase: false
+  keep_duplicates: false
+  index_name:
+
+
+graph_building:
+  graph_index_method: "hipporag"
+  force_rebuild_graph: true
+
+  extraction:
+    graph_extraction_model: "OpenAIGenerator"
+    graph_extraction_concurrency: 4
+    graph_extraction_retries: 1
+
+  methods:
+    hipporag:
+      index:
+        use_entities_vdb: true
+        use_relations_vdb: false
+        use_e2r_r2c: true
+        enable_graph_augmentation: true
+        augment_top_k: 10
+        augment_threshold: 0.8
+        similarity_max: 1.0
+
+    graphrag:
+      extraction:
+        graph_max_gleaning: 1
+
+      index:
+        use_entities_vdb: true
+        use_relations_vdb: false
+        use_e2r_r2c: false
+        enable_graph_augmentation: false
+        use_community: true
+        entity_vdb_text_fields:
+          - "entity_name"
+          - "entity_type"
+          - "description"
+        graph_cluster_algorithm: "leiden"
+        max_graph_cluster_size: 10
+        graph_cluster_seed: 3735928559
+        summary_max_tokens: 500
+        enforce_sub_communities: false
+        community_describe_max_tokens: 12000

@@ -1,0 +1,10 @@
+{
+  "metrics": {
+    "em": 0.75,
+    "f1": 0.75,
+    "acc": 0.75,
+    "recall@4": 0.25
+  },
+  "num_samples": 4,
+  "elapsed_time": 23.1554
+}

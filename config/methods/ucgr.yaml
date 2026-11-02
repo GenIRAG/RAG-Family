@@ -1,0 +1,32 @@
+index:
+  paths:
+    FM_index_path: "indexes/storage/FMindex_topiocqa_grpo_test_index/index.fm_index"
+
+inference:
+  ucgr:
+    ucgr_second_stage_num_beams: 5
+    ucgr_second_stage_top_k: 5
+    ucgr_second_stage_max_new_tokens: 32
+    ucgr_reasoner_max_tokens: 256
+    ucgr_temperature: 0.0
+    ucgr_torch_dtype: "auto"
+    ucgr_device_map: "auto"
+    ucgr_use_fp16: false
+    fm_forced_bos_token_id: 128000
+
+roles:
+  reasoner:
+    HFDecoder:
+      prompt_name: "ucgr_retrieval"
+      max_tokens: 256
+      temperature: 0.0
+
+evaluation:
+  data_file: "data/evalute/topiocqa_grpo_test_converted.jsonl"
+  sample_num: 10
+  random_sample: false
+  metrics:
+    - "acc4r"
+    - "recall@5"
+    - "mrr@5"
+    - "ndcg@3"

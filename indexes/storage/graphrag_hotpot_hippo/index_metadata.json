@@ -1,0 +1,4523 @@
+{
+  "config": {
+    "use_entities_vdb": true,
+    "use_relations_vdb": false,
+    "use_e2r_r2c": false,
+    "enable_graph_augmentation": false,
+    "use_community": true,
+    "entity_vdb_text_fields": [
+      "entity_name",
+      "entity_type",
+      "description"
+    ],
+    "graph_cluster_algorithm": "leiden",
+    "max_graph_cluster_size": 10,
+    "graph_cluster_seed": 3735928559,
+    "summary_max_tokens": 500,
+    "enforce_sub_communities": false,
+    "community_describe_max_tokens": 12000
+  },
+  "node_ids": [
+    "woodson",
+    "pulaski county",
+    "arkansas",
+    "ed wood sr",
+    "wood plantation",
+    "little rock north little rock conway metropolitan statistical area",
+    "population 403",
+    "woodson lake",
+    "wood hollow",
+    "scott derrickson",
+    "los angeles",
+    "california",
+    "sinister",
+    "the exorcism of emily rose",
+    "deliver us from evil",
+    "doctor strange",
+    "american",
+    "horror films",
+    "marvel cinematic universe",
+    "ed wood",
+    "tim burton",
+    "johnny depp",
+    "bela lugosi",
+    "martin landau",
+    "sarah jessica parker",
+    "patricia arquette",
+    "jeffrey jones",
+    "lisa marie",
+    "bill murray",
+    "cult filmmaker ed wood",
+    "supporting cast",
+    "1994 american biographical period comedy drama film",
+    "edward davis wood jr",
+    "filmmaker",
+    "actor",
+    "writer",
+    "producer",
+    "director",
+    "cult following",
+    "tyler bates",
+    "dawn of the dead",
+    "300",
+    "sucker punch",
+    "john wick",
+    "zack snyder",
+    "rob zombie",
+    "neil marshall",
+    "william friedkin",
+    "james gunn",
+    "marilyn manson",
+    "the pale emperor",
+    "heaven upside down",
+    "guardians of the galaxy vol  2",
+    "action and horror genres",
+    "film scoring",
+    "music production",
+    "adam collis",
+    "duke university",
+    "university of california  los angeles",
+    "university of southern california",
+    "love in the ruins",
+    "hundred percent",
+    "eric koyanagi",
+    "c  robert cargill",
+    "ethan hawke",
+    "ellison oswalt",
+    "home movies",
+    "2012",
+    "jerry bruckheimer",
+    "ralph sarchie",
+    "lisa collier cool",
+    "eric bana",
+    "dgar ram rez",
+    "sean harris",
+    "olivia munn",
+    "joel mchale",
+    "beware the night",
+    "2014",
+    "horror film",
+    "conrad brooks",
+    "hollywood  california",
+    "ed wood films",
+    "plan 9 from outer space",
+    "glen or glenda",
+    "jail bait",
+    "baltimore  maryland",
+    "1960s and 1970s",
+    "1980s",
+    "shirley temple black",
+    "ghana",
+    "czechoslovakia",
+    "shirley temple",
+    "actress",
+    "singer",
+    "dancer",
+    "businesswoman",
+    "diplomat",
+    "corliss archer",
+    "cbs",
+    "nbc",
+    "abc",
+    "a date with judy",
+    "the bob hope show",
+    "golden age of radio",
+    "janet waldo",
+    "judy jetson",
+    "nancy",
+    "penelope pitstop",
+    "josie",
+    "meet corliss archer",
+    "shazzan",
+    "josie and the pussycats",
+    "the jetsons",
+    "marvel studios",
+    "walt disney studios motion pictures",
+    "benedict cumberbatch",
+    "chiwetel ejiofor",
+    "rachel mcadams",
+    "benedict wong",
+    "michael stuhlbarg",
+    "benjamin bratt",
+    "scott adkins",
+    "mads mikkelsen",
+    "tilda swinton",
+    "stephen strange",
+    "2016",
+    "lord high treasurer",
+    "acts of union of 1707",
+    "british government",
+    "great officer of state",
+    "lord high steward",
+    "lord high chancellor",
+    "kiss and tell",
+    "the parents",
+    "ziv company",
+    "f  hugh herbert",
+    "american television sitcom",
+    "july 13  1951",
+    "august 10  1951",
+    "april 1954",
+    "december 1954",
+    "a kiss for corliss",
+    "richard wallace",
+    "howard dimsdale",
+    "united artists",
+    "1949",
+    "almost a bride",
+    "kiss for corliss",
+    "secretary of state for constitutional affairs",
+    "lord chancellor",
+    "first secretary of state",
+    "deputy prime minister",
+    "lord chancellor s department",
+    "andre norton award",
+    "science fiction and fantasy writers of america",
+    "catherine asaro",
+    "andre norton",
+    "young adult science fiction and fantasy",
+    "nebula awards",
+    "graphic novels",
+    "village accountant",
+    "patwari",
+    "talati",
+    "patel",
+    "karnam",
+    "adhikari",
+    "shanbogaru",
+    "patnaik",
+    "tapedar",
+    "kulkarni",
+    "the officeholder",
+    "charles craft",
+    "hampshire",
+    "hollywood",
+    "painting the town",
+    "racket squad",
+    "science fiction theatre",
+    "highway patrol",
+    "sea hunt",
+    "flipper s new adventure",
+    "lloyd bridges",
+    "flipper",
+    "shadowshaper",
+    "daniel jos  older",
+    "sierra santiago",
+    "brooklyn",
+    "gentrification",
+    "shadowshapers",
+    "the mysterious being",
+    "victoria hanley",
+    "the seer and the sword",
+    "the healer s keep",
+    "the light of the oracle",
+    "indigo magic",
+    "egmont usa",
+    "cotton wood press",
+    "seize the story  a handbook for teens who like to write",
+    "wild ink  a grownups guide to writing fiction for teens",
+    "fantasy novelist",
+    "companion books",
+    "march 2012",
+    "young adult literature",
+    "the hork bajir chronicles",
+    "k  a  applegate",
+    "tobias",
+    "jara hamee",
+    "aldrea",
+    "dak hamee",
+    "esplin 9466",
+    "the yeerks",
+    "the valley of the free hork bajir",
+    "animorphs",
+    "the ellimist chronicles",
+    "the andalite chronicles",
+    "left behind  the kids",
+    "jerry b  jenkins",
+    "tim lahaye",
+    "chris fabry",
+    "tyndale house publishing",
+    "left behind",
+    "the rapture",
+    "the tribulation",
+    "young adult market",
+    "square enix",
+    "digicube",
+    "studio bentstuff",
+    "perfect works",
+    "ultimania",
+    "final fantasy vii",
+    "square",
+    "enix",
+    "1998",
+    "1999",
+    "katherine applegate",
+    "michael grant",
+    "scholastic",
+    "the six main characters",
+    "science fantasy",
+    "the divide trilogy",
+    "elizabeth kay",
+    "chicken house",
+    "ted dewan",
+    "the divide",
+    "back to the divide",
+    "jinx on the divide",
+    "fantasy young adult novel",
+    "french",
+    "german",
+    "spanish",
+    "finnish",
+    "chinese",
+    "japanese",
+    "portuguese",
+    "italian",
+    "romanian",
+    "dutch",
+    "walter gillings",
+    "john carnell",
+    "kyril bonfiglioli",
+    "roberts   vinter",
+    "new worlds",
+    "impulse",
+    "sf impulse",
+    "nova publications",
+    "1950",
+    "1964",
+    "1966",
+    "financial pressure",
+    "etiquette   espionage",
+    "gail carriger",
+    "parasol protectorate",
+    "young adult",
+    "steampunk",
+    "esma sultan",
+    "abd laziz",
+    "gevheri kad n",
+    "abd lmecid ii",
+    "ottoman empire",
+    "salih bey svatnba",
+    "19th century",
+    "abdul hamid i",
+    "mustafa iv",
+    "mahmud ii",
+    "bezmi lem sultan",
+    "rahime perestu sultan",
+    "sultan",
+    "k   k h seyin pasha",
+    "ottoman navy",
+    "kapudan pasha",
+    "grand admiral",
+    "djama  el kebir",
+    "the great mosque of algiers",
+    "algiers",
+    "sidi okba mosque",
+    "ali ibn yusuf",
+    "ziyyanid sultan of tlemcen",
+    "grand mosque d alger",
+    "djamaa al kebir",
+    "el kebir mosque",
+    "algeria",
+    "ottoman sultans",
+    "three daughters",
+    "sultan ahmed mosque",
+    "istanbul",
+    "turkey",
+    "ahmed i",
+    "hagia sophia",
+    "blue mosque",
+    "k lliye",
+    "madrasah",
+    "hospice",
+    "laleli mosque",
+    "laleli",
+    "fatih",
+    "18th century",
+    "camii",
+    "esma sultan mansion",
+    "bosphorus",
+    "yal",
+    "ortak y",
+    "ehzade mehmed seyfeddin",
+    "32nd sultan",
+    "ahmed iii",
+    "mustafa iii",
+    "zeynep kad n",
+    "14 march 1726",
+    "13 august 1788",
+    "guardians of the galaxy",
+    "parents",
+    "2003"
+  ],
+  "edge_ids": [
+    [
+      "woodson",
+      "pulaski county"
+    ],
+    [
+      "woodson",
+      "arkansas"
+    ],
+    [
+      "woodson",
+      "ed wood sr"
+    ],
+    [
+      "woodson",
+      "wood plantation"
+    ],
+    [
+      "woodson",
+      "little rock north little rock conway metropolitan statistical area"
+    ],
+    [
+      "woodson",
+      "woodson lake"
+    ],
+    [
+      "woodson",
+      "wood hollow"
+    ],
+    [
+      "pulaski county",
+      "woodson lake"
+    ],
+    [
+      "pulaski county",
+      "wood hollow"
+    ],
+    [
+      "ed wood sr",
+      "wood plantation"
+    ],
+    [
+      "scott derrickson",
+      "los angeles"
+    ],
+    [
+      "scott derrickson",
+      "sinister"
+    ],
+    [
+      "scott derrickson",
+      "the exorcism of emily rose"
+    ],
+    [
+      "scott derrickson",
+      "deliver us from evil"
+    ],
+    [
+      "scott derrickson",
+      "doctor strange"
+    ],
+    [
+      "scott derrickson",
+      "american"
+    ],
+    [
+      "scott derrickson",
+      "horror films"
+    ],
+    [
+      "scott derrickson",
+      "marvel cinematic universe"
+    ],
+    [
+      "scott derrickson",
+      "tyler bates"
+    ],
+    [
+      "scott derrickson",
+      "love in the ruins"
+    ],
+    [
+      "los angeles",
+      "california"
+    ],
+    [
+      "los angeles",
+      "charles craft"
+    ],
+    [
+      "sinister",
+      "c  robert cargill"
+    ],
+    [
+      "sinister",
+      "ethan hawke"
+    ],
+    [
+      "sinister",
+      "2012"
+    ],
+    [
+      "deliver us from evil",
+      "jerry bruckheimer"
+    ],
+    [
+      "deliver us from evil",
+      "ralph sarchie"
+    ],
+    [
+      "deliver us from evil",
+      "lisa collier cool"
+    ],
+    [
+      "deliver us from evil",
+      "eric bana"
+    ],
+    [
+      "deliver us from evil",
+      "dgar ram rez"
+    ],
+    [
+      "deliver us from evil",
+      "sean harris"
+    ],
+    [
+      "deliver us from evil",
+      "olivia munn"
+    ],
+    [
+      "deliver us from evil",
+      "joel mchale"
+    ],
+    [
+      "deliver us from evil",
+      "beware the night"
+    ],
+    [
+      "deliver us from evil",
+      "2014"
+    ],
+    [
+      "deliver us from evil",
+      "horror film"
+    ],
+    [
+      "doctor strange",
+      "marvel cinematic universe"
+    ],
+    [
+      "doctor strange",
+      "marvel studios"
+    ],
+    [
+      "doctor strange",
+      "walt disney studios motion pictures"
+    ],
+    [
+      "doctor strange",
+      "benedict cumberbatch"
+    ],
+    [
+      "doctor strange",
+      "chiwetel ejiofor"
+    ],
+    [
+      "doctor strange",
+      "rachel mcadams"
+    ],
+    [
+      "doctor strange",
+      "benedict wong"
+    ],
+    [
+      "doctor strange",
+      "michael stuhlbarg"
+    ],
+    [
+      "doctor strange",
+      "benjamin bratt"
+    ],
+    [
+      "doctor strange",
+      "scott adkins"
+    ],
+    [
+      "doctor strange",
+      "mads mikkelsen"
+    ],
+    [
+      "doctor strange",
+      "tilda swinton"
+    ],
+    [
+      "doctor strange",
+      "stephen strange"
+    ],
+    [
+      "doctor strange",
+      "2016"
+    ],
+    [
+      "ed wood",
+      "tim burton"
+    ],
+    [
+      "ed wood",
+      "johnny depp"
+    ],
+    [
+      "ed wood",
+      "martin landau"
+    ],
+    [
+      "ed wood",
+      "sarah jessica parker"
+    ],
+    [
+      "ed wood",
+      "patricia arquette"
+    ],
+    [
+      "ed wood",
+      "jeffrey jones"
+    ],
+    [
+      "ed wood",
+      "lisa marie"
+    ],
+    [
+      "ed wood",
+      "bill murray"
+    ],
+    [
+      "ed wood",
+      "supporting cast"
+    ],
+    [
+      "ed wood",
+      "1994 american biographical period comedy drama film"
+    ],
+    [
+      "ed wood",
+      "edward davis wood jr"
+    ],
+    [
+      "johnny depp",
+      "bela lugosi"
+    ],
+    [
+      "johnny depp",
+      "cult filmmaker ed wood"
+    ],
+    [
+      "tyler bates",
+      "zack snyder"
+    ],
+    [
+      "tyler bates",
+      "rob zombie"
+    ],
+    [
+      "tyler bates",
+      "neil marshall"
+    ],
+    [
+      "tyler bates",
+      "william friedkin"
+    ],
+    [
+      "tyler bates",
+      "james gunn"
+    ],
+    [
+      "tyler bates",
+      "dawn of the dead"
+    ],
+    [
+      "tyler bates",
+      "300"
+    ],
+    [
+      "tyler bates",
+      "sucker punch"
+    ],
+    [
+      "tyler bates",
+      "john wick"
+    ],
+    [
+      "tyler bates",
+      "marilyn manson"
+    ],
+    [
+      "tyler bates",
+      "action and horror genres"
+    ],
+    [
+      "tyler bates",
+      "film scoring"
+    ],
+    [
+      "tyler bates",
+      "music production"
+    ],
+    [
+      "james gunn",
+      "guardians of the galaxy"
+    ],
+    [
+      "james gunn",
+      "guardians of the galaxy vol  2"
+    ],
+    [
+      "marilyn manson",
+      "the pale emperor"
+    ],
+    [
+      "marilyn manson",
+      "heaven upside down"
+    ],
+    [
+      "marilyn manson",
+      "action and horror genres"
+    ],
+    [
+      "adam collis",
+      "duke university"
+    ],
+    [
+      "adam collis",
+      "university of california  los angeles"
+    ],
+    [
+      "adam collis",
+      "university of southern california"
+    ],
+    [
+      "adam collis",
+      "love in the ruins"
+    ],
+    [
+      "adam collis",
+      "hundred percent"
+    ],
+    [
+      "hundred percent",
+      "eric koyanagi"
+    ],
+    [
+      "ethan hawke",
+      "ellison oswalt"
+    ],
+    [
+      "ellison oswalt",
+      "home movies"
+    ],
+    [
+      "conrad brooks",
+      "hollywood  california"
+    ],
+    [
+      "conrad brooks",
+      "ed wood films"
+    ],
+    [
+      "conrad brooks",
+      "plan 9 from outer space"
+    ],
+    [
+      "conrad brooks",
+      "glen or glenda"
+    ],
+    [
+      "conrad brooks",
+      "jail bait"
+    ],
+    [
+      "conrad brooks",
+      "baltimore  maryland"
+    ],
+    [
+      "conrad brooks",
+      "1960s and 1970s"
+    ],
+    [
+      "conrad brooks",
+      "1980s"
+    ],
+    [
+      "ed wood films",
+      "plan 9 from outer space"
+    ],
+    [
+      "ed wood films",
+      "glen or glenda"
+    ],
+    [
+      "ed wood films",
+      "jail bait"
+    ],
+    [
+      "1960s and 1970s",
+      "1980s"
+    ],
+    [
+      "shirley temple black",
+      "ghana"
+    ],
+    [
+      "shirley temple black",
+      "czechoslovakia"
+    ],
+    [
+      "shirley temple black",
+      "shirley temple"
+    ],
+    [
+      "shirley temple black",
+      "actress"
+    ],
+    [
+      "shirley temple black",
+      "singer"
+    ],
+    [
+      "shirley temple black",
+      "dancer"
+    ],
+    [
+      "shirley temple black",
+      "businesswoman"
+    ],
+    [
+      "shirley temple black",
+      "diplomat"
+    ],
+    [
+      "shirley temple",
+      "kiss and tell"
+    ],
+    [
+      "shirley temple",
+      "a kiss for corliss"
+    ],
+    [
+      "corliss archer",
+      "cbs"
+    ],
+    [
+      "corliss archer",
+      "nbc"
+    ],
+    [
+      "corliss archer",
+      "abc"
+    ],
+    [
+      "corliss archer",
+      "a date with judy"
+    ],
+    [
+      "corliss archer",
+      "the bob hope show"
+    ],
+    [
+      "corliss archer",
+      "golden age of radio"
+    ],
+    [
+      "corliss archer",
+      "the parents"
+    ],
+    [
+      "corliss archer",
+      "ziv company"
+    ],
+    [
+      "corliss archer",
+      "f  hugh herbert"
+    ],
+    [
+      "cbs",
+      "nbc"
+    ],
+    [
+      "cbs",
+      "abc"
+    ],
+    [
+      "cbs",
+      "golden age of radio"
+    ],
+    [
+      "nbc",
+      "abc"
+    ],
+    [
+      "nbc",
+      "golden age of radio"
+    ],
+    [
+      "abc",
+      "golden age of radio"
+    ],
+    [
+      "a date with judy",
+      "the bob hope show"
+    ],
+    [
+      "janet waldo",
+      "judy jetson"
+    ],
+    [
+      "janet waldo",
+      "nancy"
+    ],
+    [
+      "janet waldo",
+      "penelope pitstop"
+    ],
+    [
+      "janet waldo",
+      "josie"
+    ],
+    [
+      "janet waldo",
+      "meet corliss archer"
+    ],
+    [
+      "janet waldo",
+      "shazzan"
+    ],
+    [
+      "janet waldo",
+      "josie and the pussycats"
+    ],
+    [
+      "janet waldo",
+      "the jetsons"
+    ],
+    [
+      "meet corliss archer",
+      "american television sitcom"
+    ],
+    [
+      "meet corliss archer",
+      "july 13  1951"
+    ],
+    [
+      "meet corliss archer",
+      "august 10  1951"
+    ],
+    [
+      "meet corliss archer",
+      "april 1954"
+    ],
+    [
+      "meet corliss archer",
+      "december 1954"
+    ],
+    [
+      "meet corliss archer",
+      "charles craft"
+    ],
+    [
+      "lord high treasurer",
+      "acts of union of 1707"
+    ],
+    [
+      "lord high treasurer",
+      "british government"
+    ],
+    [
+      "lord high treasurer",
+      "great officer of state"
+    ],
+    [
+      "lord high treasurer",
+      "lord high steward"
+    ],
+    [
+      "lord high treasurer",
+      "lord high chancellor"
+    ],
+    [
+      "british government",
+      "secretary of state for constitutional affairs"
+    ],
+    [
+      "british government",
+      "lord chancellor s department"
+    ],
+    [
+      "kiss and tell",
+      "parents"
+    ],
+    [
+      "kiss and tell",
+      "a kiss for corliss"
+    ],
+    [
+      "kiss and tell",
+      "kiss for corliss"
+    ],
+    [
+      "a kiss for corliss",
+      "richard wallace"
+    ],
+    [
+      "a kiss for corliss",
+      "howard dimsdale"
+    ],
+    [
+      "a kiss for corliss",
+      "united artists"
+    ],
+    [
+      "a kiss for corliss",
+      "almost a bride"
+    ],
+    [
+      "a kiss for corliss",
+      "1949"
+    ],
+    [
+      "secretary of state for constitutional affairs",
+      "lord chancellor"
+    ],
+    [
+      "secretary of state for constitutional affairs",
+      "first secretary of state"
+    ],
+    [
+      "secretary of state for constitutional affairs",
+      "lord chancellor s department"
+    ],
+    [
+      "first secretary of state",
+      "deputy prime minister"
+    ],
+    [
+      "andre norton award",
+      "science fiction and fantasy writers of america"
+    ],
+    [
+      "andre norton award",
+      "catherine asaro"
+    ],
+    [
+      "andre norton award",
+      "andre norton"
+    ],
+    [
+      "science fiction and fantasy writers of america",
+      "catherine asaro"
+    ],
+    [
+      "village accountant",
+      "patwari"
+    ],
+    [
+      "village accountant",
+      "talati"
+    ],
+    [
+      "village accountant",
+      "karnam"
+    ],
+    [
+      "village accountant",
+      "adhikari"
+    ],
+    [
+      "village accountant",
+      "shanbogaru"
+    ],
+    [
+      "village accountant",
+      "patnaik"
+    ],
+    [
+      "village accountant",
+      "tapedar"
+    ],
+    [
+      "village accountant",
+      "kulkarni"
+    ],
+    [
+      "village accountant",
+      "the officeholder"
+    ],
+    [
+      "charles craft",
+      "hampshire"
+    ],
+    [
+      "charles craft",
+      "hollywood"
+    ],
+    [
+      "charles craft",
+      "painting the town"
+    ],
+    [
+      "charles craft",
+      "racket squad"
+    ],
+    [
+      "charles craft",
+      "science fiction theatre"
+    ],
+    [
+      "charles craft",
+      "highway patrol"
+    ],
+    [
+      "charles craft",
+      "sea hunt"
+    ],
+    [
+      "charles craft",
+      "flipper s new adventure"
+    ],
+    [
+      "sea hunt",
+      "lloyd bridges"
+    ],
+    [
+      "flipper s new adventure",
+      "flipper"
+    ],
+    [
+      "shadowshaper",
+      "daniel jos  older"
+    ],
+    [
+      "shadowshaper",
+      "sierra santiago"
+    ],
+    [
+      "shadowshaper",
+      "gentrification"
+    ],
+    [
+      "daniel jos  older",
+      "sierra santiago"
+    ],
+    [
+      "sierra santiago",
+      "brooklyn"
+    ],
+    [
+      "sierra santiago",
+      "shadowshapers"
+    ],
+    [
+      "sierra santiago",
+      "the mysterious being"
+    ],
+    [
+      "brooklyn",
+      "gentrification"
+    ],
+    [
+      "shadowshapers",
+      "the mysterious being"
+    ],
+    [
+      "victoria hanley",
+      "the seer and the sword"
+    ],
+    [
+      "victoria hanley",
+      "the healer s keep"
+    ],
+    [
+      "victoria hanley",
+      "the light of the oracle"
+    ],
+    [
+      "victoria hanley",
+      "indigo magic"
+    ],
+    [
+      "victoria hanley",
+      "seize the story  a handbook for teens who like to write"
+    ],
+    [
+      "victoria hanley",
+      "wild ink  a grownups guide to writing fiction for teens"
+    ],
+    [
+      "victoria hanley",
+      "fantasy novelist"
+    ],
+    [
+      "the seer and the sword",
+      "companion books"
+    ],
+    [
+      "the healer s keep",
+      "companion books"
+    ],
+    [
+      "the light of the oracle",
+      "companion books"
+    ],
+    [
+      "indigo magic",
+      "egmont usa"
+    ],
+    [
+      "indigo magic",
+      "young adult literature"
+    ],
+    [
+      "indigo magic",
+      "march 2012"
+    ],
+    [
+      "cotton wood press",
+      "seize the story  a handbook for teens who like to write"
+    ],
+    [
+      "cotton wood press",
+      "wild ink  a grownups guide to writing fiction for teens"
+    ],
+    [
+      "the hork bajir chronicles",
+      "k  a  applegate"
+    ],
+    [
+      "the hork bajir chronicles",
+      "tobias"
+    ],
+    [
+      "the hork bajir chronicles",
+      "jara hamee"
+    ],
+    [
+      "the hork bajir chronicles",
+      "animorphs"
+    ],
+    [
+      "the hork bajir chronicles",
+      "the ellimist chronicles"
+    ],
+    [
+      "the hork bajir chronicles",
+      "the andalite chronicles"
+    ],
+    [
+      "k  a  applegate",
+      "animorphs"
+    ],
+    [
+      "tobias",
+      "the valley of the free hork bajir"
+    ],
+    [
+      "jara hamee",
+      "the yeerks"
+    ],
+    [
+      "aldrea",
+      "dak hamee"
+    ],
+    [
+      "aldrea",
+      "the yeerks"
+    ],
+    [
+      "dak hamee",
+      "the yeerks"
+    ],
+    [
+      "esplin 9466",
+      "the yeerks"
+    ],
+    [
+      "animorphs",
+      "scholastic"
+    ],
+    [
+      "animorphs",
+      "the six main characters"
+    ],
+    [
+      "animorphs",
+      "science fantasy"
+    ],
+    [
+      "left behind  the kids",
+      "jerry b  jenkins"
+    ],
+    [
+      "left behind  the kids",
+      "tim lahaye"
+    ],
+    [
+      "left behind  the kids",
+      "chris fabry"
+    ],
+    [
+      "left behind  the kids",
+      "tyndale house publishing"
+    ],
+    [
+      "left behind  the kids",
+      "left behind"
+    ],
+    [
+      "left behind  the kids",
+      "the rapture"
+    ],
+    [
+      "left behind  the kids",
+      "the tribulation"
+    ],
+    [
+      "left behind  the kids",
+      "young adult market"
+    ],
+    [
+      "jerry b  jenkins",
+      "tim lahaye"
+    ],
+    [
+      "jerry b  jenkins",
+      "chris fabry"
+    ],
+    [
+      "jerry b  jenkins",
+      "tyndale house publishing"
+    ],
+    [
+      "tim lahaye",
+      "chris fabry"
+    ],
+    [
+      "tim lahaye",
+      "tyndale house publishing"
+    ],
+    [
+      "chris fabry",
+      "tyndale house publishing"
+    ],
+    [
+      "square enix",
+      "digicube"
+    ],
+    [
+      "square enix",
+      "ultimania"
+    ],
+    [
+      "square enix",
+      "square"
+    ],
+    [
+      "square enix",
+      "enix"
+    ],
+    [
+      "digicube",
+      "perfect works"
+    ],
+    [
+      "digicube",
+      "square"
+    ],
+    [
+      "studio bentstuff",
+      "ultimania"
+    ],
+    [
+      "studio bentstuff",
+      "final fantasy vii"
+    ],
+    [
+      "perfect works",
+      "1998"
+    ],
+    [
+      "perfect works",
+      "1999"
+    ],
+    [
+      "ultimania",
+      "2003"
+    ],
+    [
+      "katherine applegate",
+      "michael grant"
+    ],
+    [
+      "scholastic",
+      "the divide trilogy"
+    ],
+    [
+      "science fantasy",
+      "walter gillings"
+    ],
+    [
+      "science fantasy",
+      "john carnell"
+    ],
+    [
+      "science fantasy",
+      "kyril bonfiglioli"
+    ],
+    [
+      "science fantasy",
+      "roberts   vinter"
+    ],
+    [
+      "science fantasy",
+      "sf impulse"
+    ],
+    [
+      "science fantasy",
+      "nova publications"
+    ],
+    [
+      "science fantasy",
+      "1964"
+    ],
+    [
+      "the divide trilogy",
+      "elizabeth kay"
+    ],
+    [
+      "the divide trilogy",
+      "ted dewan"
+    ],
+    [
+      "the divide trilogy",
+      "french"
+    ],
+    [
+      "the divide trilogy",
+      "german"
+    ],
+    [
+      "the divide trilogy",
+      "spanish"
+    ],
+    [
+      "the divide trilogy",
+      "finnish"
+    ],
+    [
+      "the divide trilogy",
+      "chinese"
+    ],
+    [
+      "the divide trilogy",
+      "japanese"
+    ],
+    [
+      "the divide trilogy",
+      "portuguese"
+    ],
+    [
+      "the divide trilogy",
+      "italian"
+    ],
+    [
+      "the divide trilogy",
+      "romanian"
+    ],
+    [
+      "the divide trilogy",
+      "dutch"
+    ],
+    [
+      "chicken house",
+      "the divide"
+    ],
+    [
+      "the divide",
+      "back to the divide"
+    ],
+    [
+      "the divide",
+      "jinx on the divide"
+    ],
+    [
+      "back to the divide",
+      "jinx on the divide"
+    ],
+    [
+      "john carnell",
+      "new worlds"
+    ],
+    [
+      "kyril bonfiglioli",
+      "impulse"
+    ],
+    [
+      "kyril bonfiglioli",
+      "1966"
+    ],
+    [
+      "roberts   vinter",
+      "sf impulse"
+    ],
+    [
+      "roberts   vinter",
+      "1964"
+    ],
+    [
+      "roberts   vinter",
+      "financial pressure"
+    ],
+    [
+      "etiquette   espionage",
+      "gail carriger"
+    ],
+    [
+      "etiquette   espionage",
+      "parasol protectorate"
+    ],
+    [
+      "etiquette   espionage",
+      "young adult"
+    ],
+    [
+      "etiquette   espionage",
+      "steampunk"
+    ],
+    [
+      "gail carriger",
+      "parasol protectorate"
+    ],
+    [
+      "esma sultan",
+      "abd laziz"
+    ],
+    [
+      "esma sultan",
+      "gevheri kad n"
+    ],
+    [
+      "esma sultan",
+      "abd lmecid ii"
+    ],
+    [
+      "esma sultan",
+      "abdul hamid i"
+    ],
+    [
+      "esma sultan",
+      "mustafa iv"
+    ],
+    [
+      "esma sultan",
+      "mahmud ii"
+    ],
+    [
+      "esma sultan",
+      "bezmi lem sultan"
+    ],
+    [
+      "esma sultan",
+      "rahime perestu sultan"
+    ],
+    [
+      "esma sultan",
+      "k   k h seyin pasha"
+    ],
+    [
+      "esma sultan",
+      "ottoman navy"
+    ],
+    [
+      "esma sultan",
+      "ottoman sultans"
+    ],
+    [
+      "esma sultan",
+      "three daughters"
+    ],
+    [
+      "esma sultan",
+      "esma sultan mansion"
+    ],
+    [
+      "esma sultan",
+      "ahmed iii"
+    ],
+    [
+      "esma sultan",
+      "mustafa iii"
+    ],
+    [
+      "esma sultan",
+      "zeynep kad n"
+    ],
+    [
+      "esma sultan",
+      "ottoman empire"
+    ],
+    [
+      "abd laziz",
+      "ottoman empire"
+    ],
+    [
+      "abd laziz",
+      "gevheri kad n"
+    ],
+    [
+      "abd laziz",
+      "ehzade mehmed seyfeddin"
+    ],
+    [
+      "gevheri kad n",
+      "salih bey svatnba"
+    ],
+    [
+      "gevheri kad n",
+      "ehzade mehmed seyfeddin"
+    ],
+    [
+      "abd lmecid ii",
+      "ottoman empire"
+    ],
+    [
+      "ottoman empire",
+      "k   k h seyin pasha"
+    ],
+    [
+      "ottoman empire",
+      "ottoman navy"
+    ],
+    [
+      "ottoman empire",
+      "laleli mosque"
+    ],
+    [
+      "ottoman empire",
+      "ahmed iii"
+    ],
+    [
+      "ottoman empire",
+      "mustafa iii"
+    ],
+    [
+      "ottoman empire",
+      "abdul hamid i"
+    ],
+    [
+      "abdul hamid i",
+      "ahmed iii"
+    ],
+    [
+      "abdul hamid i",
+      "mustafa iii"
+    ],
+    [
+      "k   k h seyin pasha",
+      "ottoman navy"
+    ],
+    [
+      "ottoman navy",
+      "kapudan pasha"
+    ],
+    [
+      "ottoman navy",
+      "grand admiral"
+    ],
+    [
+      "djama  el kebir",
+      "the great mosque of algiers"
+    ],
+    [
+      "the great mosque of algiers",
+      "algiers"
+    ],
+    [
+      "the great mosque of algiers",
+      "sidi okba mosque"
+    ],
+    [
+      "the great mosque of algiers",
+      "ali ibn yusuf"
+    ],
+    [
+      "the great mosque of algiers",
+      "ziyyanid sultan of tlemcen"
+    ],
+    [
+      "the great mosque of algiers",
+      "grand mosque d alger"
+    ],
+    [
+      "the great mosque of algiers",
+      "djamaa al kebir"
+    ],
+    [
+      "the great mosque of algiers",
+      "el kebir mosque"
+    ],
+    [
+      "algiers",
+      "algeria"
+    ],
+    [
+      "ottoman sultans",
+      "three daughters"
+    ],
+    [
+      "sultan ahmed mosque",
+      "istanbul"
+    ],
+    [
+      "sultan ahmed mosque",
+      "turkey"
+    ],
+    [
+      "sultan ahmed mosque",
+      "ahmed i"
+    ],
+    [
+      "sultan ahmed mosque",
+      "hagia sophia"
+    ],
+    [
+      "sultan ahmed mosque",
+      "blue mosque"
+    ],
+    [
+      "sultan ahmed mosque",
+      "k lliye"
+    ],
+    [
+      "istanbul",
+      "fatih"
+    ],
+    [
+      "istanbul",
+      "turkey"
+    ],
+    [
+      "istanbul",
+      "esma sultan mansion"
+    ],
+    [
+      "istanbul",
+      "bosphorus"
+    ],
+    [
+      "istanbul",
+      "ortak y"
+    ],
+    [
+      "turkey",
+      "bosphorus"
+    ],
+    [
+      "k lliye",
+      "madrasah"
+    ],
+    [
+      "k lliye",
+      "hospice"
+    ],
+    [
+      "laleli mosque",
+      "laleli"
+    ],
+    [
+      "laleli mosque",
+      "fatih"
+    ],
+    [
+      "laleli mosque",
+      "18th century"
+    ],
+    [
+      "laleli mosque",
+      "camii"
+    ],
+    [
+      "laleli",
+      "fatih"
+    ],
+    [
+      "esma sultan mansion",
+      "bosphorus"
+    ],
+    [
+      "esma sultan mansion",
+      "yal"
+    ],
+    [
+      "esma sultan mansion",
+      "ortak y"
+    ],
+    [
+      "ahmed iii",
+      "mustafa iii"
+    ]
+  ],
+  "entity_id_to_idx": {
+    "woodson": 0,
+    "pulaski county": 1,
+    "arkansas": 2,
+    "ed wood sr": 3,
+    "wood plantation": 4,
+    "little rock north little rock conway metropolitan statistical area": 5,
+    "population 403": 6,
+    "woodson lake": 7,
+    "wood hollow": 8,
+    "scott derrickson": 9,
+    "los angeles": 10,
+    "california": 11,
+    "sinister": 12,
+    "the exorcism of emily rose": 13,
+    "deliver us from evil": 14,
+    "doctor strange": 15,
+    "american": 16,
+    "horror films": 17,
+    "marvel cinematic universe": 18,
+    "ed wood": 19,
+    "tim burton": 20,
+    "johnny depp": 21,
+    "bela lugosi": 22,
+    "martin landau": 23,
+    "sarah jessica parker": 24,
+    "patricia arquette": 25,
+    "jeffrey jones": 26,
+    "lisa marie": 27,
+    "bill murray": 28,
+    "cult filmmaker ed wood": 29,
+    "supporting cast": 30,
+    "1994 american biographical period comedy drama film": 31,
+    "edward davis wood jr": 32,
+    "filmmaker": 33,
+    "actor": 34,
+    "writer": 35,
+    "producer": 36,
+    "director": 37,
+    "cult following": 38,
+    "tyler bates": 39,
+    "dawn of the dead": 40,
+    "300": 41,
+    "sucker punch": 42,
+    "john wick": 43,
+    "zack snyder": 44,
+    "rob zombie": 45,
+    "neil marshall": 46,
+    "william friedkin": 47,
+    "james gunn": 48,
+    "marilyn manson": 49,
+    "the pale emperor": 50,
+    "heaven upside down": 51,
+    "guardians of the galaxy vol  2": 52,
+    "action and horror genres": 53,
+    "film scoring": 54,
+    "music production": 55,
+    "adam collis": 56,
+    "duke university": 57,
+    "university of california  los angeles": 58,
+    "university of southern california": 59,
+    "love in the ruins": 60,
+    "hundred percent": 61,
+    "eric koyanagi": 62,
+    "c  robert cargill": 63,
+    "ethan hawke": 64,
+    "ellison oswalt": 65,
+    "home movies": 66,
+    "2012": 67,
+    "jerry bruckheimer": 68,
+    "ralph sarchie": 69,
+    "lisa collier cool": 70,
+    "eric bana": 71,
+    "dgar ram rez": 72,
+    "sean harris": 73,
+    "olivia munn": 74,
+    "joel mchale": 75,
+    "beware the night": 76,
+    "2014": 77,
+    "horror film": 78,
+    "conrad brooks": 79,
+    "hollywood  california": 80,
+    "ed wood films": 81,
+    "plan 9 from outer space": 82,
+    "glen or glenda": 83,
+    "jail bait": 84,
+    "baltimore  maryland": 85,
+    "1960s and 1970s": 86,
+    "1980s": 87,
+    "shirley temple black": 88,
+    "ghana": 89,
+    "czechoslovakia": 90,
+    "shirley temple": 91,
+    "actress": 92,
+    "singer": 93,
+    "dancer": 94,
+    "businesswoman": 95,
+    "diplomat": 96,
+    "corliss archer": 97,
+    "cbs": 98,
+    "nbc": 99,
+    "abc": 100,
+    "a date with judy": 101,
+    "the bob hope show": 102,
+    "golden age of radio": 103,
+    "janet waldo": 104,
+    "judy jetson": 105,
+    "nancy": 106,
+    "penelope pitstop": 107,
+    "josie": 108,
+    "meet corliss archer": 109,
+    "shazzan": 110,
+    "josie and the pussycats": 111,
+    "the jetsons": 112,
+    "marvel studios": 113,
+    "walt disney studios motion pictures": 114,
+    "benedict cumberbatch": 115,
+    "chiwetel ejiofor": 116,
+    "rachel mcadams": 117,
+    "benedict wong": 118,
+    "michael stuhlbarg": 119,
+    "benjamin bratt": 120,
+    "scott adkins": 121,
+    "mads mikkelsen": 122,
+    "tilda swinton": 123,
+    "stephen strange": 124,
+    "2016": 125,
+    "lord high treasurer": 126,
+    "acts of union of 1707": 127,
+    "british government": 128,
+    "great officer of state": 129,
+    "lord high steward": 130,
+    "lord high chancellor": 131,
+    "kiss and tell": 132,
+    "the parents": 133,
+    "ziv company": 134,
+    "f  hugh herbert": 135,
+    "american television sitcom": 136,
+    "july 13  1951": 137,
+    "august 10  1951": 138,
+    "april 1954": 139,
+    "december 1954": 140,
+    "a kiss for corliss": 141,
+    "richard wallace": 142,
+    "howard dimsdale": 143,
+    "united artists": 144,
+    "1949": 145,
+    "almost a bride": 146,
+    "kiss for corliss": 147,
+    "secretary of state for constitutional affairs": 148,
+    "lord chancellor": 149,
+    "first secretary of state": 150,
+    "deputy prime minister": 151,
+    "lord chancellor s department": 152,
+    "andre norton award": 153,
+    "science fiction and fantasy writers of america": 154,
+    "catherine asaro": 155,
+    "andre norton": 156,
+    "young adult science fiction and fantasy": 157,
+    "nebula awards": 158,
+    "graphic novels": 159,
+    "village accountant": 160,
+    "patwari": 161,
+    "talati": 162,
+    "patel": 163,
+    "karnam": 164,
+    "adhikari": 165,
+    "shanbogaru": 166,
+    "patnaik": 167,
+    "tapedar": 168,
+    "kulkarni": 169,
+    "the officeholder": 170,
+    "charles craft": 171,
+    "hampshire": 172,
+    "hollywood": 173,
+    "painting the town": 174,
+    "racket squad": 175,
+    "science fiction theatre": 176,
+    "highway patrol": 177,
+    "sea hunt": 178,
+    "flipper s new adventure": 179,
+    "lloyd bridges": 180,
+    "flipper": 181,
+    "shadowshaper": 182,
+    "daniel jos  older": 183,
+    "sierra santiago": 184,
+    "brooklyn": 185,
+    "gentrification": 186,
+    "shadowshapers": 187,
+    "the mysterious being": 188,
+    "victoria hanley": 189,
+    "the seer and the sword": 190,
+    "the healer s keep": 191,
+    "the light of the oracle": 192,
+    "indigo magic": 193,
+    "egmont usa": 194,
+    "cotton wood press": 195,
+    "seize the story  a handbook for teens who like to write": 196,
+    "wild ink  a grownups guide to writing fiction for teens": 197,
+    "fantasy novelist": 198,
+    "companion books": 199,
+    "march 2012": 200,
+    "young adult literature": 201,
+    "the hork bajir chronicles": 202,
+    "k  a  applegate": 203,
+    "tobias": 204,
+    "jara hamee": 205,
+    "aldrea": 206,
+    "dak hamee": 207,
+    "esplin 9466": 208,
+    "the yeerks": 209,
+    "the valley of the free hork bajir": 210,
+    "animorphs": 211,
+    "the ellimist chronicles": 212,
+    "the andalite chronicles": 213,
+    "left behind  the kids": 214,
+    "jerry b  jenkins": 215,
+    "tim lahaye": 216,
+    "chris fabry": 217,
+    "tyndale house publishing": 218,
+    "left behind": 219,
+    "the rapture": 220,
+    "the tribulation": 221,
+    "young adult market": 222,
+    "square enix": 223,
+    "digicube": 224,
+    "studio bentstuff": 225,
+    "perfect works": 226,
+    "ultimania": 227,
+    "final fantasy vii": 228,
+    "square": 229,
+    "enix": 230,
+    "1998": 231,
+    "1999": 232,
+    "katherine applegate": 233,
+    "michael grant": 234,
+    "scholastic": 235,
+    "the six main characters": 236,
+    "science fantasy": 237,
+    "the divide trilogy": 238,
+    "elizabeth kay": 239,
+    "chicken house": 240,
+    "ted dewan": 241,
+    "the divide": 242,
+    "back to the divide": 243,
+    "jinx on the divide": 244,
+    "fantasy young adult novel": 245,
+    "french": 246,
+    "german": 247,
+    "spanish": 248,
+    "finnish": 249,
+    "chinese": 250,
+    "japanese": 251,
+    "portuguese": 252,
+    "italian": 253,
+    "romanian": 254,
+    "dutch": 255,
+    "walter gillings": 256,
+    "john carnell": 257,
+    "kyril bonfiglioli": 258,
+    "roberts   vinter": 259,
+    "new worlds": 260,
+    "impulse": 261,
+    "sf impulse": 262,
+    "nova publications": 263,
+    "1950": 264,
+    "1964": 265,
+    "1966": 266,
+    "financial pressure": 267,
+    "etiquette   espionage": 268,
+    "gail carriger": 269,
+    "parasol protectorate": 270,
+    "young adult": 271,
+    "steampunk": 272,
+    "esma sultan": 273,
+    "abd laziz": 274,
+    "gevheri kad n": 275,
+    "abd lmecid ii": 276,
+    "ottoman empire": 277,
+    "salih bey svatnba": 278,
+    "19th century": 279,
+    "abdul hamid i": 280,
+    "mustafa iv": 281,
+    "mahmud ii": 282,
+    "bezmi lem sultan": 283,
+    "rahime perestu sultan": 284,
+    "sultan": 285,
+    "k   k h seyin pasha": 286,
+    "ottoman navy": 287,
+    "kapudan pasha": 288,
+    "grand admiral": 289,
+    "djama  el kebir": 290,
+    "the great mosque of algiers": 291,
+    "algiers": 292,
+    "sidi okba mosque": 293,
+    "ali ibn yusuf": 294,
+    "ziyyanid sultan of tlemcen": 295,
+    "grand mosque d alger": 296,
+    "djamaa al kebir": 297,
+    "el kebir mosque": 298,
+    "algeria": 299,
+    "ottoman sultans": 300,
+    "three daughters": 301,
+    "sultan ahmed mosque": 302,
+    "istanbul": 303,
+    "turkey": 304,
+    "ahmed i": 305,
+    "hagia sophia": 306,
+    "blue mosque": 307,
+    "k lliye": 308,
+    "madrasah": 309,
+    "hospice": 310,
+    "laleli mosque": 311,
+    "laleli": 312,
+    "fatih": 313,
+    "18th century": 314,
+    "camii": 315,
+    "esma sultan mansion": 316,
+    "bosphorus": 317,
+    "yal": 318,
+    "ortak y": 319,
+    "ehzade mehmed seyfeddin": 320,
+    "32nd sultan": 321,
+    "ahmed iii": 322,
+    "mustafa iii": 323,
+    "zeynep kad n": 324,
+    "14 march 1726": 325,
+    "13 august 1788": 326,
+    "guardians of the galaxy": 327,
+    "parents": 328,
+    "2003": 329
+  },
+  "idx_to_entity_id": {
+    "0": "woodson",
+    "1": "pulaski county",
+    "2": "arkansas",
+    "3": "ed wood sr",
+    "4": "wood plantation",
+    "5": "little rock north little rock conway metropolitan statistical area",
+    "6": "population 403",
+    "7": "woodson lake",
+    "8": "wood hollow",
+    "9": "scott derrickson",
+    "10": "los angeles",
+    "11": "california",
+    "12": "sinister",
+    "13": "the exorcism of emily rose",
+    "14": "deliver us from evil",
+    "15": "doctor strange",
+    "16": "american",
+    "17": "horror films",
+    "18": "marvel cinematic universe",
+    "19": "ed wood",
+    "20": "tim burton",
+    "21": "johnny depp",
+    "22": "bela lugosi",
+    "23": "martin landau",
+    "24": "sarah jessica parker",
+    "25": "patricia arquette",
+    "26": "jeffrey jones",
+    "27": "lisa marie",
+    "28": "bill murray",
+    "29": "cult filmmaker ed wood",
+    "30": "supporting cast",
+    "31": "1994 american biographical period comedy drama film",
+    "32": "edward davis wood jr",
+    "33": "filmmaker",
+    "34": "actor",
+    "35": "writer",
+    "36": "producer",
+    "37": "director",
+    "38": "cult following",
+    "39": "tyler bates",
+    "40": "dawn of the dead",
+    "41": "300",
+    "42": "sucker punch",
+    "43": "john wick",
+    "44": "zack snyder",
+    "45": "rob zombie",
+    "46": "neil marshall",
+    "47": "william friedkin",
+    "48": "james gunn",
+    "49": "marilyn manson",
+    "50": "the pale emperor",
+    "51": "heaven upside down",
+    "52": "guardians of the galaxy vol  2",
+    "53": "action and horror genres",
+    "54": "film scoring",
+    "55": "music production",
+    "56": "adam collis",
+    "57": "duke university",
+    "58": "university of california  los angeles",
+    "59": "university of southern california",
+    "60": "love in the ruins",
+    "61": "hundred percent",
+    "62": "eric koyanagi",
+    "63": "c  robert cargill",
+    "64": "ethan hawke",
+    "65": "ellison oswalt",
+    "66": "home movies",
+    "67": "2012",
+    "68": "jerry bruckheimer",
+    "69": "ralph sarchie",
+    "70": "lisa collier cool",
+    "71": "eric bana",
+    "72": "dgar ram rez",
+    "73": "sean harris",
+    "74": "olivia munn",
+    "75": "joel mchale",
+    "76": "beware the night",
+    "77": "2014",
+    "78": "horror film",
+    "79": "conrad brooks",
+    "80": "hollywood  california",
+    "81": "ed wood films",
+    "82": "plan 9 from outer space",
+    "83": "glen or glenda",
+    "84": "jail bait",
+    "85": "baltimore  maryland",
+    "86": "1960s and 1970s",
+    "87": "1980s",
+    "88": "shirley temple black",
+    "89": "ghana",
+    "90": "czechoslovakia",
+    "91": "shirley temple",
+    "92": "actress",
+    "93": "singer",
+    "94": "dancer",
+    "95": "businesswoman",
+    "96": "diplomat",
+    "97": "corliss archer",
+    "98": "cbs",
+    "99": "nbc",
+    "100": "abc",
+    "101": "a date with judy",
+    "102": "the bob hope show",
+    "103": "golden age of radio",
+    "104": "janet waldo",
+    "105": "judy jetson",
+    "106": "nancy",
+    "107": "penelope pitstop",
+    "108": "josie",
+    "109": "meet corliss archer",
+    "110": "shazzan",
+    "111": "josie and the pussycats",
+    "112": "the jetsons",
+    "113": "marvel studios",
+    "114": "walt disney studios motion pictures",
+    "115": "benedict cumberbatch",
+    "116": "chiwetel ejiofor",
+    "117": "rachel mcadams",
+    "118": "benedict wong",
+    "119": "michael stuhlbarg",
+    "120": "benjamin bratt",
+    "121": "scott adkins",
+    "122": "mads mikkelsen",
+    "123": "tilda swinton",
+    "124": "stephen strange",
+    "125": "2016",
+    "126": "lord high treasurer",
+    "127": "acts of union of 1707",
+    "128": "british government",
+    "129": "great officer of state",
+    "130": "lord high steward",
+    "131": "lord high chancellor",
+    "132": "kiss and tell",
+    "133": "the parents",
+    "134": "ziv company",
+    "135": "f  hugh herbert",
+    "136": "american television sitcom",
+    "137": "july 13  1951",
+    "138": "august 10  1951",
+    "139": "april 1954",
+    "140": "december 1954",
+    "141": "a kiss for corliss",
+    "142": "richard wallace",
+    "143": "howard dimsdale",
+    "144": "united artists",
+    "145": "1949",
+    "146": "almost a bride",
+    "147": "kiss for corliss",
+    "148": "secretary of state for constitutional affairs",
+    "149": "lord chancellor",
+    "150": "first secretary of state",
+    "151": "deputy prime minister",
+    "152": "lord chancellor s department",
+    "153": "andre norton award",
+    "154": "science fiction and fantasy writers of america",
+    "155": "catherine asaro",
+    "156": "andre norton",
+    "157": "young adult science fiction and fantasy",
+    "158": "nebula awards",
+    "159": "graphic novels",
+    "160": "village accountant",
+    "161": "patwari",
+    "162": "talati",
+    "163": "patel",
+    "164": "karnam",
+    "165": "adhikari",
+    "166": "shanbogaru",
+    "167": "patnaik",
+    "168": "tapedar",
+    "169": "kulkarni",
+    "170": "the officeholder",
+    "171": "charles craft",
+    "172": "hampshire",
+    "173": "hollywood",
+    "174": "painting the town",
+    "175": "racket squad",
+    "176": "science fiction theatre",
+    "177": "highway patrol",
+    "178": "sea hunt",
+    "179": "flipper s new adventure",
+    "180": "lloyd bridges",
+    "181": "flipper",
+    "182": "shadowshaper",
+    "183": "daniel jos  older",
+    "184": "sierra santiago",
+    "185": "brooklyn",
+    "186": "gentrification",
+    "187": "shadowshapers",
+    "188": "the mysterious being",
+    "189": "victoria hanley",
+    "190": "the seer and the sword",
+    "191": "the healer s keep",
+    "192": "the light of the oracle",
+    "193": "indigo magic",
+    "194": "egmont usa",
+    "195": "cotton wood press",
+    "196": "seize the story  a handbook for teens who like to write",
+    "197": "wild ink  a grownups guide to writing fiction for teens",
+    "198": "fantasy novelist",
+    "199": "companion books",
+    "200": "march 2012",
+    "201": "young adult literature",
+    "202": "the hork bajir chronicles",
+    "203": "k  a  applegate",
+    "204": "tobias",
+    "205": "jara hamee",
+    "206": "aldrea",
+    "207": "dak hamee",
+    "208": "esplin 9466",
+    "209": "the yeerks",
+    "210": "the valley of the free hork bajir",
+    "211": "animorphs",
+    "212": "the ellimist chronicles",
+    "213": "the andalite chronicles",
+    "214": "left behind  the kids",
+    "215": "jerry b  jenkins",
+    "216": "tim lahaye",
+    "217": "chris fabry",
+    "218": "tyndale house publishing",
+    "219": "left behind",
+    "220": "the rapture",
+    "221": "the tribulation",
+    "222": "young adult market",
+    "223": "square enix",
+    "224": "digicube",
+    "225": "studio bentstuff",
+    "226": "perfect works",
+    "227": "ultimania",
+    "228": "final fantasy vii",
+    "229": "square",
+    "230": "enix",
+    "231": "1998",
+    "232": "1999",
+    "233": "katherine applegate",
+    "234": "michael grant",
+    "235": "scholastic",
+    "236": "the six main characters",
+    "237": "science fantasy",
+    "238": "the divide trilogy",
+    "239": "elizabeth kay",
+    "240": "chicken house",
+    "241": "ted dewan",
+    "242": "the divide",
+    "243": "back to the divide",
+    "244": "jinx on the divide",
+    "245": "fantasy young adult novel",
+    "246": "french",
+    "247": "german",
+    "248": "spanish",
+    "249": "finnish",
+    "250": "chinese",
+    "251": "japanese",
+    "252": "portuguese",
+    "253": "italian",
+    "254": "romanian",
+    "255": "dutch",
+    "256": "walter gillings",
+    "257": "john carnell",
+    "258": "kyril bonfiglioli",
+    "259": "roberts   vinter",
+    "260": "new worlds",
+    "261": "impulse",
+    "262": "sf impulse",
+    "263": "nova publications",
+    "264": "1950",
+    "265": "1964",
+    "266": "1966",
+    "267": "financial pressure",
+    "268": "etiquette   espionage",
+    "269": "gail carriger",
+    "270": "parasol protectorate",
+    "271": "young adult",
+    "272": "steampunk",
+    "273": "esma sultan",
+    "274": "abd laziz",
+    "275": "gevheri kad n",
+    "276": "abd lmecid ii",
+    "277": "ottoman empire",
+    "278": "salih bey svatnba",
+    "279": "19th century",
+    "280": "abdul hamid i",
+    "281": "mustafa iv",
+    "282": "mahmud ii",
+    "283": "bezmi lem sultan",
+    "284": "rahime perestu sultan",
+    "285": "sultan",
+    "286": "k   k h seyin pasha",
+    "287": "ottoman navy",
+    "288": "kapudan pasha",
+    "289": "grand admiral",
+    "290": "djama  el kebir",
+    "291": "the great mosque of algiers",
+    "292": "algiers",
+    "293": "sidi okba mosque",
+    "294": "ali ibn yusuf",
+    "295": "ziyyanid sultan of tlemcen",
+    "296": "grand mosque d alger",
+    "297": "djamaa al kebir",
+    "298": "el kebir mosque",
+    "299": "algeria",
+    "300": "ottoman sultans",
+    "301": "three daughters",
+    "302": "sultan ahmed mosque",
+    "303": "istanbul",
+    "304": "turkey",
+    "305": "ahmed i",
+    "306": "hagia sophia",
+    "307": "blue mosque",
+    "308": "k lliye",
+    "309": "madrasah",
+    "310": "hospice",
+    "311": "laleli mosque",
+    "312": "laleli",
+    "313": "fatih",
+    "314": "18th century",
+    "315": "camii",
+    "316": "esma sultan mansion",
+    "317": "bosphorus",
+    "318": "yal",
+    "319": "ortak y",
+    "320": "ehzade mehmed seyfeddin",
+    "321": "32nd sultan",
+    "322": "ahmed iii",
+    "323": "mustafa iii",
+    "324": "zeynep kad n",
+    "325": "14 march 1726",
+    "326": "13 august 1788",
+    "327": "guardians of the galaxy",
+    "328": "parents",
+    "329": "2003"
+  },
+  "entity_texts": [
+    "woodson geo Woodson is a census-designated place in Pulaski County, Arkansas, with a population of 403 as of the 2010 census, and is part of the Little Rock–North Little Rock–Conway Metropolitan Statistical Area.",
+    "pulaski county geo Pulaski County is a county in Arkansas, which includes the census-designated place of Woodson.",
+    "arkansas geo Arkansas is a state in the United States, where Woodson and Pulaski County are located.",
+    "ed wood sr person Ed Wood Sr. was a prominent plantation owner, trader, and businessman at the turn of the 20th century, associated with Woodson and its surrounding areas.",
+    "wood plantation organization Wood Plantation is the largest plantation owned by Ed Wood Sr., located adjacent to Woodson.",
+    "little rock north little rock conway metropolitan statistical area geo Little Rock–North Little Rock–Conway Metropolitan Statistical Area is a metropolitan area in Arkansas that includes Woodson, indicating its significance in the regional context.",
+    "population 403 event Population 403 refers to the census data recorded in 2010 for Woodson, highlighting its demographic aspect.",
+    "woodson lake geo Woodson Lake is a geographical feature associated with Woodson, contributing to the area's natural landscape.",
+    "wood hollow geo Wood Hollow is another geographical feature related to Woodson, enhancing the area's environmental attributes.",
+    "scott derrickson person Scott Derrickson is an American director, screenwriter, and producer, known for his work in horror films and the Marvel Cinematic Universe.<SEP>Scott Derrickson is a director who has collaborated with Tyler Bates, showcasing his versatility in film scoring.<SEP>Scott Derrickson is a filmmaker known for directing the short film 'Love in the Ruins', in which Adam Collis served as the assistant director.<SEP>Scott Derrickson is the director of the film Sinister, known for his work in the horror genre.<SEP>Scott Derrickson is the director of the film Deliver Us from Evil, contributing to its creative vision and execution.<SEP>Scott Derrickson is the director of Doctor Strange, contributing to its creative vision and direction.",
+    "los angeles geo Los Angeles is a major city in California where Scott Derrickson resides, known for its entertainment industry.<SEP>Los Angeles is a city in California where Charles Craft passed away and where Hollywood is located, making it significant to his life and career.",
+    "california geo California is a state in the United States, home to Los Angeles and a significant location in the film industry.",
+    "sinister event Sinister is a horror film directed by Scott Derrickson, recognized for its impact in the genre.<SEP>Sinister is a 2012 supernatural horror film that explores themes of danger and the supernatural, directed by Scott Derrickson.",
+    "the exorcism of emily rose event The Exorcism of Emily Rose is a horror film directed by Scott Derrickson, notable for its blend of courtroom drama and supernatural elements.",
+    "deliver us from evil event Deliver Us From Evil is a horror film directed by Scott Derrickson, contributing to his reputation in the genre.<SEP>Deliver Us from Evil is a 2014 American supernatural horror film that explores themes of the supernatural and is based on real accounts.",
+    "doctor strange event Doctor Strange is a Marvel Cinematic Universe film directed by Scott Derrickson, showcasing his work in a major franchise.<SEP>Doctor Strange is a 2016 American superhero film that is part of the Marvel Cinematic Universe, featuring the character Stephen Strange who learns mystic arts after a life-changing event.",
+    "american organization American refers to the nationality of Scott Derrickson, indicating his cultural background and the context of his work in the film industry.",
+    "horror films event Horror Films is a genre that encompasses the movies directed by Scott Derrickson, highlighting his specialization in this area.",
+    "marvel cinematic universe organization Marvel Cinematic Universe is a major film franchise that includes Doctor Strange, showcasing Scott Derrickson's involvement in high-profile projects.<SEP>The Marvel Cinematic Universe is a media franchise and shared universe centered around a series of superhero films produced by Marvel Studios, including Doctor Strange.",
+    "ed wood event Ed Wood is a 1994 American biographical period comedy-drama film that explores the life of cult filmmaker Ed Wood and his notable works.<SEP>Ed Wood is a name associated with the body of work and legacy of Edward Davis Wood Jr., often referred to in discussions about his films and impact on the film industry.",
+    "tim burton person Tim Burton is the director and producer of the film Ed Wood, known for his distinctive style and contributions to cinema.",
+    "johnny depp person Johnny Depp stars as Ed Wood in the film, portraying the life and struggles of the cult filmmaker.",
+    "bela lugosi person Bela Lugosi is a character in the film, depicted as an actor who had a significant relationship with Ed Wood.",
+    "martin landau person Martin Landau plays the role of Bela Lugosi in the film, contributing to the narrative of Ed Wood's life.",
+    "sarah jessica parker person Sarah Jessica Parker is part of the supporting cast in the film Ed Wood, adding to the ensemble of characters.",
+    "patricia arquette person Patricia Arquette is among the supporting cast in the film, contributing to the story of Ed Wood's life.",
+    "jeffrey jones person Jeffrey Jones is a supporting actor in the film Ed Wood, playing a role that complements the main narrative.",
+    "lisa marie person Lisa Marie is part of the supporting cast in the film, contributing to the portrayal of Ed Wood's life and times.",
+    "bill murray person Bill Murray is a supporting actor in the film Ed Wood, known for his comedic roles and unique character portrayals.",
+    "cult filmmaker ed wood person Cult Filmmaker Ed Wood is the central figure of the film, known for his unique and unconventional filmmaking style that has garnered a cult following.",
+    "supporting cast organization The supporting cast of the film Ed Wood includes various actors who contribute to the narrative and character dynamics surrounding Ed Wood's life and career.",
+    "1994 american biographical period comedy drama film event The film Ed Wood is categorized as a 1994 American biographical period comedy-drama, highlighting the life and works of Ed Wood during a specific time in his career.",
+    "edward davis wood jr person Edward Davis Wood Jr. was an American filmmaker, actor, writer, producer, and director, known for his unique contributions to cinema and his cult following.",
+    "filmmaker person A filmmaker is a person who creates films, encompassing roles such as director, producer, and writer, which Edward Davis Wood Jr. embodied.",
+    "actor person An actor is a person who portrays characters in films, television, or theater, a role that Edward Davis Wood Jr. fulfilled in his career.",
+    "writer person A writer is an individual who composes text, including scripts and screenplays, which Edward Davis Wood Jr. did as part of his filmmaking process.",
+    "producer person A producer is responsible for overseeing the production of films, a role that Edward Davis Wood Jr. took on in his projects.",
+    "director person A director is the individual responsible for the creative vision of a film, a key role that Edward Davis Wood Jr. held in his career.",
+    "cult following event Cult following refers to a group of fans who are highly dedicated to a particular filmmaker or film, which Edward Davis Wood Jr. has due to his unique style and contributions to cinema.",
+    "tyler bates person Tyler Bates is an American musician, music producer, and composer known for his work in action and horror films, as well as being the lead guitarist for the band Marilyn Manson.",
+    "dawn of the dead event Dawn of the Dead is a film scored by Tyler Bates, contributing to his reputation in the horror genre.",
+    "300 event 300 is a film for which Tyler Bates composed the score, showcasing his work in action cinema.",
+    "sucker punch event Sucker Punch is another film scored by Tyler Bates, further establishing his presence in the action genre.",
+    "john wick event John Wick is a film that features a score by Tyler Bates, adding to his portfolio in action films.",
+    "zack snyder person Zack Snyder is a director with whom Tyler Bates has collaborated on multiple film projects, including scoring.",
+    "rob zombie person Rob Zombie is a director known for his collaboration with Tyler Bates on film scores, particularly in the horror genre.",
+    "neil marshall person Neil Marshall is a director who has worked with Tyler Bates, contributing to his film scoring experience.",
+    "william friedkin person William Friedkin is a director associated with Tyler Bates, indicating a professional collaboration in film scoring.",
+    "james gunn person James Gunn is a director with whom Tyler Bates has a significant collaborative relationship, scoring all of Gunn's films including the successful Guardians of the Galaxy.",
+    "marilyn manson organization Marilyn Manson is an American rock band for which Tyler Bates is the lead guitarist and has produced several albums.",
+    "the pale emperor event The Pale Emperor is an album produced by Tyler Bates for the band Marilyn Manson, highlighting his role in music production.",
+    "heaven upside down event Heaven Upside Down is another album produced by Tyler Bates for Marilyn Manson, showcasing his contributions to the band's music.",
+    "guardians of the galaxy vol  2 event Guardians of the Galaxy Vol. 2 is the sequel to the original film, also scored by Tyler Bates, showcasing his continued collaboration with James Gunn.",
+    "action and horror genres event The action and horror genres are the primary categories in which Tyler Bates has worked, influencing his career as a composer and music producer.",
+    "film scoring event Film scoring is the practice in which Tyler Bates specializes, composing music for various films, particularly in the action and horror genres.",
+    "music production event Music production is a key aspect of Tyler Bates's career, where he produces albums for bands like Marilyn Manson.",
+    "adam collis person Adam Collis is an American filmmaker and actor known for his work in film and cinema, having attended multiple prestigious universities for his education.",
+    "duke university organization Duke University is a prestigious university located in North Carolina, where Adam Collis studied from 1986 to 1990.",
+    "university of california  los angeles organization The University of California, Los Angeles is a renowned university where Adam Collis furthered his education from 2007 to 2010.",
+    "university of southern california organization The University of Southern California is a prominent institution where Adam Collis studied cinema from 1991 to 1997.",
+    "love in the ruins event Love in the Ruins' is a short film directed by Scott Derrickson in which Adam Collis served as the assistant director in 1995.",
+    "hundred percent event Hundred Percent' is a film released in 1998 in which Adam Collis played the role of 'Crankshaft', showcasing his acting career.",
+    "eric koyanagi person Eric Koyanagi is a filmmaker who directed the film 'Hundred Percent', in which Adam Collis played a role.",
+    "c  robert cargill person C. Robert Cargill is a writer who co-wrote the screenplay for the film Sinister, contributing to its narrative.",
+    "ethan hawke person Ethan Hawke stars as Ellison Oswalt, a fictional true-crime writer whose family faces danger due to the events in the film.",
+    "ellison oswalt person Ellison Oswalt is a fictional character portrayed by Ethan Hawke, a true-crime writer who becomes embroiled in supernatural events that threaten his family.",
+    "home movies event The home movies discovered by Ellison Oswalt are central to the plot of Sinister, as they reveal dangerous supernatural occurrences.",
+    "2012 event 2012 is the year in which the film Sinister was released, marking its entry into the horror film genre.",
+    "jerry bruckheimer organization Jerry Bruckheimer is the producer of Deliver Us from Evil, known for his work in the film industry and involvement in high-profile projects.",
+    "ralph sarchie person Ralph Sarchie is the author of the non-fiction book 'Beware the Night,' which serves as the basis for the film Deliver Us from Evil.",
+    "lisa collier cool person Lisa Collier Cool is a co-author of the book 'Beware the Night,' contributing to the source material for the film.",
+    "eric bana person Eric Bana is an actor who stars in Deliver Us from Evil, playing a significant role in the film.",
+    "dgar ram rez person Édgar Ramírez is an actor featured in Deliver Us from Evil, contributing to the film's main cast.",
+    "sean harris person Sean Harris is an actor in Deliver Us from Evil, known for his role in the film.",
+    "olivia munn person Olivia Munn is an actress who plays a key role in Deliver Us from Evil.",
+    "joel mchale person Joel McHale is an actor in Deliver Us from Evil, adding to the film's ensemble cast.",
+    "beware the night event Beware the Night is a 2001 non-fiction book that serves as the source material for the film Deliver Us from Evil, detailing real accounts of supernatural events.",
+    "2014 event 2014 is the year when the film Deliver Us from Evil was released, marking its entry into the film industry.",
+    "horror film event Horror Film is a genre that Deliver Us from Evil belongs to, characterized by its supernatural themes and elements designed to frighten audiences.",
+    "conrad brooks person Conrad Brooks is an American actor known for his roles in Ed Wood films and has also written, produced, and directed several films.",
+    "hollywood  california geo Hollywood, California is a location where Conrad Brooks moved in 1948 to pursue his acting career.",
+    "ed wood films organization Ed Wood films refer to the body of work created by filmmaker Ed Wood, which includes notable titles like 'Plan 9 from Outer Space' and 'Glen or Glenda'.",
+    "plan 9 from outer space event Plan 9 from Outer Space is a film directed by Ed Wood, in which Conrad Brooks appeared, contributing to his early acting career.",
+    "glen or glenda event Glen or Glenda is another film by Ed Wood featuring Conrad Brooks, showcasing his involvement in early cinema.",
+    "jail bait event Jail Bait is a film directed by Ed Wood that includes Conrad Brooks in its cast, further establishing his acting credentials.",
+    "baltimore  maryland geo Baltimore, Maryland is the birthplace of Conrad Brooks, indicating his origins and early life.",
+    "1960s and 1970s event The 1960s and 1970s represent a period during which Conrad Brooks took a break from acting, marking a significant hiatus in his career.",
+    "1980s event The 1980s signify a time when Conrad Brooks reemerged in the acting scene, revitalizing his career due to renewed interest in Ed Wood films.",
+    "shirley temple black person Shirley Temple Black was an American actress, singer, dancer, businesswoman, and diplomat, known for being Hollywood's top box-office draw as a child actress and later serving as a U.S. ambassador and Chief of Protocol.",
+    "ghana geo Ghana is a country in West Africa where Shirley Temple Black served as the United States ambassador.",
+    "czechoslovakia geo Czechoslovakia was a country in Central Europe where Shirley Temple Black also served as the United States ambassador.",
+    "shirley temple person Shirley Temple is a renowned American actress and cultural icon, celebrated for her performances as a child actress in the 1930s.<SEP>Shirley Temple is a renowned actress who starred in the film Kiss and Tell at the age of 17, portraying the character Corliss Archer.<SEP>Shirley Temple is a renowned actress who stars in A Kiss for Corliss, marking her final performance in a leading role.",
+    "actress event Actress refers to Shirley Temple's profession, highlighting her significant contributions to film and entertainment during her childhood.",
+    "singer event Singer denotes another aspect of Shirley Temple's career, showcasing her talents beyond acting.",
+    "dancer event Dancer reflects Shirley Temple's skills in dance, which were integral to her performances and public persona.",
+    "businesswoman event Businesswoman indicates Shirley Temple's involvement in business ventures, demonstrating her versatility and success beyond entertainment.",
+    "diplomat event Diplomat signifies Shirley Temple's role in international relations, particularly her service as an ambassador.",
+    "corliss archer event Corliss Archer is a radio program from the Golden Age of radio that aired from January 7, 1943, to September 30, 1956, and is known for its long run despite having fewer than 24 episodes remaining.<SEP>Corliss Archer is a character in the film Kiss and Tell, portrayed by Shirley Temple, who navigates teenage relationships and parental concerns.<SEP>Corliss Archer is an American television sitcom that aired on CBS, adapted from a radio series and based on short stories by F. Hugh Herbert.",
+    "cbs organization CBS is a major American television and radio network that produced the program 'Corliss Archer' and was involved in its broadcasting during its original run.<SEP>CBS is a major American television network that aired the sitcom 'Corliss Archer' during its original run.",
+    "nbc organization NBC is a major American television and radio network that initially aired 'Corliss Archer' as a summer replacement for 'The Bob Hope Show' and was also a competitor to CBS.",
+    "abc organization ABC is a major American television network that aired 'Corliss Archer' from October 3, 1952, to June 26, 1953, showcasing its role in the program's broadcasting history.",
+    "a date with judy event A Date with Judy is a popular radio program that aired on NBC, which served as a competitor to CBS's 'Corliss Archer' and influenced its creation.",
+    "the bob hope show event The Bob Hope Show is a well-known radio program that aired on NBC, which was replaced by 'Corliss Archer' during the summer of 1948.",
+    "golden age of radio event The Golden Age of Radio refers to a period in the 20th century when radio was the dominant form of entertainment in the United States, during which 'Corliss Archer' was produced.",
+    "janet waldo person Janet Waldo was an American radio and voice actress, known for her roles in animation and radio, particularly as Judy Jetson and the title character in 'Meet Corliss Archer'.",
+    "judy jetson event Judy Jetson is a character voiced by Janet Waldo in the animated series 'The Jetsons', representing a significant role in her career.",
+    "nancy event Nancy is a character voiced by Janet Waldo in the animated series 'Shazzan', showcasing her versatility as a voice actress.",
+    "penelope pitstop event Penelope Pitstop is a character voiced by Janet Waldo in the animated series, highlighting her contributions to animation.",
+    "josie event Josie is a character voiced by Janet Waldo in 'Josie and the Pussycats', further establishing her legacy in voice acting.",
+    "meet corliss archer event Meet Corliss Archer is a radio show where Janet Waldo voiced the title character, showcasing her talent in radio acting.<SEP>Meet Corliss Archer is the title of an American television sitcom that aired on CBS, representing a significant cultural artifact from the early 1950s.<SEP>Meet Corliss Archer' is a television series edited by Charles Craft in 1954.",
+    "shazzan event Shazzan is an animated series in which Janet Waldo voiced the character Nancy, highlighting her contributions to the genre.",
+    "josie and the pussycats event Josie and the Pussycats is an animated series featuring Janet Waldo as the voice of Josie, further establishing her legacy in voice acting.",
+    "the jetsons event The Jetsons is an animated series where Janet Waldo voiced Judy Jetson, marking a significant role in her career.",
+    "marvel studios organization Marvel Studios is the production company behind the film Doctor Strange, known for creating the Marvel Cinematic Universe.",
+    "walt disney studios motion pictures organization Walt Disney Studios Motion Pictures is the distributor of Doctor Strange, playing a significant role in its release and promotion.",
+    "benedict cumberbatch person Benedict Cumberbatch stars as Stephen Strange in Doctor Strange, portraying the lead character's journey and transformation.",
+    "chiwetel ejiofor person Chiwetel Ejiofor plays a significant role in Doctor Strange, contributing to the film's narrative and character dynamics.",
+    "rachel mcadams person Rachel McAdams is part of the cast of Doctor Strange, playing a key character that interacts with Stephen Strange.",
+    "benedict wong person Benedict Wong is featured in Doctor Strange, adding depth to the film's exploration of mystic arts.",
+    "michael stuhlbarg person Michael Stuhlbarg appears in Doctor Strange, contributing to the ensemble cast and storyline.",
+    "benjamin bratt person Benjamin Bratt is part of the cast of Doctor Strange, playing a role that impacts the protagonist's journey.",
+    "scott adkins person Scott Adkins is featured in Doctor Strange, contributing to the film's action sequences and character interactions.",
+    "mads mikkelsen person Mads Mikkelsen plays the antagonist in Doctor Strange, providing conflict and depth to the storyline.",
+    "tilda swinton person Tilda Swinton is part of the cast of Doctor Strange, portraying a pivotal character in the narrative.",
+    "stephen strange person Stephen Strange is the main character in Doctor Strange, a skilled surgeon who learns the mystic arts after a life-altering accident.",
+    "2016 event 2016 is the year when Doctor Strange was released, marking its entry into the Marvel Cinematic Universe.",
+    "lord high treasurer organization The Lord High Treasurer is a significant English government position, historically recognized as a British government role since the Acts of Union of 1707, ranking third among Great Officers of State.",
+    "acts of union of 1707 event The Acts of Union of 1707 are historical legislative acts that unified the Kingdom of England and the Kingdom of Scotland, leading to the establishment of the British government structure.",
+    "british government organization The British Government is the political system governing the United Kingdom, which includes various positions such as the Lord High Treasurer.<SEP>The British Government is the central government of the United Kingdom, responsible for the administration of the country and its various departments.",
+    "great officer of state organization Great Officers of State are high-ranking officials in the British government, with the Lord High Treasurer being the third-highest among them.",
+    "lord high steward organization The Lord High Steward is one of the highest-ranking officials in the British government, above the Lord High Treasurer.",
+    "lord high chancellor organization The Lord High Chancellor is another high-ranking official in the British government, positioned above the Lord High Treasurer.",
+    "kiss and tell event Kiss and Tell is a 1945 American comedy film that explores the lives of two teenage girls and their interactions with boys, leading to parental concerns and conflicts.<SEP>Kiss and Tell is the 1945 film that serves as the predecessor to A Kiss for Corliss, establishing a narrative connection.",
+    "the parents organization The Parents in Kiss and Tell represent the adult figures who are concerned about their daughters' behavior and influence, leading to conflict and bickering.",
+    "ziv company organization Ziv Company is a media company that syndicated the 'Corliss Archer' sitcom after its original airing on CBS.",
+    "f  hugh herbert person F. Hugh Herbert is the author of the short stories that served as the basis for the radio series and subsequent television adaptation of 'Corliss Archer'.",
+    "american television sitcom event American television sitcom refers to a genre of television programming that features comedic narratives, often centered around family or social situations, exemplified by 'Corliss Archer'.",
+    "july 13  1951 event July 13, 1951, marks the premiere date of the sitcom 'Corliss Archer' on CBS, indicating the start of its original broadcast.",
+    "august 10  1951 event August 10, 1951, signifies the end date of the original airing of 'Corliss Archer' on CBS, marking the conclusion of its first run.",
+    "april 1954 event April 1954 marks the beginning of the syndication of 'Corliss Archer' by the Ziv Company, extending its availability to a wider audience.",
+    "december 1954 event December 1954 marks the end of the syndication run of 'Corliss Archer' by the Ziv Company, concluding its broadcast history.",
+    "a kiss for corliss event A Kiss for Corliss is a 1949 American comedy film directed by Richard Wallace, marking Shirley Temple's final starring role and film appearance.",
+    "richard wallace person Richard Wallace is the director of the film A Kiss for Corliss, contributing to its creative vision.",
+    "howard dimsdale person Howard Dimsdale is the writer of A Kiss for Corliss, responsible for the film's screenplay.",
+    "united artists organization United Artists is the film distribution company that released A Kiss for Corliss on November 25, 1949.",
+    "1949 event 1949 is the year in which the film A Kiss for Corliss was released, marking a significant point in cinematic history.",
+    "almost a bride event Almost a Bride is the retitled name of A Kiss for Corliss before its release, indicating a change in branding.",
+    "kiss for corliss event Kiss for Corliss is the title of the film that signifies its central theme and narrative focus.",
+    "secretary of state for constitutional affairs organization The Secretary of State for Constitutional Affairs is a British Government position created in 2003, responsible for certain functions previously held by the Lord Chancellor.",
+    "lord chancellor person The Lord Chancellor is a senior official in the British Government, historically responsible for the judiciary and the administration of justice.",
+    "first secretary of state person The First Secretary of State is a senior position within the British Government, often held by the Deputy Prime Minister, overseeing various governmental functions.",
+    "deputy prime minister person The Deputy Prime Minister is a senior government official in the UK, often responsible for overseeing various departments and functions within the government.",
+    "lord chancellor s department organization The Lord Chancellor's Department was a governmental department in the UK responsible for the administration of justice and related functions, which had certain responsibilities transferred to the Secretary of State for Constitutional Affairs.",
+    "andre norton award event The Andre Norton Award is an annual award recognizing the best young adult or middle grade science fiction or fantasy book published in the United States, established to honor author Andre Norton.",
+    "science fiction and fantasy writers of america organization The Science Fiction and Fantasy Writers of America (SFWA) is the organization that presents the Andre Norton Award, supporting authors in the science fiction and fantasy genres.",
+    "catherine asaro person Catherine Asaro is a notable figure in the science fiction community, serving as the president of SFWA when the Andre Norton Award was established.",
+    "andre norton person Andre Norton was a prolific author in the science fiction and fantasy genres, whose legacy is honored through the Andre Norton Award.",
+    "young adult science fiction and fantasy event Young Adult Science Fiction and Fantasy refers to a genre of literature that targets young adult readers, encompassing works that are recognized by the Andre Norton Award.",
+    "nebula awards event The Nebula Awards are prestigious awards presented by the Science Fiction and Fantasy Writers of America, recognizing outstanding works in the science fiction and fantasy genres, and are mentioned in relation to the Andre Norton Award.",
+    "graphic novels event Graphic Novels are a format of storytelling that can be eligible for the Andre Norton Award, indicating the award's inclusivity of various forms of literature.",
+    "village accountant organization The Village Accountant is an administrative government position in rural areas of the Indian sub-continent, known by various names across different regions.",
+    "patwari organization Patwari is a term used for the Village Accountant in regions like Telangana, Bengal, North India, and Pakistan.",
+    "talati organization Talati is a designation for the Village Accountant in Karnataka, Gujarat, and Maharashtra.",
+    "patel organization Patel is another name for the Village Accountant, used in various regions of India.",
+    "karnam organization Karnam is the term for the Village Accountant in Andhra Pradesh.",
+    "adhikari organization Adhikari is the name for the Village Accountant in Tamil Nadu.",
+    "shanbogaru organization Shanbogaru is the designation for the Village Accountant in South Karnataka.",
+    "patnaik organization Patnaik is a term used for the Village Accountant in Orissa.",
+    "tapedar organization Tapedar is the name for the Village Accountant in Sindh.",
+    "kulkarni organization Kulkarni is a historical term used for the Village Accountant in Northern Karnataka and Maharashtra.",
+    "the officeholder person The officeholder is the individual who occupies the position of Village Accountant, responsible for various administrative tasks in rural areas.",
+    "charles craft person Charles Craft was an English-born American film and television editor known for editing 90 feature-length films and several television series from the 1950s to the 1960s.",
+    "hampshire geo Hampshire is a county in England, where Charles Craft was born.",
+    "hollywood geo Hollywood is a district in Los Angeles, California, known as the center of the film industry, where Charles Craft began his career in 1927.",
+    "painting the town event Painting the Town' is a silent film edited by Charles Craft, marking his entry into the film industry.",
+    "racket squad event Racket Squad' is a television show for which Charles Craft was the main editor, editing 93 of the 98 episodes from 1951 to 1953.",
+    "science fiction theatre event Science Fiction Theatre' is a television series edited by Charles Craft from 1955 to 1956.",
+    "highway patrol event Highway Patrol' is a television series edited by Charles Craft from 1955 to 1957.",
+    "sea hunt event Sea Hunt' is a television series starring Lloyd Bridges, for which Charles Craft was one of the main editors in the late 1950s and early 1960s.",
+    "flipper s new adventure event Flipper's New Adventure' is a film edited by Charles Craft in 1964, which was a sequel to the 1963 film 'Flipper'.",
+    "lloyd bridges person Lloyd Bridges is an actor who starred in the television series 'Sea Hunt', which Charles Craft edited.",
+    "flipper event Flipper' is a film that was released in 1963, which was followed by the sequel 'Flipper's New Adventure' edited by Charles Craft.",
+    "shadowshaper event Shadowshaper is a 2015 American urban fantasy young adult novel that explores themes of art, heritage, and community in the face of gentrification.",
+    "daniel jos  older person Daniel José Older is the author of Shadowshaper, known for his contributions to urban fantasy and young adult literature.",
+    "sierra santiago person Sierra Santiago is an Afro-Boricua teenager and the protagonist of Shadowshaper, who navigates her identity and heritage while confronting external threats to her community.",
+    "brooklyn geo Brooklyn is the setting of Shadowshaper, representing a vibrant community facing challenges from gentrification and cultural appropriation.",
+    "gentrification event Gentrification is a social phenomenon that impacts the community in Shadowshaper, representing the external forces that threaten the cultural heritage of the characters.",
+    "shadowshapers organization Shadowshapers are individuals who infuse art with ancestral spirits, playing a crucial role in the cultural and spiritual heritage that Sierra Santiago must protect.",
+    "the mysterious being person The Mysterious Being is an antagonist in Shadowshaper, who appropriates the magic of the shadowshapers and poses a threat to their existence and heritage.",
+    "victoria hanley person Victoria Hanley is an American young adult fantasy novelist known for her series of companion books and her contributions to non-fiction literature for teens.",
+    "the seer and the sword event The Seer And The Sword is one of Victoria Hanley's first three books, part of a series of companion novels.",
+    "the healer s keep event The Healer's Keep is another book by Victoria Hanley, serving as a companion to her other works.",
+    "the light of the oracle event The Light Of The Oracle is the third book in the companion series written by Victoria Hanley.",
+    "indigo magic event Indigo Magic is the title of a series for which Victoria Hanley released a sequel in March 2012.",
+    "egmont usa organization Egmont USA is the publishing company that published Victoria Hanley's book Indigo Magic.",
+    "cotton wood press organization Cotton Wood Press is the publisher of Victoria Hanley's non-fiction books aimed at young writers.",
+    "seize the story  a handbook for teens who like to write event Seize the Story is a non-fiction book published by Victoria Hanley, providing guidance for teen writers.",
+    "wild ink  a grownups guide to writing fiction for teens event Wild Ink is another non-fiction book by Victoria Hanley, aimed at adults who wish to guide teens in writing fiction.",
+    "fantasy novelist person Fantasy Novelist is a term that describes Victoria Hanley’s profession, indicating her specialization in writing young adult fantasy literature.",
+    "companion books event Companion Books refers to the series of novels written by Victoria Hanley, which are interconnected and enhance the reading experience.",
+    "march 2012 event March 2012 is the release date of Victoria Hanley's sequel to the Indigo Magic series, marking a significant event in her publishing timeline.",
+    "young adult literature event Young Adult Literature is the genre in which Victoria Hanley writes, targeting a specific audience of teenage readers.",
+    "the hork bajir chronicles event The Hork-Bajir Chronicles is a companion book to the 'Animorphs' series, detailing events that occur in the timeline of the series and focusing on the enslavement of the Hork-Bajir by the Yeerks.",
+    "k  a  applegate person K. A. Applegate is the author of 'The Hork-Bajir Chronicles' and the 'Animorphs' series, contributing significantly to the narrative and world-building of the series.<SEP>K. A. Applegate is the pen name used by Katherine Applegate and Michael Grant for their collaborative writing on the Animorphs series.",
+    "tobias person Tobias is a character who introduces the story in 'The Hork-Bajir Chronicles' and plays a role in the narrative by flying to the valley of the free Hork-Bajir.",
+    "jara hamee person Jara Hamee is a character who narrates the story of the Hork-Bajir's enslavement and the efforts to save their world.",
+    "aldrea person Aldrea is an Andalite character who, along with Dak Hamee, attempts to save the Hork-Bajir from the Yeerk invasion.",
+    "dak hamee person Dak Hamee is a Hork-Bajir character who partners with Aldrea in the effort to resist the Yeerk invasion.",
+    "esplin 9466 person Esplin 9466 is a character who provides a perspective in the narrative of 'The Hork-Bajir Chronicles', likely representing the antagonistic forces.",
+    "the yeerks organization The Yeerks are the antagonistic force in 'The Hork-Bajir Chronicles', responsible for enslaving the Hork-Bajir and invading their world.",
+    "the valley of the free hork bajir geo The Valley of the Free Hork-Bajir is a significant location in the story where Tobias flies and where Jara Hamee narrates the history of the Hork-Bajir.",
+    "animorphs event Animorphs is a series of books that serves as the primary context for 'The Hork-Bajir Chronicles', providing a backdrop for the events and characters within the companion book.<SEP>Animorphs is a science fantasy series of young adult books that explores themes such as horror, war, dehumanization, sanity, morality, innocence, leadership, freedom, and growing up.",
+    "the ellimist chronicles event The Ellimist Chronicles is a book within the 'Animorphs' series that precedes the events of 'The Hork-Bajir Chronicles', contributing to the overall narrative continuity.",
+    "the andalite chronicles event The Andalite Chronicles is another book in the 'Animorphs' series that provides background on the Andalite characters and their history, relevant to the events in 'The Hork-Bajir Chronicles'.",
+    "left behind  the kids event Left Behind: The Kids is a series of 40 short novels aimed at young adults, depicting the experiences of teenagers during the rapture and tribulation, based on biblical scriptures.",
+    "jerry b  jenkins person Jerry B. Jenkins is one of the authors of the Left Behind series, contributing to both the adult and young adult adaptations.",
+    "tim lahaye person Tim LaHaye is a co-author of the Left Behind series, known for his contributions to the adult novels that inspired the young adult series.",
+    "chris fabry person Chris Fabry is a co-author of Left Behind: The Kids, collaborating with Jenkins and LaHaye to create the young adult series.",
+    "tyndale house publishing organization Tyndale House Publishing is the publisher of the Left Behind series, responsible for releasing the books over a period from 1997 to 2004.",
+    "left behind event Left Behind is the overarching series that includes both adult and young adult adaptations, focusing on themes of rapture and tribulation based on biblical texts.",
+    "the rapture event The Rapture is a significant event in the Left Behind series, representing the moment when believers are taken to heaven, which is central to the plot.",
+    "the tribulation event The Tribulation is a period of suffering and chaos that follows the Rapture, depicted in the Left Behind series as a time of testing for those left behind.",
+    "young adult market organization The Young Adult Market refers to the demographic targeted by the Left Behind: The Kids series, focusing on themes relevant to teenagers.",
+    "square enix organization Square Enix is a video game developer and publisher formed by the merger of Square and Enix on April 1, 2003, known for producing companion books related to its games.",
+    "digicube organization DigiCube was a subsidiary of Square that published the first series of companion books, including the 'Perfect Works' series, until its dissolution in 2003.",
+    "studio bentstuff organization Studio BentStuff is a company that wrote the 'Ultimania' series of companion books for Square Enix, having previously created game guides for 'Final Fantasy VII'.",
+    "perfect works event The 'Perfect Works' series was the first series of companion books produced by Square, focusing on artwork and developer interviews from 1998 to 1999.",
+    "ultimania event The 'Ultimania' series is a continuation of companion books produced by Square Enix, written by Studio BentStuff, and focuses on the fictional worlds and characters of their games.",
+    "final fantasy vii event Final Fantasy VII' is a video game for which Studio BentStuff created game guides and later contributed to the 'Ultimania' series of companion books.",
+    "square organization Square is a video game developer known for creating iconic games and for its role in the formation of Square Enix through its merger with Enix.",
+    "enix organization Enix is a video game publisher that merged with Square on April 1, 2003, to form Square Enix, contributing to the development and publication of various games.",
+    "1998 event The year 1998 marks the beginning of the production of companion books by Square, highlighting the company's focus on artwork and developer insights.",
+    "1999 event The year 1999 is significant as it marks the end of the 'Perfect Works' series publication by DigiCube.",
+    "katherine applegate person Katherine Applegate is a co-author of the Animorphs series, contributing to its narrative and thematic development.",
+    "michael grant person Michael Grant is a co-author of the Animorphs series, collaborating with Katherine Applegate under the name K. A. Applegate.",
+    "scholastic organization Scholastic is the publisher of the Animorphs series, playing a crucial role in its distribution and availability to readers.<SEP>Scholastic is a major publishing company that published the subsequent volumes of The Divide Trilogy and reprinted the first novel.",
+    "the six main characters person The six main characters of the Animorphs series take turns narrating the story, providing diverse perspectives and experiences throughout the books.",
+    "science fantasy event Science Fantasy is the genre of the Animorphs series, blending elements of science fiction and fantasy to create a unique narrative experience.<SEP>Science Fantasy is a British fantasy and science fiction magazine launched in 1950, known for its various titles and editorial changes over the years.",
+    "the divide trilogy event The Divide Trilogy is a fantasy young adult novel trilogy by Elizabeth Kay, consisting of three books set in an alternate universe.",
+    "elizabeth kay person Elizabeth Kay is the author of The Divide Trilogy, contributing to the fantasy young adult genre.",
+    "chicken house organization Chicken House is a small press publisher that originally published the first novel of The Divide Trilogy, now a division of Scholastic.",
+    "ted dewan person Ted Dewan is the illustrator for the interior illustrations of The Divide Trilogy, contributing to the visual aspect of the books.",
+    "the divide event The Divide is the first book in The Divide Trilogy, published in 2002, setting the stage for the series.",
+    "back to the divide event Back to The Divide is the second book in The Divide Trilogy, published in 2005, continuing the story from the first book.",
+    "jinx on the divide event Jinx on The Divide is the third book in The Divide Trilogy, published in 2006, concluding the series.",
+    "fantasy young adult novel event The Divide Trilogy is categorized as a fantasy young adult novel, indicating its genre and target audience.",
+    "french geo French is one of the languages into which The Divide Trilogy has been translated, showcasing its international reach.",
+    "german geo German is one of the languages into which The Divide Trilogy has been translated, indicating its popularity in German-speaking regions.",
+    "spanish geo Spanish is one of the languages into which The Divide Trilogy has been translated, reflecting its appeal in Spanish-speaking countries.",
+    "finnish geo Finnish is one of the languages into which The Divide Trilogy has been translated, highlighting its accessibility in Finland.",
+    "chinese geo Chinese is one of the languages into which The Divide Trilogy has been translated, indicating its reach in Chinese-speaking markets.",
+    "japanese geo Japanese is one of the languages into which The Divide Trilogy has been translated, showing its popularity in Japan.",
+    "portuguese geo Portuguese is one of the languages into which The Divide Trilogy has been translated, reflecting its appeal in Portuguese-speaking regions.",
+    "italian geo Italian is one of the languages into which The Divide Trilogy has been translated, indicating its reach in Italy.",
+    "romanian geo Romanian is one of the languages into which The Divide Trilogy has been translated, showcasing its accessibility in Romania.",
+    "dutch geo Dutch is one of the languages into which The Divide Trilogy has been translated, indicating its popularity in the Netherlands.",
+    "walter gillings person Walter Gillings was the editor of the first two issues of Science Fantasy, contributing to its initial direction and content.",
+    "john carnell person John Carnell was the editor of Science Fantasy after Walter Gillings, also serving as the editor of the companion magazine 'New Worlds'.",
+    "kyril bonfiglioli person Kyril Bonfiglioli was hired to edit Science Fantasy after its acquisition by Roberts & Vinter, and he changed the magazine's title to 'Impulse'.",
+    "roberts   vinter organization Roberts & Vinter were the publishers who acquired Science Fantasy and later faced financial difficulties leading to the magazine's cessation.",
+    "new worlds organization New Worlds was a companion magazine to Science Fantasy, edited by John Carnell, and played a significant role in the British science fiction scene.",
+    "impulse event Impulse was the new title given to Science Fantasy by Kyril Bonfiglioli, which caused confusion among distributors.",
+    "sf impulse event SF Impulse was the final title of Science Fantasy, used for its last few issues before the magazine ceased publication.",
+    "nova publications organization Nova Publications was the original publisher of Science Fantasy, launching the magazine in 1950 as a companion to New Worlds.",
+    "1950 event 1950 marks the year when Science Fantasy was launched, establishing its presence in the British fantasy and science fiction magazine market.",
+    "1964 event 1964 is the year when Nova Publications went out of business, leading to significant changes in the publication of Science Fantasy.",
+    "1966 event 1966 is the year when Kyril Bonfiglioli changed the title of Science Fantasy to Impulse, marking a pivotal moment in the magazine's history.",
+    "financial pressure event Financial pressure refers to the circumstances that led to the cessation of Science Fantasy's publication after Roberts & Vinter faced difficulties.",
+    "etiquette   espionage event Etiquette & Espionage is a young adult steampunk novel that marks Gail Carriger's first foray into the young adult genre, set in the same universe as her Parasol Protectorate series.",
+    "gail carriger person Gail Carriger is the author of Etiquette & Espionage, known for her work in the steampunk genre and for writing the Parasol Protectorate series.",
+    "parasol protectorate organization Parasol Protectorate is a bestselling adult series by Gail Carriger, providing a backdrop for the events in Etiquette & Espionage.",
+    "young adult event Young Adult refers to a genre of fiction aimed at a teenage audience, which Etiquette & Espionage is categorized under.",
+    "steampunk event Steampunk is a subgenre of science fiction that incorporates technology and aesthetic designs inspired by 19th-century industrial steam-powered machinery, which is a defining characteristic of Etiquette & Espionage.",
+    "esma sultan person Esma Sultan was an Ottoman princess, born on 21 March 1873 and died on 7 May 1899, known for being the daughter of Sultan Abdülaziz and Gevheri Kadın.<SEP>Esma Sultan was an Ottoman princess, born on 17 July 1778 and died on 4 June 1848. She was the daughter of Sultan Abdul Hamid I and the sister of Sultans Mustafa IV and Mahmud II. She also served as the adoptive mother of Bezmiâlem Sultan and Rahime Perestu Sultan.<SEP>Esma Sultan was an Ottoman princess and the wife of Küçük Hüseyin Pasha, linking her to the Ottoman dynasty.<SEP>Esma Sultan refers to the name shared by three daughters of three different Ottoman Sultans, indicating a historical significance and connection to the Ottoman Empire.<SEP>Esma Sultan is the original owner of the Esma Sultan Mansion, which is named in her honor, indicating her historical significance.<SEP>Esma Sultan was a daughter of Gevheri Kadın and Abdülaziz, also part of the Ottoman royal family.<SEP>Esma Sultan was an Ottoman princess, born on 14 March 1726 and died on 13 August 1788, known for being the daughter of Sultan Ahmed III and his consort Zeynep Kadın.",
+    "abd laziz person Abdülaziz was the Sultan of the Ottoman Empire and the father of Esma Sultan, known for his reign during the 19th century.<SEP>Abdülaziz was the 32nd Sultan of the Ottoman Empire, ruling from 1861 until his deposition in 1876.",
+    "gevheri kad n person Gevheri Kadın was the wife of Sultan Abdülaziz and the mother of Esma Sultan, contributing to the royal lineage of the Ottoman Empire.<SEP>Gevheri Kadın was the fifth wife of the 32nd Ottoman Sultan Abdülaziz and the mother of Şehzade Mehmed Seyfeddin and Esma Sultan.",
+    "abd lmecid ii person Abdülmecid II was the last Caliph of the Muslim world and the half-brother of Esma Sultan, representing a significant figure in the Ottoman dynasty.",
+    "ottoman empire organization The Ottoman Empire was a historical empire that existed from the late 13th century until the early 20th century, known for its vast territory and significant influence in the region.<SEP>The Ottoman Empire was a historical empire that spanned across Europe, Asia, and Africa, known for its significant influence on the regions it governed, particularly during the reigns of its sultans.<SEP>The Ottoman Empire was a historical empire that spanned across Europe, Asia, and Africa, known for its significant political and military influence, particularly during the time of Küçük Hüseyin Pasha.<SEP>The Ottoman Empire was a historical empire that ruled over a vast territory, including the region where the Laleli Mosque is located, influencing its architecture and culture.<SEP>The Ottoman Empire was a historical empire that existed from 1299 to 1922, known for its vast territorial expanse and significant cultural contributions.<SEP>The Ottoman Empire was a significant historical empire that existed from the late 13th century until the early 20th century, known for its vast territorial expanse and cultural influence.",
+    "salih bey svatnba person Salih Bey Svatnba was the father of Gevheri Kadın, linking him to the royal lineage of the Ottoman Empire through his daughter.",
+    "19th century event The 19th century was a period marked by significant political, social, and cultural changes, during which Abdülaziz ruled the Ottoman Empire.",
+    "abdul hamid i person Abdul Hamid I was the Sultan of the Ottoman Empire, known for his reign during the late 18th century and as the father of Esma Sultan.<SEP>Abdul Hamid I was the half-brother of Esma Sultan and served as Sultan of the Ottoman Empire, recognized for his rule in the late 18th century.",
+    "mustafa iv person Mustafa IV was a Sultan of the Ottoman Empire and the brother of Esma Sultan, known for his brief reign in the early 19th century.",
+    "mahmud ii person Mahmud II was a Sultan of the Ottoman Empire and the brother of Esma Sultan, recognized for his significant reforms during his reign in the 19th century.",
+    "bezmi lem sultan person Bezmiâlem Sultan was the adoptive daughter of Esma Sultan, contributing to the lineage of the Ottoman royal family.",
+    "rahime perestu sultan person Rahime Perestu Sultan was another adoptive daughter of Esma Sultan, also part of the Ottoman royal family.",
+    "sultan title Sultan is a title used for the rulers of the Ottoman Empire, denoting a position of authority and governance over the empire's territories.",
+    "k   k h seyin pasha person Küçük Hüseyin Pasha was an Ottoman statesman and admiral, serving as the Grand Admiral of the Ottoman Navy from 11 March 1792 to 7 December 1803, and was connected to the Ottoman dynasty through his marriage to an Ottoman princess.",
+    "ottoman navy organization The Ottoman Navy was the naval force of the Ottoman Empire, with Küçük Hüseyin Pasha serving as its Grand Admiral, indicating its significance in maritime operations.",
+    "kapudan pasha event Kapudan Pasha is the title held by the Grand Admiral of the Ottoman Navy, a significant position that Küçük Hüseyin Pasha occupied from 1792 to 1803, marking an important event in naval leadership.",
+    "grand admiral event Grand Admiral is a rank within the Ottoman Navy, representing the highest naval authority, which Küçük Hüseyin Pasha achieved during his career.",
+    "djama  el kebir organization Djamaâ el Kebir is a mosque located in Algiers, Algeria, known for its historical significance and architectural style, being one of the few remaining examples of Almoravid architecture.",
+    "the great mosque of algiers organization The Great Mosque of Algiers, also known as Djama’a al-Kebir, is the oldest mosque in Algiers, built in 1097, and is significant for its historical and architectural attributes.",
+    "algiers geo Algiers is the capital city of Algeria, where the Great Mosque is located, and serves as a central hub for cultural and historical landmarks.",
+    "sidi okba mosque organization Sidi Okba Mosque is recognized as the oldest mosque in Algeria, predating the Great Mosque of Algiers, and is significant in the context of Islamic architecture in the region.",
+    "ali ibn yusuf person Ali ibn Yusuf was the sultan under whose reign the Great Mosque of Algiers was built, marking an important historical figure in the mosque's history.",
+    "ziyyanid sultan of tlemcen person The Ziyyanid Sultan of Tlemcen is noted for constructing the minaret of the Great Mosque of Algiers, contributing to its architectural significance.",
+    "grand mosque d alger organization Grand Mosque d'Alger is another name for the Great Mosque of Algiers, highlighting its significance in the region's Islamic architecture.",
+    "djamaa al kebir organization Djamaa al-Kebir is an alternative name for the Great Mosque of Algiers, emphasizing its historical and cultural importance.",
+    "el kebir mosque organization El Kebir Mosque is yet another name for the Great Mosque of Algiers, reflecting its prominence in Algerian history.",
+    "algeria geo Algeria is the country where Algiers is located, providing a broader geographical context for the Great Mosque of Algiers.",
+    "ottoman sultans organization The Ottoman Sultans were the rulers of the Ottoman Empire, a significant historical empire that lasted for centuries and had a profound impact on the regions it governed.",
+    "three daughters person The three daughters referred to as Esma Sultan are significant figures in the context of the Ottoman royal family, representing the lineage and heritage of the Sultans.",
+    "sultan ahmed mosque organization The Sultan Ahmed Mosque, also known as the Blue Mosque, is a historic mosque located in Istanbul, Turkey, known for its stunning architecture and as a popular tourist site.",
+    "istanbul geo Istanbul is a major city in Turkey, known for its rich history and cultural significance, and is the location of the Sultan Ahmed Mosque.<SEP>Istanbul is a major city in Turkey that straddles Europe and Asia across the Bosphorus Strait, known for its historical and cultural significance.<SEP>Istanbul is a major city in Turkey where the Esma Sultan Mansion is located, known for its rich history and cultural heritage.",
+    "turkey geo Turkey is a country that encompasses a unique blend of cultures and histories, and is home to the Sultan Ahmed Mosque.<SEP>Turkey is a country located at the crossroads of Europe and Asia, known for its diverse culture and historical landmarks, including the Laleli Mosque.<SEP>Turkey is the country where Istanbul and the Esma Sultan Mansion are located, known for its rich history and diverse culture.",
+    "ahmed i person Ahmed I was the Sultan of the Ottoman Empire during the early 17th century, known for commissioning the construction of the Sultan Ahmed Mosque between 1609 and 1616.",
+    "hagia sophia organization The Hagia Sophia is a historic architectural marvel located next to the Sultan Ahmed Mosque, known for its significant cultural and religious history.",
+    "blue mosque organization The Blue Mosque is the popular name for the Sultan Ahmed Mosque, known for its distinctive blue tiles and architectural beauty, attracting many visitors.",
+    "k lliye organization The Külliye of the Sultan Ahmed Mosque includes various structures such as Ahmed's tomb, a madrasah, and a hospice, serving multiple community functions.",
+    "madrasah organization The madrasah within the Külliye of the Sultan Ahmed Mosque serves as an educational institution, reflecting the mosque's role in community learning and religious education.",
+    "hospice organization The hospice in the Külliye of the Sultan Ahmed Mosque provides care and support for travelers and the needy, showcasing the mosque's charitable functions.",
+    "laleli mosque organization Laleli Mosque is an 18th-century Ottoman imperial mosque, known for its historical significance and architectural style, located in Laleli, Fatih, Istanbul, Turkey.",
+    "laleli geo Laleli is a district in Fatih, Istanbul, Turkey, where the Laleli Mosque is situated, contributing to its cultural and historical context.",
+    "fatih geo Fatih is a district in Istanbul, Turkey, known for its rich history and numerous historical sites, including the Laleli Mosque.",
+    "18th century event The 18th Century is the time period during which the Laleli Mosque was constructed, marking an era of significant architectural development in the Ottoman Empire.",
+    "camii organization Camii is the Turkish word for mosque, indicating the religious function of the Laleli Mosque as a place of worship.",
+    "esma sultan mansion organization Esma Sultan Mansion is a historical waterside mansion located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey, originally owned by Esma Sultan, and currently serves as a cultural center after redevelopment.",
+    "bosphorus geo Bosphorus is a strait that forms part of the boundary between Europe and Asia, and is the location of the Esma Sultan Mansion, enhancing its historical and geographical significance.",
+    "yal organization Yalı refers to a type of waterside mansion in Turkey, which is exemplified by the Esma Sultan Mansion, indicating its architectural and cultural significance.",
+    "ortak y geo Ortaköy is a neighborhood in Istanbul, Turkey, where the Esma Sultan Mansion is located, known for its historical and cultural landmarks.",
+    "ehzade mehmed seyfeddin person Şehzade Mehmed Seyfeddin was a son of Gevheri Kadın and Abdülaziz, part of the Ottoman royal family.",
+    "32nd sultan event The title of the 32nd Sultan refers to Abdülaziz's reign, marking a significant period in the history of the Ottoman Empire.",
+    "ahmed iii person Ahmed III was the Sultan of the Ottoman Empire, known for being the father of Esma Sultan and for his reign during the early 18th century.",
+    "mustafa iii person Mustafa III was the half-brother of Esma Sultan and served as Sultan of the Ottoman Empire, known for his reign during the 18th century.",
+    "zeynep kad n person Zeynep Kadın was the consort of Sultan Ahmed III and the mother of Esma Sultan, contributing to the royal lineage of the Ottoman Empire.",
+    "14 march 1726 event 14 March 1726 marks the birth date of Esma Sultan, an important event in the history of the Ottoman royal family.",
+    "13 august 1788 event 13 August 1788 marks the death date of Esma Sultan, signifying the end of her life and her contributions to the Ottoman Empire.",
+    "guardians of the galaxy UNKNOWN James Gunn directed Guardians of the Galaxy, which features a score by Tyler Bates, indicating their collaborative relationship.",
+    "parents UNKNOWN The film depicts the concerns of parents regarding their daughters' interests in boys, highlighting the parental dynamics and conflicts within the story.",
+    "2003 UNKNOWN The 'Ultimania' series resumed publication after the merger of Square and Enix in 2003, indicating a continuation of the companion book tradition under Square Enix."
+  ],
+  "relation_id_to_idx": {
+    "woodson<SEP>pulaski county": 0,
+    "woodson<SEP>arkansas": 1,
+    "woodson<SEP>ed wood sr": 2,
+    "woodson<SEP>wood plantation": 3,
+    "woodson<SEP>little rock north little rock conway metropolitan statistical area": 4,
+    "woodson<SEP>woodson lake": 5,
+    "woodson<SEP>wood hollow": 6,
+    "pulaski county<SEP>woodson lake": 7,
+    "pulaski county<SEP>wood hollow": 8,
+    "ed wood sr<SEP>wood plantation": 9,
+    "scott derrickson<SEP>los angeles": 10,
+    "scott derrickson<SEP>sinister": 11,
+    "scott derrickson<SEP>the exorcism of emily rose": 12,
+    "scott derrickson<SEP>deliver us from evil": 13,
+    "scott derrickson<SEP>doctor strange": 14,
+    "scott derrickson<SEP>american": 15,
+    "scott derrickson<SEP>horror films": 16,
+    "scott derrickson<SEP>marvel cinematic universe": 17,
+    "scott derrickson<SEP>tyler bates": 18,
+    "scott derrickson<SEP>love in the ruins": 19,
+    "los angeles<SEP>california": 20,
+    "los angeles<SEP>charles craft": 21,
+    "sinister<SEP>c  robert cargill": 22,
+    "sinister<SEP>ethan hawke": 23,
+    "sinister<SEP>2012": 24,
+    "deliver us from evil<SEP>jerry bruckheimer": 25,
+    "deliver us from evil<SEP>ralph sarchie": 26,
+    "deliver us from evil<SEP>lisa collier cool": 27,
+    "deliver us from evil<SEP>eric bana": 28,
+    "deliver us from evil<SEP>dgar ram rez": 29,
+    "deliver us from evil<SEP>sean harris": 30,
+    "deliver us from evil<SEP>olivia munn": 31,
+    "deliver us from evil<SEP>joel mchale": 32,
+    "deliver us from evil<SEP>beware the night": 33,
+    "deliver us from evil<SEP>2014": 34,
+    "deliver us from evil<SEP>horror film": 35,
+    "doctor strange<SEP>marvel cinematic universe": 36,
+    "doctor strange<SEP>marvel studios": 37,
+    "doctor strange<SEP>walt disney studios motion pictures": 38,
+    "doctor strange<SEP>benedict cumberbatch": 39,
+    "doctor strange<SEP>chiwetel ejiofor": 40,
+    "doctor strange<SEP>rachel mcadams": 41,
+    "doctor strange<SEP>benedict wong": 42,
+    "doctor strange<SEP>michael stuhlbarg": 43,
+    "doctor strange<SEP>benjamin bratt": 44,
+    "doctor strange<SEP>scott adkins": 45,
+    "doctor strange<SEP>mads mikkelsen": 46,
+    "doctor strange<SEP>tilda swinton": 47,
+    "doctor strange<SEP>stephen strange": 48,
+    "doctor strange<SEP>2016": 49,
+    "ed wood<SEP>tim burton": 50,
+    "ed wood<SEP>johnny depp": 51,
+    "ed wood<SEP>martin landau": 52,
+    "ed wood<SEP>sarah jessica parker": 53,
+    "ed wood<SEP>patricia arquette": 54,
+    "ed wood<SEP>jeffrey jones": 55,
+    "ed wood<SEP>lisa marie": 56,
+    "ed wood<SEP>bill murray": 57,
+    "ed wood<SEP>supporting cast": 58,
+    "ed wood<SEP>1994 american biographical period comedy drama film": 59,
+    "ed wood<SEP>edward davis wood jr": 60,
+    "johnny depp<SEP>bela lugosi": 61,
+    "johnny depp<SEP>cult filmmaker ed wood": 62,
+    "tyler bates<SEP>zack snyder": 63,
+    "tyler bates<SEP>rob zombie": 64,
+    "tyler bates<SEP>neil marshall": 65,
+    "tyler bates<SEP>william friedkin": 66,
+    "tyler bates<SEP>james gunn": 67,
+    "tyler bates<SEP>dawn of the dead": 68,
+    "tyler bates<SEP>300": 69,
+    "tyler bates<SEP>sucker punch": 70,
+    "tyler bates<SEP>john wick": 71,
+    "tyler bates<SEP>marilyn manson": 72,
+    "tyler bates<SEP>action and horror genres": 73,
+    "tyler bates<SEP>film scoring": 74,
+    "tyler bates<SEP>music production": 75,
+    "james gunn<SEP>guardians of the galaxy": 76,
+    "james gunn<SEP>guardians of the galaxy vol  2": 77,
+    "marilyn manson<SEP>the pale emperor": 78,
+    "marilyn manson<SEP>heaven upside down": 79,
+    "marilyn manson<SEP>action and horror genres": 80,
+    "adam collis<SEP>duke university": 81,
+    "adam collis<SEP>university of california  los angeles": 82,
+    "adam collis<SEP>university of southern california": 83,
+    "adam collis<SEP>love in the ruins": 84,
+    "adam collis<SEP>hundred percent": 85,
+    "hundred percent<SEP>eric koyanagi": 86,
+    "ethan hawke<SEP>ellison oswalt": 87,
+    "ellison oswalt<SEP>home movies": 88,
+    "conrad brooks<SEP>hollywood  california": 89,
+    "conrad brooks<SEP>ed wood films": 90,
+    "conrad brooks<SEP>plan 9 from outer space": 91,
+    "conrad brooks<SEP>glen or glenda": 92,
+    "conrad brooks<SEP>jail bait": 93,
+    "conrad brooks<SEP>baltimore  maryland": 94,
+    "conrad brooks<SEP>1960s and 1970s": 95,
+    "conrad brooks<SEP>1980s": 96,
+    "ed wood films<SEP>plan 9 from outer space": 97,
+    "ed wood films<SEP>glen or glenda": 98,
+    "ed wood films<SEP>jail bait": 99,
+    "1960s and 1970s<SEP>1980s": 100,
+    "shirley temple black<SEP>ghana": 101,
+    "shirley temple black<SEP>czechoslovakia": 102,
+    "shirley temple black<SEP>shirley temple": 103,
+    "shirley temple black<SEP>actress": 104,
+    "shirley temple black<SEP>singer": 105,
+    "shirley temple black<SEP>dancer": 106,
+    "shirley temple black<SEP>businesswoman": 107,
+    "shirley temple black<SEP>diplomat": 108,
+    "shirley temple<SEP>kiss and tell": 109,
+    "shirley temple<SEP>a kiss for corliss": 110,
+    "corliss archer<SEP>cbs": 111,
+    "corliss archer<SEP>nbc": 112,
+    "corliss archer<SEP>abc": 113,
+    "corliss archer<SEP>a date with judy": 114,
+    "corliss archer<SEP>the bob hope show": 115,
+    "corliss archer<SEP>golden age of radio": 116,
+    "corliss archer<SEP>the parents": 117,
+    "corliss archer<SEP>ziv company": 118,
+    "corliss archer<SEP>f  hugh herbert": 119,
+    "cbs<SEP>nbc": 120,
+    "cbs<SEP>abc": 121,
+    "cbs<SEP>golden age of radio": 122,
+    "nbc<SEP>abc": 123,
+    "nbc<SEP>golden age of radio": 124,
+    "abc<SEP>golden age of radio": 125,
+    "a date with judy<SEP>the bob hope show": 126,
+    "janet waldo<SEP>judy jetson": 127,
+    "janet waldo<SEP>nancy": 128,
+    "janet waldo<SEP>penelope pitstop": 129,
+    "janet waldo<SEP>josie": 130,
+    "janet waldo<SEP>meet corliss archer": 131,
+    "janet waldo<SEP>shazzan": 132,
+    "janet waldo<SEP>josie and the pussycats": 133,
+    "janet waldo<SEP>the jetsons": 134,
+    "meet corliss archer<SEP>american television sitcom": 135,
+    "meet corliss archer<SEP>july 13  1951": 136,
+    "meet corliss archer<SEP>august 10  1951": 137,
+    "meet corliss archer<SEP>april 1954": 138,
+    "meet corliss archer<SEP>december 1954": 139,
+    "meet corliss archer<SEP>charles craft": 140,
+    "lord high treasurer<SEP>acts of union of 1707": 141,
+    "lord high treasurer<SEP>british government": 142,
+    "lord high treasurer<SEP>great officer of state": 143,
+    "lord high treasurer<SEP>lord high steward": 144,
+    "lord high treasurer<SEP>lord high chancellor": 145,
+    "british government<SEP>secretary of state for constitutional affairs": 146,
+    "british government<SEP>lord chancellor s department": 147,
+    "kiss and tell<SEP>parents": 148,
+    "kiss and tell<SEP>a kiss for corliss": 149,
+    "kiss and tell<SEP>kiss for corliss": 150,
+    "a kiss for corliss<SEP>richard wallace": 151,
+    "a kiss for corliss<SEP>howard dimsdale": 152,
+    "a kiss for corliss<SEP>united artists": 153,
+    "a kiss for corliss<SEP>almost a bride": 154,
+    "a kiss for corliss<SEP>1949": 155,
+    "secretary of state for constitutional affairs<SEP>lord chancellor": 156,
+    "secretary of state for constitutional affairs<SEP>first secretary of state": 157,
+    "secretary of state for constitutional affairs<SEP>lord chancellor s department": 158,
+    "first secretary of state<SEP>deputy prime minister": 159,
+    "andre norton award<SEP>science fiction and fantasy writers of america": 160,
+    "andre norton award<SEP>catherine asaro": 161,
+    "andre norton award<SEP>andre norton": 162,
+    "science fiction and fantasy writers of america<SEP>catherine asaro": 163,
+    "village accountant<SEP>patwari": 164,
+    "village accountant<SEP>talati": 165,
+    "village accountant<SEP>karnam": 166,
+    "village accountant<SEP>adhikari": 167,
+    "village accountant<SEP>shanbogaru": 168,
+    "village accountant<SEP>patnaik": 169,
+    "village accountant<SEP>tapedar": 170,
+    "village accountant<SEP>kulkarni": 171,
+    "village accountant<SEP>the officeholder": 172,
+    "charles craft<SEP>hampshire": 173,
+    "charles craft<SEP>hollywood": 174,
+    "charles craft<SEP>painting the town": 175,
+    "charles craft<SEP>racket squad": 176,
+    "charles craft<SEP>science fiction theatre": 177,
+    "charles craft<SEP>highway patrol": 178,
+    "charles craft<SEP>sea hunt": 179,
+    "charles craft<SEP>flipper s new adventure": 180,
+    "sea hunt<SEP>lloyd bridges": 181,
+    "flipper s new adventure<SEP>flipper": 182,
+    "shadowshaper<SEP>daniel jos  older": 183,
+    "shadowshaper<SEP>sierra santiago": 184,
+    "shadowshaper<SEP>gentrification": 185,
+    "daniel jos  older<SEP>sierra santiago": 186,
+    "sierra santiago<SEP>brooklyn": 187,
+    "sierra santiago<SEP>shadowshapers": 188,
+    "sierra santiago<SEP>the mysterious being": 189,
+    "brooklyn<SEP>gentrification": 190,
+    "shadowshapers<SEP>the mysterious being": 191,
+    "victoria hanley<SEP>the seer and the sword": 192,
+    "victoria hanley<SEP>the healer s keep": 193,
+    "victoria hanley<SEP>the light of the oracle": 194,
+    "victoria hanley<SEP>indigo magic": 195,
+    "victoria hanley<SEP>seize the story  a handbook for teens who like to write": 196,
+    "victoria hanley<SEP>wild ink  a grownups guide to writing fiction for teens": 197,
+    "victoria hanley<SEP>fantasy novelist": 198,
+    "the seer and the sword<SEP>companion books": 199,
+    "the healer s keep<SEP>companion books": 200,
+    "the light of the oracle<SEP>companion books": 201,
+    "indigo magic<SEP>egmont usa": 202,
+    "indigo magic<SEP>young adult literature": 203,
+    "indigo magic<SEP>march 2012": 204,
+    "cotton wood press<SEP>seize the story  a handbook for teens who like to write": 205,
+    "cotton wood press<SEP>wild ink  a grownups guide to writing fiction for teens": 206,
+    "the hork bajir chronicles<SEP>k  a  applegate": 207,
+    "the hork bajir chronicles<SEP>tobias": 208,
+    "the hork bajir chronicles<SEP>jara hamee": 209,
+    "the hork bajir chronicles<SEP>animorphs": 210,
+    "the hork bajir chronicles<SEP>the ellimist chronicles": 211,
+    "the hork bajir chronicles<SEP>the andalite chronicles": 212,
+    "k  a  applegate<SEP>animorphs": 213,
+    "tobias<SEP>the valley of the free hork bajir": 214,
+    "jara hamee<SEP>the yeerks": 215,
+    "aldrea<SEP>dak hamee": 216,
+    "aldrea<SEP>the yeerks": 217,
+    "dak hamee<SEP>the yeerks": 218,
+    "esplin 9466<SEP>the yeerks": 219,
+    "animorphs<SEP>scholastic": 220,
+    "animorphs<SEP>the six main characters": 221,
+    "animorphs<SEP>science fantasy": 222,
+    "left behind  the kids<SEP>jerry b  jenkins": 223,
+    "left behind  the kids<SEP>tim lahaye": 224,
+    "left behind  the kids<SEP>chris fabry": 225,
+    "left behind  the kids<SEP>tyndale house publishing": 226,
+    "left behind  the kids<SEP>left behind": 227,
+    "left behind  the kids<SEP>the rapture": 228,
+    "left behind  the kids<SEP>the tribulation": 229,
+    "left behind  the kids<SEP>young adult market": 230,
+    "jerry b  jenkins<SEP>tim lahaye": 231,
+    "jerry b  jenkins<SEP>chris fabry": 232,
+    "jerry b  jenkins<SEP>tyndale house publishing": 233,
+    "tim lahaye<SEP>chris fabry": 234,
+    "tim lahaye<SEP>tyndale house publishing": 235,
+    "chris fabry<SEP>tyndale house publishing": 236,
+    "square enix<SEP>digicube": 237,
+    "square enix<SEP>ultimania": 238,
+    "square enix<SEP>square": 239,
+    "square enix<SEP>enix": 240,
+    "digicube<SEP>perfect works": 241,
+    "digicube<SEP>square": 242,
+    "studio bentstuff<SEP>ultimania": 243,
+    "studio bentstuff<SEP>final fantasy vii": 244,
+    "perfect works<SEP>1998": 245,
+    "perfect works<SEP>1999": 246,
+    "ultimania<SEP>2003": 247,
+    "katherine applegate<SEP>michael grant": 248,
+    "scholastic<SEP>the divide trilogy": 249,
+    "science fantasy<SEP>walter gillings": 250,
+    "science fantasy<SEP>john carnell": 251,
+    "science fantasy<SEP>kyril bonfiglioli": 252,
+    "science fantasy<SEP>roberts   vinter": 253,
+    "science fantasy<SEP>sf impulse": 254,
+    "science fantasy<SEP>nova publications": 255,
+    "science fantasy<SEP>1964": 256,
+    "the divide trilogy<SEP>elizabeth kay": 257,
+    "the divide trilogy<SEP>ted dewan": 258,
+    "the divide trilogy<SEP>french": 259,
+    "the divide trilogy<SEP>german": 260,
+    "the divide trilogy<SEP>spanish": 261,
+    "the divide trilogy<SEP>finnish": 262,
+    "the divide trilogy<SEP>chinese": 263,
+    "the divide trilogy<SEP>japanese": 264,
+    "the divide trilogy<SEP>portuguese": 265,
+    "the divide trilogy<SEP>italian": 266,
+    "the divide trilogy<SEP>romanian": 267,
+    "the divide trilogy<SEP>dutch": 268,
+    "chicken house<SEP>the divide": 269,
+    "the divide<SEP>back to the divide": 270,
+    "the divide<SEP>jinx on the divide": 271,
+    "back to the divide<SEP>jinx on the divide": 272,
+    "john carnell<SEP>new worlds": 273,
+    "kyril bonfiglioli<SEP>impulse": 274,
+    "kyril bonfiglioli<SEP>1966": 275,
+    "roberts   vinter<SEP>sf impulse": 276,
+    "roberts   vinter<SEP>1964": 277,
+    "roberts   vinter<SEP>financial pressure": 278,
+    "etiquette   espionage<SEP>gail carriger": 279,
+    "etiquette   espionage<SEP>parasol protectorate": 280,
+    "etiquette   espionage<SEP>young adult": 281,
+    "etiquette   espionage<SEP>steampunk": 282,
+    "gail carriger<SEP>parasol protectorate": 283,
+    "esma sultan<SEP>abd laziz": 284,
+    "esma sultan<SEP>gevheri kad n": 285,
+    "esma sultan<SEP>abd lmecid ii": 286,
+    "esma sultan<SEP>abdul hamid i": 287,
+    "esma sultan<SEP>mustafa iv": 288,
+    "esma sultan<SEP>mahmud ii": 289,
+    "esma sultan<SEP>bezmi lem sultan": 290,
+    "esma sultan<SEP>rahime perestu sultan": 291,
+    "esma sultan<SEP>k   k h seyin pasha": 292,
+    "esma sultan<SEP>ottoman navy": 293,
+    "esma sultan<SEP>ottoman sultans": 294,
+    "esma sultan<SEP>three daughters": 295,
+    "esma sultan<SEP>esma sultan mansion": 296,
+    "esma sultan<SEP>ahmed iii": 297,
+    "esma sultan<SEP>mustafa iii": 298,
+    "esma sultan<SEP>zeynep kad n": 299,
+    "esma sultan<SEP>ottoman empire": 300,
+    "abd laziz<SEP>ottoman empire": 301,
+    "abd laziz<SEP>gevheri kad n": 302,
+    "abd laziz<SEP>ehzade mehmed seyfeddin": 303,
+    "gevheri kad n<SEP>salih bey svatnba": 304,
+    "gevheri kad n<SEP>ehzade mehmed seyfeddin": 305,
+    "abd lmecid ii<SEP>ottoman empire": 306,
+    "ottoman empire<SEP>k   k h seyin pasha": 307,
+    "ottoman empire<SEP>ottoman navy": 308,
+    "ottoman empire<SEP>laleli mosque": 309,
+    "ottoman empire<SEP>ahmed iii": 310,
+    "ottoman empire<SEP>mustafa iii": 311,
+    "ottoman empire<SEP>abdul hamid i": 312,
+    "abdul hamid i<SEP>ahmed iii": 313,
+    "abdul hamid i<SEP>mustafa iii": 314,
+    "k   k h seyin pasha<SEP>ottoman navy": 315,
+    "ottoman navy<SEP>kapudan pasha": 316,
+    "ottoman navy<SEP>grand admiral": 317,
+    "djama  el kebir<SEP>the great mosque of algiers": 318,
+    "the great mosque of algiers<SEP>algiers": 319,
+    "the great mosque of algiers<SEP>sidi okba mosque": 320,
+    "the great mosque of algiers<SEP>ali ibn yusuf": 321,
+    "the great mosque of algiers<SEP>ziyyanid sultan of tlemcen": 322,
+    "the great mosque of algiers<SEP>grand mosque d alger": 323,
+    "the great mosque of algiers<SEP>djamaa al kebir": 324,
+    "the great mosque of algiers<SEP>el kebir mosque": 325,
+    "algiers<SEP>algeria": 326,
+    "ottoman sultans<SEP>three daughters": 327,
+    "sultan ahmed mosque<SEP>istanbul": 328,
+    "sultan ahmed mosque<SEP>turkey": 329,
+    "sultan ahmed mosque<SEP>ahmed i": 330,
+    "sultan ahmed mosque<SEP>hagia sophia": 331,
+    "sultan ahmed mosque<SEP>blue mosque": 332,
+    "sultan ahmed mosque<SEP>k lliye": 333,
+    "istanbul<SEP>fatih": 334,
+    "istanbul<SEP>turkey": 335,
+    "istanbul<SEP>esma sultan mansion": 336,
+    "istanbul<SEP>bosphorus": 337,
+    "istanbul<SEP>ortak y": 338,
+    "turkey<SEP>bosphorus": 339,
+    "k lliye<SEP>madrasah": 340,
+    "k lliye<SEP>hospice": 341,
+    "laleli mosque<SEP>laleli": 342,
+    "laleli mosque<SEP>fatih": 343,
+    "laleli mosque<SEP>18th century": 344,
+    "laleli mosque<SEP>camii": 345,
+    "laleli<SEP>fatih": 346,
+    "esma sultan mansion<SEP>bosphorus": 347,
+    "esma sultan mansion<SEP>yal": 348,
+    "esma sultan mansion<SEP>ortak y": 349,
+    "ahmed iii<SEP>mustafa iii": 350
+  },
+  "idx_to_relation_id": {
+    "0": [
+      "woodson",
+      "pulaski county"
+    ],
+    "1": [
+      "woodson",
+      "arkansas"
+    ],
+    "2": [
+      "woodson",
+      "ed wood sr"
+    ],
+    "3": [
+      "woodson",
+      "wood plantation"
+    ],
+    "4": [
+      "woodson",
+      "little rock north little rock conway metropolitan statistical area"
+    ],
+    "5": [
+      "woodson",
+      "woodson lake"
+    ],
+    "6": [
+      "woodson",
+      "wood hollow"
+    ],
+    "7": [
+      "pulaski county",
+      "woodson lake"
+    ],
+    "8": [
+      "pulaski county",
+      "wood hollow"
+    ],
+    "9": [
+      "ed wood sr",
+      "wood plantation"
+    ],
+    "10": [
+      "scott derrickson",
+      "los angeles"
+    ],
+    "11": [
+      "scott derrickson",
+      "sinister"
+    ],
+    "12": [
+      "scott derrickson",
+      "the exorcism of emily rose"
+    ],
+    "13": [
+      "scott derrickson",
+      "deliver us from evil"
+    ],
+    "14": [
+      "scott derrickson",
+      "doctor strange"
+    ],
+    "15": [
+      "scott derrickson",
+      "american"
+    ],
+    "16": [
+      "scott derrickson",
+      "horror films"
+    ],
+    "17": [
+      "scott derrickson",
+      "marvel cinematic universe"
+    ],
+    "18": [
+      "scott derrickson",
+      "tyler bates"
+    ],
+    "19": [
+      "scott derrickson",
+      "love in the ruins"
+    ],
+    "20": [
+      "los angeles",
+      "california"
+    ],
+    "21": [
+      "los angeles",
+      "charles craft"
+    ],
+    "22": [
+      "sinister",
+      "c  robert cargill"
+    ],
+    "23": [
+      "sinister",
+      "ethan hawke"
+    ],
+    "24": [
+      "sinister",
+      "2012"
+    ],
+    "25": [
+      "deliver us from evil",
+      "jerry bruckheimer"
+    ],
+    "26": [
+      "deliver us from evil",
+      "ralph sarchie"
+    ],
+    "27": [
+      "deliver us from evil",
+      "lisa collier cool"
+    ],
+    "28": [
+      "deliver us from evil",
+      "eric bana"
+    ],
+    "29": [
+      "deliver us from evil",
+      "dgar ram rez"
+    ],
+    "30": [
+      "deliver us from evil",
+      "sean harris"
+    ],
+    "31": [
+      "deliver us from evil",
+      "olivia munn"
+    ],
+    "32": [
+      "deliver us from evil",
+      "joel mchale"
+    ],
+    "33": [
+      "deliver us from evil",
+      "beware the night"
+    ],
+    "34": [
+      "deliver us from evil",
+      "2014"
+    ],
+    "35": [
+      "deliver us from evil",
+      "horror film"
+    ],
+    "36": [
+      "doctor strange",
+      "marvel cinematic universe"
+    ],
+    "37": [
+      "doctor strange",
+      "marvel studios"
+    ],
+    "38": [
+      "doctor strange",
+      "walt disney studios motion pictures"
+    ],
+    "39": [
+      "doctor strange",
+      "benedict cumberbatch"
+    ],
+    "40": [
+      "doctor strange",
+      "chiwetel ejiofor"
+    ],
+    "41": [
+      "doctor strange",
+      "rachel mcadams"
+    ],
+    "42": [
+      "doctor strange",
+      "benedict wong"
+    ],
+    "43": [
+      "doctor strange",
+      "michael stuhlbarg"
+    ],
+    "44": [
+      "doctor strange",
+      "benjamin bratt"
+    ],
+    "45": [
+      "doctor strange",
+      "scott adkins"
+    ],
+    "46": [
+      "doctor strange",
+      "mads mikkelsen"
+    ],
+    "47": [
+      "doctor strange",
+      "tilda swinton"
+    ],
+    "48": [
+      "doctor strange",
+      "stephen strange"
+    ],
+    "49": [
+      "doctor strange",
+      "2016"
+    ],
+    "50": [
+      "ed wood",
+      "tim burton"
+    ],
+    "51": [
+      "ed wood",
+      "johnny depp"
+    ],
+    "52": [
+      "ed wood",
+      "martin landau"
+    ],
+    "53": [
+      "ed wood",
+      "sarah jessica parker"
+    ],
+    "54": [
+      "ed wood",
+      "patricia arquette"
+    ],
+    "55": [
+      "ed wood",
+      "jeffrey jones"
+    ],
+    "56": [
+      "ed wood",
+      "lisa marie"
+    ],
+    "57": [
+      "ed wood",
+      "bill murray"
+    ],
+    "58": [
+      "ed wood",
+      "supporting cast"
+    ],
+    "59": [
+      "ed wood",
+      "1994 american biographical period comedy drama film"
+    ],
+    "60": [
+      "ed wood",
+      "edward davis wood jr"
+    ],
+    "61": [
+      "johnny depp",
+      "bela lugosi"
+    ],
+    "62": [
+      "johnny depp",
+      "cult filmmaker ed wood"
+    ],
+    "63": [
+      "tyler bates",
+      "zack snyder"
+    ],
+    "64": [
+      "tyler bates",
+      "rob zombie"
+    ],
+    "65": [
+      "tyler bates",
+      "neil marshall"
+    ],
+    "66": [
+      "tyler bates",
+      "william friedkin"
+    ],
+    "67": [
+      "tyler bates",
+      "james gunn"
+    ],
+    "68": [
+      "tyler bates",
+      "dawn of the dead"
+    ],
+    "69": [
+      "tyler bates",
+      "300"
+    ],
+    "70": [
+      "tyler bates",
+      "sucker punch"
+    ],
+    "71": [
+      "tyler bates",
+      "john wick"
+    ],
+    "72": [
+      "tyler bates",
+      "marilyn manson"
+    ],
+    "73": [
+      "tyler bates",
+      "action and horror genres"
+    ],
+    "74": [
+      "tyler bates",
+      "film scoring"
+    ],
+    "75": [
+      "tyler bates",
+      "music production"
+    ],
+    "76": [
+      "james gunn",
+      "guardians of the galaxy"
+    ],
+    "77": [
+      "james gunn",
+      "guardians of the galaxy vol  2"
+    ],
+    "78": [
+      "marilyn manson",
+      "the pale emperor"
+    ],
+    "79": [
+      "marilyn manson",
+      "heaven upside down"
+    ],
+    "80": [
+      "marilyn manson",
+      "action and horror genres"
+    ],
+    "81": [
+      "adam collis",
+      "duke university"
+    ],
+    "82": [
+      "adam collis",
+      "university of california  los angeles"
+    ],
+    "83": [
+      "adam collis",
+      "university of southern california"
+    ],
+    "84": [
+      "adam collis",
+      "love in the ruins"
+    ],
+    "85": [
+      "adam collis",
+      "hundred percent"
+    ],
+    "86": [
+      "hundred percent",
+      "eric koyanagi"
+    ],
+    "87": [
+      "ethan hawke",
+      "ellison oswalt"
+    ],
+    "88": [
+      "ellison oswalt",
+      "home movies"
+    ],
+    "89": [
+      "conrad brooks",
+      "hollywood  california"
+    ],
+    "90": [
+      "conrad brooks",
+      "ed wood films"
+    ],
+    "91": [
+      "conrad brooks",
+      "plan 9 from outer space"
+    ],
+    "92": [
+      "conrad brooks",
+      "glen or glenda"
+    ],
+    "93": [
+      "conrad brooks",
+      "jail bait"
+    ],
+    "94": [
+      "conrad brooks",
+      "baltimore  maryland"
+    ],
+    "95": [
+      "conrad brooks",
+      "1960s and 1970s"
+    ],
+    "96": [
+      "conrad brooks",
+      "1980s"
+    ],
+    "97": [
+      "ed wood films",
+      "plan 9 from outer space"
+    ],
+    "98": [
+      "ed wood films",
+      "glen or glenda"
+    ],
+    "99": [
+      "ed wood films",
+      "jail bait"
+    ],
+    "100": [
+      "1960s and 1970s",
+      "1980s"
+    ],
+    "101": [
+      "shirley temple black",
+      "ghana"
+    ],
+    "102": [
+      "shirley temple black",
+      "czechoslovakia"
+    ],
+    "103": [
+      "shirley temple black",
+      "shirley temple"
+    ],
+    "104": [
+      "shirley temple black",
+      "actress"
+    ],
+    "105": [
+      "shirley temple black",
+      "singer"
+    ],
+    "106": [
+      "shirley temple black",
+      "dancer"
+    ],
+    "107": [
+      "shirley temple black",
+      "businesswoman"
+    ],
+    "108": [
+      "shirley temple black",
+      "diplomat"
+    ],
+    "109": [
+      "shirley temple",
+      "kiss and tell"
+    ],
+    "110": [
+      "shirley temple",
+      "a kiss for corliss"
+    ],
+    "111": [
+      "corliss archer",
+      "cbs"
+    ],
+    "112": [
+      "corliss archer",
+      "nbc"
+    ],
+    "113": [
+      "corliss archer",
+      "abc"
+    ],
+    "114": [
+      "corliss archer",
+      "a date with judy"
+    ],
+    "115": [
+      "corliss archer",
+      "the bob hope show"
+    ],
+    "116": [
+      "corliss archer",
+      "golden age of radio"
+    ],
+    "117": [
+      "corliss archer",
+      "the parents"
+    ],
+    "118": [
+      "corliss archer",
+      "ziv company"
+    ],
+    "119": [
+      "corliss archer",
+      "f  hugh herbert"
+    ],
+    "120": [
+      "cbs",
+      "nbc"
+    ],
+    "121": [
+      "cbs",
+      "abc"
+    ],
+    "122": [
+      "cbs",
+      "golden age of radio"
+    ],
+    "123": [
+      "nbc",
+      "abc"
+    ],
+    "124": [
+      "nbc",
+      "golden age of radio"
+    ],
+    "125": [
+      "abc",
+      "golden age of radio"
+    ],
+    "126": [
+      "a date with judy",
+      "the bob hope show"
+    ],
+    "127": [
+      "janet waldo",
+      "judy jetson"
+    ],
+    "128": [
+      "janet waldo",
+      "nancy"
+    ],
+    "129": [
+      "janet waldo",
+      "penelope pitstop"
+    ],
+    "130": [
+      "janet waldo",
+      "josie"
+    ],
+    "131": [
+      "janet waldo",
+      "meet corliss archer"
+    ],
+    "132": [
+      "janet waldo",
+      "shazzan"
+    ],
+    "133": [
+      "janet waldo",
+      "josie and the pussycats"
+    ],
+    "134": [
+      "janet waldo",
+      "the jetsons"
+    ],
+    "135": [
+      "meet corliss archer",
+      "american television sitcom"
+    ],
+    "136": [
+      "meet corliss archer",
+      "july 13  1951"
+    ],
+    "137": [
+      "meet corliss archer",
+      "august 10  1951"
+    ],
+    "138": [
+      "meet corliss archer",
+      "april 1954"
+    ],
+    "139": [
+      "meet corliss archer",
+      "december 1954"
+    ],
+    "140": [
+      "meet corliss archer",
+      "charles craft"
+    ],
+    "141": [
+      "lord high treasurer",
+      "acts of union of 1707"
+    ],
+    "142": [
+      "lord high treasurer",
+      "british government"
+    ],
+    "143": [
+      "lord high treasurer",
+      "great officer of state"
+    ],
+    "144": [
+      "lord high treasurer",
+      "lord high steward"
+    ],
+    "145": [
+      "lord high treasurer",
+      "lord high chancellor"
+    ],
+    "146": [
+      "british government",
+      "secretary of state for constitutional affairs"
+    ],
+    "147": [
+      "british government",
+      "lord chancellor s department"
+    ],
+    "148": [
+      "kiss and tell",
+      "parents"
+    ],
+    "149": [
+      "kiss and tell",
+      "a kiss for corliss"
+    ],
+    "150": [
+      "kiss and tell",
+      "kiss for corliss"
+    ],
+    "151": [
+      "a kiss for corliss",
+      "richard wallace"
+    ],
+    "152": [
+      "a kiss for corliss",
+      "howard dimsdale"
+    ],
+    "153": [
+      "a kiss for corliss",
+      "united artists"
+    ],
+    "154": [
+      "a kiss for corliss",
+      "almost a bride"
+    ],
+    "155": [
+      "a kiss for corliss",
+      "1949"
+    ],
+    "156": [
+      "secretary of state for constitutional affairs",
+      "lord chancellor"
+    ],
+    "157": [
+      "secretary of state for constitutional affairs",
+      "first secretary of state"
+    ],
+    "158": [
+      "secretary of state for constitutional affairs",
+      "lord chancellor s department"
+    ],
+    "159": [
+      "first secretary of state",
+      "deputy prime minister"
+    ],
+    "160": [
+      "andre norton award",
+      "science fiction and fantasy writers of america"
+    ],
+    "161": [
+      "andre norton award",
+      "catherine asaro"
+    ],
+    "162": [
+      "andre norton award",
+      "andre norton"
+    ],
+    "163": [
+      "science fiction and fantasy writers of america",
+      "catherine asaro"
+    ],
+    "164": [
+      "village accountant",
+      "patwari"
+    ],
+    "165": [
+      "village accountant",
+      "talati"
+    ],
+    "166": [
+      "village accountant",
+      "karnam"
+    ],
+    "167": [
+      "village accountant",
+      "adhikari"
+    ],
+    "168": [
+      "village accountant",
+      "shanbogaru"
+    ],
+    "169": [
+      "village accountant",
+      "patnaik"
+    ],
+    "170": [
+      "village accountant",
+      "tapedar"
+    ],
+    "171": [
+      "village accountant",
+      "kulkarni"
+    ],
+    "172": [
+      "village accountant",
+      "the officeholder"
+    ],
+    "173": [
+      "charles craft",
+      "hampshire"
+    ],
+    "174": [
+      "charles craft",
+      "hollywood"
+    ],
+    "175": [
+      "charles craft",
+      "painting the town"
+    ],
+    "176": [
+      "charles craft",
+      "racket squad"
+    ],
+    "177": [
+      "charles craft",
+      "science fiction theatre"
+    ],
+    "178": [
+      "charles craft",
+      "highway patrol"
+    ],
+    "179": [
+      "charles craft",
+      "sea hunt"
+    ],
+    "180": [
+      "charles craft",
+      "flipper s new adventure"
+    ],
+    "181": [
+      "sea hunt",
+      "lloyd bridges"
+    ],
+    "182": [
+      "flipper s new adventure",
+      "flipper"
+    ],
+    "183": [
+      "shadowshaper",
+      "daniel jos  older"
+    ],
+    "184": [
+      "shadowshaper",
+      "sierra santiago"
+    ],
+    "185": [
+      "shadowshaper",
+      "gentrification"
+    ],
+    "186": [
+      "daniel jos  older",
+      "sierra santiago"
+    ],
+    "187": [
+      "sierra santiago",
+      "brooklyn"
+    ],
+    "188": [
+      "sierra santiago",
+      "shadowshapers"
+    ],
+    "189": [
+      "sierra santiago",
+      "the mysterious being"
+    ],
+    "190": [
+      "brooklyn",
+      "gentrification"
+    ],
+    "191": [
+      "shadowshapers",
+      "the mysterious being"
+    ],
+    "192": [
+      "victoria hanley",
+      "the seer and the sword"
+    ],
+    "193": [
+      "victoria hanley",
+      "the healer s keep"
+    ],
+    "194": [
+      "victoria hanley",
+      "the light of the oracle"
+    ],
+    "195": [
+      "victoria hanley",
+      "indigo magic"
+    ],
+    "196": [
+      "victoria hanley",
+      "seize the story  a handbook for teens who like to write"
+    ],
+    "197": [
+      "victoria hanley",
+      "wild ink  a grownups guide to writing fiction for teens"
+    ],
+    "198": [
+      "victoria hanley",
+      "fantasy novelist"
+    ],
+    "199": [
+      "the seer and the sword",
+      "companion books"
+    ],
+    "200": [
+      "the healer s keep",
+      "companion books"
+    ],
+    "201": [
+      "the light of the oracle",
+      "companion books"
+    ],
+    "202": [
+      "indigo magic",
+      "egmont usa"
+    ],
+    "203": [
+      "indigo magic",
+      "young adult literature"
+    ],
+    "204": [
+      "indigo magic",
+      "march 2012"
+    ],
+    "205": [
+      "cotton wood press",
+      "seize the story  a handbook for teens who like to write"
+    ],
+    "206": [
+      "cotton wood press",
+      "wild ink  a grownups guide to writing fiction for teens"
+    ],
+    "207": [
+      "the hork bajir chronicles",
+      "k  a  applegate"
+    ],
+    "208": [
+      "the hork bajir chronicles",
+      "tobias"
+    ],
+    "209": [
+      "the hork bajir chronicles",
+      "jara hamee"
+    ],
+    "210": [
+      "the hork bajir chronicles",
+      "animorphs"
+    ],
+    "211": [
+      "the hork bajir chronicles",
+      "the ellimist chronicles"
+    ],
+    "212": [
+      "the hork bajir chronicles",
+      "the andalite chronicles"
+    ],
+    "213": [
+      "k  a  applegate",
+      "animorphs"
+    ],
+    "214": [
+      "tobias",
+      "the valley of the free hork bajir"
+    ],
+    "215": [
+      "jara hamee",
+      "the yeerks"
+    ],
+    "216": [
+      "aldrea",
+      "dak hamee"
+    ],
+    "217": [
+      "aldrea",
+      "the yeerks"
+    ],
+    "218": [
+      "dak hamee",
+      "the yeerks"
+    ],
+    "219": [
+      "esplin 9466",
+      "the yeerks"
+    ],
+    "220": [
+      "animorphs",
+      "scholastic"
+    ],
+    "221": [
+      "animorphs",
+      "the six main characters"
+    ],
+    "222": [
+      "animorphs",
+      "science fantasy"
+    ],
+    "223": [
+      "left behind  the kids",
+      "jerry b  jenkins"
+    ],
+    "224": [
+      "left behind  the kids",
+      "tim lahaye"
+    ],
+    "225": [
+      "left behind  the kids",
+      "chris fabry"
+    ],
+    "226": [
+      "left behind  the kids",
+      "tyndale house publishing"
+    ],
+    "227": [
+      "left behind  the kids",
+      "left behind"
+    ],
+    "228": [
+      "left behind  the kids",
+      "the rapture"
+    ],
+    "229": [
+      "left behind  the kids",
+      "the tribulation"
+    ],
+    "230": [
+      "left behind  the kids",
+      "young adult market"
+    ],
+    "231": [
+      "jerry b  jenkins",
+      "tim lahaye"
+    ],
+    "232": [
+      "jerry b  jenkins",
+      "chris fabry"
+    ],
+    "233": [
+      "jerry b  jenkins",
+      "tyndale house publishing"
+    ],
+    "234": [
+      "tim lahaye",
+      "chris fabry"
+    ],
+    "235": [
+      "tim lahaye",
+      "tyndale house publishing"
+    ],
+    "236": [
+      "chris fabry",
+      "tyndale house publishing"
+    ],
+    "237": [
+      "square enix",
+      "digicube"
+    ],
+    "238": [
+      "square enix",
+      "ultimania"
+    ],
+    "239": [
+      "square enix",
+      "square"
+    ],
+    "240": [
+      "square enix",
+      "enix"
+    ],
+    "241": [
+      "digicube",
+      "perfect works"
+    ],
+    "242": [
+      "digicube",
+      "square"
+    ],
+    "243": [
+      "studio bentstuff",
+      "ultimania"
+    ],
+    "244": [
+      "studio bentstuff",
+      "final fantasy vii"
+    ],
+    "245": [
+      "perfect works",
+      "1998"
+    ],
+    "246": [
+      "perfect works",
+      "1999"
+    ],
+    "247": [
+      "ultimania",
+      "2003"
+    ],
+    "248": [
+      "katherine applegate",
+      "michael grant"
+    ],
+    "249": [
+      "scholastic",
+      "the divide trilogy"
+    ],
+    "250": [
+      "science fantasy",
+      "walter gillings"
+    ],
+    "251": [
+      "science fantasy",
+      "john carnell"
+    ],
+    "252": [
+      "science fantasy",
+      "kyril bonfiglioli"
+    ],
+    "253": [
+      "science fantasy",
+      "roberts   vinter"
+    ],
+    "254": [
+      "science fantasy",
+      "sf impulse"
+    ],
+    "255": [
+      "science fantasy",
+      "nova publications"
+    ],
+    "256": [
+      "science fantasy",
+      "1964"
+    ],
+    "257": [
+      "the divide trilogy",
+      "elizabeth kay"
+    ],
+    "258": [
+      "the divide trilogy",
+      "ted dewan"
+    ],
+    "259": [
+      "the divide trilogy",
+      "french"
+    ],
+    "260": [
+      "the divide trilogy",
+      "german"
+    ],
+    "261": [
+      "the divide trilogy",
+      "spanish"
+    ],
+    "262": [
+      "the divide trilogy",
+      "finnish"
+    ],
+    "263": [
+      "the divide trilogy",
+      "chinese"
+    ],
+    "264": [
+      "the divide trilogy",
+      "japanese"
+    ],
+    "265": [
+      "the divide trilogy",
+      "portuguese"
+    ],
+    "266": [
+      "the divide trilogy",
+      "italian"
+    ],
+    "267": [
+      "the divide trilogy",
+      "romanian"
+    ],
+    "268": [
+      "the divide trilogy",
+      "dutch"
+    ],
+    "269": [
+      "chicken house",
+      "the divide"
+    ],
+    "270": [
+      "the divide",
+      "back to the divide"
+    ],
+    "271": [
+      "the divide",
+      "jinx on the divide"
+    ],
+    "272": [
+      "back to the divide",
+      "jinx on the divide"
+    ],
+    "273": [
+      "john carnell",
+      "new worlds"
+    ],
+    "274": [
+      "kyril bonfiglioli",
+      "impulse"
+    ],
+    "275": [
+      "kyril bonfiglioli",
+      "1966"
+    ],
+    "276": [
+      "roberts   vinter",
+      "sf impulse"
+    ],
+    "277": [
+      "roberts   vinter",
+      "1964"
+    ],
+    "278": [
+      "roberts   vinter",
+      "financial pressure"
+    ],
+    "279": [
+      "etiquette   espionage",
+      "gail carriger"
+    ],
+    "280": [
+      "etiquette   espionage",
+      "parasol protectorate"
+    ],
+    "281": [
+      "etiquette   espionage",
+      "young adult"
+    ],
+    "282": [
+      "etiquette   espionage",
+      "steampunk"
+    ],
+    "283": [
+      "gail carriger",
+      "parasol protectorate"
+    ],
+    "284": [
+      "esma sultan",
+      "abd laziz"
+    ],
+    "285": [
+      "esma sultan",
+      "gevheri kad n"
+    ],
+    "286": [
+      "esma sultan",
+      "abd lmecid ii"
+    ],
+    "287": [
+      "esma sultan",
+      "abdul hamid i"
+    ],
+    "288": [
+      "esma sultan",
+      "mustafa iv"
+    ],
+    "289": [
+      "esma sultan",
+      "mahmud ii"
+    ],
+    "290": [
+      "esma sultan",
+      "bezmi lem sultan"
+    ],
+    "291": [
+      "esma sultan",
+      "rahime perestu sultan"
+    ],
+    "292": [
+      "esma sultan",
+      "k   k h seyin pasha"
+    ],
+    "293": [
+      "esma sultan",
+      "ottoman navy"
+    ],
+    "294": [
+      "esma sultan",
+      "ottoman sultans"
+    ],
+    "295": [
+      "esma sultan",
+      "three daughters"
+    ],
+    "296": [
+      "esma sultan",
+      "esma sultan mansion"
+    ],
+    "297": [
+      "esma sultan",
+      "ahmed iii"
+    ],
+    "298": [
+      "esma sultan",
+      "mustafa iii"
+    ],
+    "299": [
+      "esma sultan",
+      "zeynep kad n"
+    ],
+    "300": [
+      "esma sultan",
+      "ottoman empire"
+    ],
+    "301": [
+      "abd laziz",
+      "ottoman empire"
+    ],
+    "302": [
+      "abd laziz",
+      "gevheri kad n"
+    ],
+    "303": [
+      "abd laziz",
+      "ehzade mehmed seyfeddin"
+    ],
+    "304": [
+      "gevheri kad n",
+      "salih bey svatnba"
+    ],
+    "305": [
+      "gevheri kad n",
+      "ehzade mehmed seyfeddin"
+    ],
+    "306": [
+      "abd lmecid ii",
+      "ottoman empire"
+    ],
+    "307": [
+      "ottoman empire",
+      "k   k h seyin pasha"
+    ],
+    "308": [
+      "ottoman empire",
+      "ottoman navy"
+    ],
+    "309": [
+      "ottoman empire",
+      "laleli mosque"
+    ],
+    "310": [
+      "ottoman empire",
+      "ahmed iii"
+    ],
+    "311": [
+      "ottoman empire",
+      "mustafa iii"
+    ],
+    "312": [
+      "ottoman empire",
+      "abdul hamid i"
+    ],
+    "313": [
+      "abdul hamid i",
+      "ahmed iii"
+    ],
+    "314": [
+      "abdul hamid i",
+      "mustafa iii"
+    ],
+    "315": [
+      "k   k h seyin pasha",
+      "ottoman navy"
+    ],
+    "316": [
+      "ottoman navy",
+      "kapudan pasha"
+    ],
+    "317": [
+      "ottoman navy",
+      "grand admiral"
+    ],
+    "318": [
+      "djama  el kebir",
+      "the great mosque of algiers"
+    ],
+    "319": [
+      "the great mosque of algiers",
+      "algiers"
+    ],
+    "320": [
+      "the great mosque of algiers",
+      "sidi okba mosque"
+    ],
+    "321": [
+      "the great mosque of algiers",
+      "ali ibn yusuf"
+    ],
+    "322": [
+      "the great mosque of algiers",
+      "ziyyanid sultan of tlemcen"
+    ],
+    "323": [
+      "the great mosque of algiers",
+      "grand mosque d alger"
+    ],
+    "324": [
+      "the great mosque of algiers",
+      "djamaa al kebir"
+    ],
+    "325": [
+      "the great mosque of algiers",
+      "el kebir mosque"
+    ],
+    "326": [
+      "algiers",
+      "algeria"
+    ],
+    "327": [
+      "ottoman sultans",
+      "three daughters"
+    ],
+    "328": [
+      "sultan ahmed mosque",
+      "istanbul"
+    ],
+    "329": [
+      "sultan ahmed mosque",
+      "turkey"
+    ],
+    "330": [
+      "sultan ahmed mosque",
+      "ahmed i"
+    ],
+    "331": [
+      "sultan ahmed mosque",
+      "hagia sophia"
+    ],
+    "332": [
+      "sultan ahmed mosque",
+      "blue mosque"
+    ],
+    "333": [
+      "sultan ahmed mosque",
+      "k lliye"
+    ],
+    "334": [
+      "istanbul",
+      "fatih"
+    ],
+    "335": [
+      "istanbul",
+      "turkey"
+    ],
+    "336": [
+      "istanbul",
+      "esma sultan mansion"
+    ],
+    "337": [
+      "istanbul",
+      "bosphorus"
+    ],
+    "338": [
+      "istanbul",
+      "ortak y"
+    ],
+    "339": [
+      "turkey",
+      "bosphorus"
+    ],
+    "340": [
+      "k lliye",
+      "madrasah"
+    ],
+    "341": [
+      "k lliye",
+      "hospice"
+    ],
+    "342": [
+      "laleli mosque",
+      "laleli"
+    ],
+    "343": [
+      "laleli mosque",
+      "fatih"
+    ],
+    "344": [
+      "laleli mosque",
+      "18th century"
+    ],
+    "345": [
+      "laleli mosque",
+      "camii"
+    ],
+    "346": [
+      "laleli",
+      "fatih"
+    ],
+    "347": [
+      "esma sultan mansion",
+      "bosphorus"
+    ],
+    "348": [
+      "esma sultan mansion",
+      "yal"
+    ],
+    "349": [
+      "esma sultan mansion",
+      "ortak y"
+    ],
+    "350": [
+      "ahmed iii",
+      "mustafa iii"
+    ]
+  },
+  "relation_texts": [],
+  "stats": {
+    "nodes": 330,
+    "edges": 351,
+    "chunks": 40,
+    "e2r_nnz": 0,
+    "r2c_nnz": 0,
+    "communities": 19,
+    "community_reports": 19
+  }
+}

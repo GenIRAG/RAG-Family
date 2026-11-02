@@ -1,0 +1,270 @@
+[
+  {
+    "id": "test_1",
+    "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+    "golden_answers": [
+      "yes"
+    ],
+    "pred": "Yes.",
+    "metric_scores": {
+      "em": 1.0,
+      "f1": 1.0,
+      "acc": 1.0,
+      "recall@4": 0.0
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "-853491906722422638_chunk_0",
+            "contents": "Scott Derrickson\nScott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.\n\n He lives in Los Angeles, California.\n\n He is best known for directing horror films such as \"Sinister\", \"The Exorcism of Emily Rose\", and \"Deliver Us From Evil\", as well as the 2016 Marvel Cinematic Universe installment, \"Doctor Strange.\"",
+            "metadata": {
+              "parent_id": "-853491906722422638",
+              "chunk_idx": 0
+            },
+            "score": 10.307113647460938
+          },
+          {
+            "id": "5136342910153351913_chunk_0",
+            "contents": "Ed Wood (film)\nEd Wood is a 1994 American biographical period comedy-drama film directed and produced by Tim Burton, and starring Johnny Depp as cult filmmaker Ed Wood.\n\n The film concerns the period in Wood's life when he made his best-known films as well as his relationship with actor Bela Lugosi, played by Martin Landau.\n\n Sarah Jessica Parker, Patricia Arquette, Jeffrey Jones, Lisa Marie, and Bill Murray are among the supporting cast.",
+            "metadata": {
+              "parent_id": "5136342910153351913",
+              "chunk_idx": 0
+            },
+            "score": 7.887428283691406
+          },
+          {
+            "id": "-5708826326679278261_chunk_0",
+            "contents": "Ed Wood\nEdward Davis Wood Jr. (October 10, 1924 – December 10, 1978) was an American filmmaker, actor, writer, producer, and director.",
+            "metadata": {
+              "parent_id": "-5708826326679278261",
+              "chunk_idx": 0
+            },
+            "score": 7.808868408203125
+          },
+          {
+            "id": "-106347367464786987_chunk_0",
+            "contents": "Doctor Strange (2016 film)\nDoctor Strange is a 2016 American superhero film based on the Marvel Comics character of the same name, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures.\n\n It is the fourteenth film of the Marvel Cinematic Universe (MCU).\n\n The film was directed by Scott Derrickson, who wrote it with Jon Spaihts and C. Robert Cargill, and stars Benedict Cumberbatch as Stephen Strange, along with Chiwetel Ejiofor, Rachel McAdams, Benedict Wong, Michael Stuhlbarg, Benjamin Bratt, Scott Adkins, Mads Mikkelsen, and Tilda Swinton.\n\n In \"Doctor Strange\", surgeon Strange learns the mystic arts after a career-ending car accident.",
+            "metadata": {
+              "parent_id": "-106347367464786987",
+              "chunk_idx": 0
+            },
+            "score": 1.4942725896835327
+          }
+        ],
+        "scores": [
+          10.307113647460938,
+          7.887428283691406,
+          7.808868408203125,
+          1.4942725896835327
+        ],
+        "metadata": {
+          "strategy": "retrieve_then_rerank",
+          "query": "Were Scott Derrickson and Ed Wood of the same nationality?"
+        }
+      }
+    },
+    "per_elapsed": 15.7595
+  },
+  {
+    "id": "test_2",
+    "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+    "golden_answers": [
+      "Chief of Protocol"
+    ],
+    "pred": "The documents do not provide information about any government position held by Shirley Temple, who portrayed Corliss Archer.",
+    "metric_scores": {
+      "em": 0.0,
+      "f1": 0,
+      "acc": 0.0,
+      "recall@4": 0.0
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "4860581841834991084_chunk_0",
+            "contents": "Kiss and Tell (1945 film)\nKiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer.\n\n In the film, two teenage girls cause their respective parents much concern when they start to become interested in boys.\n\n The parents' bickering about which girl is the worse influence causes more problems than it solves.",
+            "metadata": {
+              "parent_id": "4860581841834991084",
+              "chunk_idx": 0
+            },
+            "score": 7.838329792022705
+          },
+          {
+            "id": "-3351622935073705028_chunk_0",
+            "contents": "Janet Waldo\nJanet Marie Waldo (February 4, 1920 – June 12, 2016) was an American radio and voice actress.\n\n She is best known in animation for voicing Judy Jetson, Nancy in \"Shazzan\", Penelope Pitstop, and Josie in \"Josie and the Pussycats\", and on radio as the title character in \"Meet Corliss Archer\".",
+            "metadata": {
+              "parent_id": "-3351622935073705028",
+              "chunk_idx": 0
+            },
+            "score": 1.288805603981018
+          },
+          {
+            "id": "-5419722534242079489_chunk_0",
+            "contents": "A Kiss for Corliss\nA Kiss for Corliss is a 1949 American comedy film directed by Richard Wallace and written by Howard Dimsdale.\n\n It stars Shirley Temple in her final starring role as well as her final film appearance.\n\n It is a sequel to the 1945 film \"Kiss and Tell\".\n\n \"A Kiss for Corliss\" was retitled \"Almost a Bride\" before release and this title appears in the title sequence.\n\n The film was released on November 25, 1949, by United Artists.",
+            "metadata": {
+              "parent_id": "-5419722534242079489",
+              "chunk_idx": 0
+            },
+            "score": -0.21815967559814453
+          },
+          {
+            "id": "-5359293905122940660_chunk_0",
+            "contents": "Secretary of State for Constitutional Affairs\nThe office of Secretary of State for Constitutional Affairs was a British Government position, created in 2003.\n\n Certain functions of the Lord Chancellor which related to the Lord Chancellor's Department were transferred to the Secretary of State.\n\n At a later date further functions were also transferred to the Secretary of State for Constitutional Affairs from the First Secretary of State, a position within the government held by the Deputy Prime Minister.",
+            "metadata": {
+              "parent_id": "-5359293905122940660",
+              "chunk_idx": 0
+            },
+            "score": -2.173140048980713
+          }
+        ],
+        "scores": [
+          7.838329792022705,
+          1.288805603981018,
+          -0.21815967559814453,
+          -2.173140048980713
+        ],
+        "metadata": {
+          "strategy": "retrieve_then_rerank",
+          "query": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?"
+        }
+      }
+    },
+    "per_elapsed": 3.1494
+  },
+  {
+    "id": "test_3",
+    "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+    "golden_answers": [
+      "Animorphs"
+    ],
+    "pred": "Animorphs",
+    "metric_scores": {
+      "em": 1.0,
+      "f1": 1.0,
+      "acc": 1.0,
+      "recall@4": 1.0
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "-7139834397427947158_chunk_0",
+            "contents": "Animorphs\nAnimorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic.\n\n It is told in first person, with all six main characters taking turns narrating the books through their own perspectives.\n\n Horror, war, dehumanization, sanity, morality, innocence, leadership, freedom and growing up are the core themes of the series.",
+            "metadata": {
+              "parent_id": "-7139834397427947158",
+              "chunk_idx": 0
+            },
+            "score": 7.254732131958008
+          },
+          {
+            "id": "-1098374546228216485_chunk_0",
+            "contents": "The Hork-Bajir Chronicles\nThe Hork-Bajir Chronicles is the second companion book to the \"Animorphs\" series, written by K. A. Applegate.\n\n With respect to continuity within the series, it takes place before book #23, \"The Pretender\", although the events told in the story occur between the time of \"The Ellimist Chronicles\" and \"The Andalite Chronicles\".\n\n The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion.\n\n Jara Hamee's story is narrated from the points of view of Aldrea, Dak Hamee, and Esplin 9466, alternating in similar fashion to the \"Megamorphs\" books.",
+            "metadata": {
+              "parent_id": "-1098374546228216485",
+              "chunk_idx": 0
+            },
+            "score": -1.6952661275863647
+          },
+          {
+            "id": "-4124435967001818459_chunk_0",
+            "contents": "Victoria Hanley\nVictoria Hanley is an American young adult fantasy novelist.\n\n Her first three books, \"The Seer And The Sword\", \"The Healer's Keep\" and \"The Light Of The Oracle\" are companion books to one another.\n\n Her newest book (released March 2012) is the sequel of a series, called \"Indigo Magic\", published by Egmont USA.\n\n She's also published two non-fiction books through Cotton Wood Press; called \"Seize the Story: A Handbook For Teens Who Like To Write\", and \"Wild Ink: A Grownups Guide To Writing Fiction For Teens\".",
+            "metadata": {
+              "parent_id": "-4124435967001818459",
+              "chunk_idx": 0
+            },
+            "score": -3.3780317306518555
+          },
+          {
+            "id": "1916615102380816707_chunk_0",
+            "contents": "Andre Norton Award\nThe Andre Norton Award for Young Adult Science Fiction and Fantasy is an annual award presented by the Science Fiction and Fantasy Writers of America (SFWA) to the author of the best young adult or middle grade science fiction or fantasy book published in the United States in the preceding year.\n\n It is named to honor prolific science fiction and fantasy author Andre Norton (1912–2005), and it was established by then SFWA president Catherine Asaro and the SFWA Young Adult Fiction committee and announced on February 20, 2005.\n\n Any published young adult or middle grade science fiction or fantasy novel is eligible for the prize, including graphic novels.\n\n There is no limit on word count.\n\n The award is presented along with the Nebula Awards and follows the same rules for nominations and voting; as the awards are separate, works may be simultaneously nominated for both the Andre Norton award and a Nebula Award.",
+            "metadata": {
+              "parent_id": "1916615102380816707",
+              "chunk_idx": 0
+            },
+            "score": -7.519952774047852
+          }
+        ],
+        "scores": [
+          7.254732131958008,
+          -1.6952661275863647,
+          -3.3780317306518555,
+          -7.519952774047852
+        ],
+        "metadata": {
+          "strategy": "retrieve_then_rerank",
+          "query": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?"
+        }
+      }
+    },
+    "per_elapsed": 1.9382
+  },
+  {
+    "id": "test_4",
+    "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+    "golden_answers": [
+      "no"
+    ],
+    "pred": "No.",
+    "metric_scores": {
+      "em": 1.0,
+      "f1": 1.0,
+      "acc": 1.0,
+      "recall@4": 0.0
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "549464955289825522_chunk_0",
+            "contents": "Esma Sultan Mansion\nThe Esma Sultan Mansion (Turkish: \"Esma Sultan Yalısı\" ), a historical yalı (English: waterside mansion ) located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped.",
+            "metadata": {
+              "parent_id": "549464955289825522",
+              "chunk_idx": 0
+            },
+            "score": 10.307313919067383
+          },
+          {
+            "id": "-4417848264858811668_chunk_0",
+            "contents": "Laleli Mosque\nThe Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" ) is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey.",
+            "metadata": {
+              "parent_id": "-4417848264858811668",
+              "chunk_idx": 0
+            },
+            "score": 10.18447208404541
+          },
+          {
+            "id": "3552363457870622368_chunk_0",
+            "contents": "Esma Sultan\nEsma Sultan is the name of three daughters of three Ottoman Sultans:",
+            "metadata": {
+              "parent_id": "3552363457870622368",
+              "chunk_idx": 0
+            },
+            "score": 2.1034035682678223
+          },
+          {
+            "id": "-6234344167406422523_chunk_0",
+            "contents": "Esma Sultan (daughter of Ahmed III)\nEsma Sultan (14 March 1726 – 13 August 1788) was an Ottoman princess, daughter of Sultan Ahmed III and his consort Zeynep Kadın.\n\n She was the half-sister of Sultan Mustafa III and Abdul Hamid I.",
+            "metadata": {
+              "parent_id": "-6234344167406422523",
+              "chunk_idx": 0
+            },
+            "score": 1.9608491659164429
+          }
+        ],
+        "scores": [
+          10.307313919067383,
+          10.18447208404541,
+          2.1034035682678223,
+          1.9608491659164429
+        ],
+        "metadata": {
+          "strategy": "retrieve_then_rerank",
+          "query": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?"
+        }
+      }
+    },
+    "per_elapsed": 2.3067
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "faiss_type": "FLAT",
+  "faiss_nlist": 1024,
+  "faiss_nprobe": 10,
+  "faiss_hnsw_m": 32,
+  "faiss_ef_search": 64
+}

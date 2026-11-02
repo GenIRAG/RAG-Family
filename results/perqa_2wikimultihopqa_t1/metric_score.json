@@ -1,0 +1,10 @@
+{
+  "metrics": {
+    "f1": 0.963,
+    "plan_score": 1.0,
+    "step_score": 0.9815,
+    "pse_g": 0.9905
+  },
+  "num_samples": 3,
+  "elapsed_time": 22.2517
+}

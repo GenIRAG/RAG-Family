@@ -1,0 +1,318 @@
+[
+  {
+    "id": "test_1",
+    "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+    "golden_answers": [
+      "yes"
+    ],
+    "pred": "Yes.",
+    "metric_scores": {
+      "em": 1.0,
+      "f1": 1.0,
+      "acc": 1.0,
+      "recall@4": 0.0
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "34b72246a9d3f37981adbdbe53e097d9ec79fd7cf222a44df679a6b8f03b1054_chunk_0",
+            "contents": "Scott Derrickson\nScott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.\n\n He lives in Los Angeles, California.\n\n He is best known for directing horror films such as \"Sinister\", \"The Exorcism of Emily Rose\", and \"Deliver Us From Evil\", as well as the 2016 Marvel Cinematic Universe installment, \"Doctor Strange.\"",
+            "metadata": {
+              "parent_id": "34b72246a9d3f37981adbdbe53e097d9ec79fd7cf222a44df679a6b8f03b1054",
+              "chunk_idx": 0
+            },
+            "score": 82.38316345214844
+          },
+          {
+            "id": "9428b7fc5801af16860ddbb414d072629285d1460ab28a98aac6418f7d8e7732_chunk_0",
+            "contents": "Ed Wood (film)\nEd Wood is a 1994 American biographical period comedy-drama film directed and produced by Tim Burton, and starring Johnny Depp as cult filmmaker Ed Wood.\n\n The film concerns the period in Wood's life when he made his best-known films as well as his relationship with actor Bela Lugosi, played by Martin Landau.\n\n Sarah Jessica Parker, Patricia Arquette, Jeffrey Jones, Lisa Marie, and Bill Murray are among the supporting cast.",
+            "metadata": {
+              "parent_id": "9428b7fc5801af16860ddbb414d072629285d1460ab28a98aac6418f7d8e7732",
+              "chunk_idx": 0
+            },
+            "score": 71.53046417236328
+          },
+          {
+            "id": "91def121447ae6798a59c40a47de4bfd854b7379517cc068c776b31057f7b982_chunk_0",
+            "contents": "Conrad Brooks\nConrad Brooks (born Conrad Biedrzycki on January 3, 1931 in Baltimore, Maryland) is an American actor.\n\n He moved to Hollywood, California in 1948 to pursue a career in acting.\n\n He got his start in movies appearing in Ed Wood films such as \"Plan 9 from Outer Space\", \"Glen or Glenda\", and \"Jail Bait.\"\n\n He took a break from acting during the 1960s and 1970s but due to the ongoing interest in the films of Ed Wood, he reemerged in the 1980s and has become a prolific actor.\n\n He also has since gone on to write, produce and direct several films.",
+            "metadata": {
+              "parent_id": "91def121447ae6798a59c40a47de4bfd854b7379517cc068c776b31057f7b982",
+              "chunk_idx": 0
+            },
+            "score": 69.70775604248047
+          },
+          {
+            "id": "26fc9b7ced3ead7e3ff3c97acaa6a70cbaaf1101f57232d7c3764606a31e1ef8_chunk_0",
+            "contents": "Tyler Bates\nTyler Bates (born June 5, 1965) is an American musician, music producer, and composer for films, television, and video games.\n\n Much of his work is in the action and horror film genres, with films like \"Dawn of the Dead, 300, Sucker Punch,\" and \"John Wick.\"\n\n He has collaborated with directors like Zack Snyder, Rob Zombie, Neil Marshall, William Friedkin, Scott Derrickson, and James Gunn.\n\n With Gunn, he has scored every one of the director's films; including \"Guardians of the Galaxy\", which became one of the highest grossing domestic movies of 2014, and its 2017 sequel.\n\n In addition, he is also the lead guitarist of the American rock band Marilyn Manson, and produced its albums \"The Pale Emperor\" and \"Heaven Upside Down\".",
+            "metadata": {
+              "parent_id": "26fc9b7ced3ead7e3ff3c97acaa6a70cbaaf1101f57232d7c3764606a31e1ef8",
+              "chunk_idx": 0
+            },
+            "score": 65.94406127929688
+          },
+          {
+            "id": "dd3bb12dcd55a06387ec7e3b80dcf4fabc34c4af086ea1143f447d2f60edf3c6_chunk_0",
+            "contents": "Adam Collis\nAdam Collis is an American filmmaker and actor.\n\n He attended the Duke University from 1986 to 1990 and the University of California, Los Angeles from 2007 to 2010.\n\n He also studied cinema at the University of Southern California from 1991 to 1997.\n\n Collis first work was the assistant director for the Scott Derrickson's short \"Love in the Ruins\" (1995).\n\n In 1998, he played \"Crankshaft\" in Eric Koyanagi's \"Hundred Percent\".",
+            "metadata": {
+              "parent_id": "dd3bb12dcd55a06387ec7e3b80dcf4fabc34c4af086ea1143f447d2f60edf3c6",
+              "chunk_idx": 0
+            },
+            "score": 53.20119094848633
+          }
+        ],
+        "scores": [
+          82.38316345214844,
+          71.53046417236328,
+          69.70775604248047,
+          65.94406127929688,
+          53.20119094848633
+        ],
+        "metadata": {
+          "strategy": "simple",
+          "query": "Were Scott Derrickson and Ed Wood of the same nationality? Scott Derrickson and Ed Wood were not of the same nationality. Scott Derrickson is an American filmmaker, known for his work in the horror genre, including films like \"The Exorcism of Emily Rose\" and \"Doctor Strange.\" He was born in 1966 in Denver, Colorado, USA. In contrast, Ed Wood, often referred to as the \"worst director of all time,\" was also an American, born in 1924 in Poughkeepsie, New York, USA. While both were prominent figures in American cinema, their careers and styles were quite different, with Wood's work primarily in the 1950s and 1960s, and Derrickson emerging in the late 20th century. Scott Derrickson and Ed Wood were not of the same nationality. Scott Derrickson is an American filmmaker, best known for his work in the horror genre, including films like \"Sinister\" and \"Doctor Strange.\" He was born in the United States and has spent much of his career in Hollywood. On the other hand, Ed Wood, who is often regarded as one of the most inept filmmakers in history, was also an American. He was known for his low-budget films in the 1950s, such as \"Plan 9 from Outer Space.\" Therefore, while both individuals are American, they are from different generations and contributed to the film industry in very different ways. Scott Derrickson and Ed Wood were not of the same nationality. Scott Derrickson is an American filmmaker known for his work in the horror genre, including films like \"The Exorcism of Emily Rose\" and \"Doctor Strange.\" He was born in the United States, specifically in Denver, Colorado. On the other hand, Ed Wood, often regarded as one of the most infamous filmmakers in American cinema, was also an American, born in Poughkeepsie, New York. While both men share the same nationality as Americans, they are from different generations and have made their marks in distinct eras of film history. Therefore, while they are both American, they are not contemporaries and represent different periods in the evolution of American cinema. Scott Derrickson and Ed Wood were not of the same nationality. Scott Derrickson is an American filmmaker, known for his work in the horror genre, including films like \"Sinister\" and \"Doctor Strange.\" He was born in the United States. On the other hand, Ed Wood, often regarded as one of the most infamous filmmakers in American cinema history, was also American. However, while both individuals share the same nationality, their contributions to the film industry differ significantly in style and reception. Derrickson is recognized for his modern approach to filmmaking, whereas Wood is often celebrated for his unique lack of technical skill and the cult status of his films, such as \"Plan 9 from Outer Space.\" Although they are both American, their careers and legacies present contrasting narratives within the realm of cinema.",
+          "original_query": "Were Scott Derrickson and Ed Wood of the same nationality?",
+          "rewritten_query": "Were Scott Derrickson and Ed Wood of the same nationality? Scott Derrickson and Ed Wood were not of the same nationality. Scott Derrickson is an American filmmaker, known for his work in the horror genre, including films like \"The Exorcism of Emily Rose\" and \"Doctor Strange.\" He was born in 1966 in Denver, Colorado, USA. In contrast, Ed Wood, often referred to as the \"worst director of all time,\" was also an American, born in 1924 in Poughkeepsie, New York, USA. While both were prominent figures in American cinema, their careers and styles were quite different, with Wood's work primarily in the 1950s and 1960s, and Derrickson emerging in the late 20th century. Scott Derrickson and Ed Wood were not of the same nationality. Scott Derrickson is an American filmmaker, best known for his work in the horror genre, including films like \"Sinister\" and \"Doctor Strange.\" He was born in the United States and has spent much of his career in Hollywood. On the other hand, Ed Wood, who is often regarded as one of the most inept filmmakers in history, was also an American. He was known for his low-budget films in the 1950s, such as \"Plan 9 from Outer Space.\" Therefore, while both individuals are American, they are from different generations and contributed to the film industry in very different ways. Scott Derrickson and Ed Wood were not of the same nationality. Scott Derrickson is an American filmmaker known for his work in the horror genre, including films like \"The Exorcism of Emily Rose\" and \"Doctor Strange.\" He was born in the United States, specifically in Denver, Colorado. On the other hand, Ed Wood, often regarded as one of the most infamous filmmakers in American cinema, was also an American, born in Poughkeepsie, New York. While both men share the same nationality as Americans, they are from different generations and have made their marks in distinct eras of film history. Therefore, while they are both American, they are not contemporaries and represent different periods in the evolution of American cinema. Scott Derrickson and Ed Wood were not of the same nationality. Scott Derrickson is an American filmmaker, known for his work in the horror genre, including films like \"Sinister\" and \"Doctor Strange.\" He was born in the United States. On the other hand, Ed Wood, often regarded as one of the most infamous filmmakers in American cinema history, was also American. However, while both individuals share the same nationality, their contributions to the film industry differ significantly in style and reception. Derrickson is recognized for his modern approach to filmmaking, whereas Wood is often celebrated for his unique lack of technical skill and the cult status of his films, such as \"Plan 9 from Outer Space.\" Although they are both American, their careers and legacies present contrasting narratives within the realm of cinema."
+        }
+      }
+    },
+    "per_elapsed": 13.9989
+  },
+  {
+    "id": "test_2",
+    "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+    "golden_answers": [
+      "Chief of Protocol"
+    ],
+    "pred": "Janet Waldo held the position of voice actress, not a government position.",
+    "metric_scores": {
+      "em": 0.0,
+      "f1": 0.1538,
+      "acc": 0.0,
+      "recall@4": 0.0
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "ad5e4cdc62b8c129bb3dfd87538c37581e218ef8954d66dff8048bc849b4365b_chunk_0",
+            "contents": "A Kiss for Corliss\nA Kiss for Corliss is a 1949 American comedy film directed by Richard Wallace and written by Howard Dimsdale.\n\n It stars Shirley Temple in her final starring role as well as her final film appearance.\n\n It is a sequel to the 1945 film \"Kiss and Tell\".\n\n \"A Kiss for Corliss\" was retitled \"Almost a Bride\" before release and this title appears in the title sequence.\n\n The film was released on November 25, 1949, by United Artists.",
+            "metadata": {
+              "parent_id": "ad5e4cdc62b8c129bb3dfd87538c37581e218ef8954d66dff8048bc849b4365b",
+              "chunk_idx": 0
+            },
+            "score": 58.87824249267578
+          },
+          {
+            "id": "57c7d9ff495cd503aef4ac147b6d544b251e97ae39d0bb2f1db0bf58fbef885a_chunk_0",
+            "contents": "Kiss and Tell (1945 film)\nKiss and Tell is a 1945 American comedy film starring then 17-year-old Shirley Temple as Corliss Archer.\n\n In the film, two teenage girls cause their respective parents much concern when they start to become interested in boys.\n\n The parents' bickering about which girl is the worse influence causes more problems than it solves.",
+            "metadata": {
+              "parent_id": "57c7d9ff495cd503aef4ac147b6d544b251e97ae39d0bb2f1db0bf58fbef885a",
+              "chunk_idx": 0
+            },
+            "score": 39.884342193603516
+          },
+          {
+            "id": "856aba870c38b3c264537c83e33a879ef3939735e3735df5eaf7a6f4c1ae7cbf_chunk_0",
+            "contents": "Janet Waldo\nJanet Marie Waldo (February 4, 1920 – June 12, 2016) was an American radio and voice actress.\n\n She is best known in animation for voicing Judy Jetson, Nancy in \"Shazzan\", Penelope Pitstop, and Josie in \"Josie and the Pussycats\", and on radio as the title character in \"Meet Corliss Archer\".",
+            "metadata": {
+              "parent_id": "856aba870c38b3c264537c83e33a879ef3939735e3735df5eaf7a6f4c1ae7cbf",
+              "chunk_idx": 0
+            },
+            "score": 36.803466796875
+          },
+          {
+            "id": "fee9007a46f933d189194e535e95933532d4c4f507a34a3e3916a65f7b5ecb79_chunk_0",
+            "contents": "Secretary of State for Constitutional Affairs\nThe office of Secretary of State for Constitutional Affairs was a British Government position, created in 2003.\n\n Certain functions of the Lord Chancellor which related to the Lord Chancellor's Department were transferred to the Secretary of State.\n\n At a later date further functions were also transferred to the Secretary of State for Constitutional Affairs from the First Secretary of State, a position within the government held by the Deputy Prime Minister.",
+            "metadata": {
+              "parent_id": "fee9007a46f933d189194e535e95933532d4c4f507a34a3e3916a65f7b5ecb79",
+              "chunk_idx": 0
+            },
+            "score": 33.39185333251953
+          },
+          {
+            "id": "91def121447ae6798a59c40a47de4bfd854b7379517cc068c776b31057f7b982_chunk_0",
+            "contents": "Conrad Brooks\nConrad Brooks (born Conrad Biedrzycki on January 3, 1931 in Baltimore, Maryland) is an American actor.\n\n He moved to Hollywood, California in 1948 to pursue a career in acting.\n\n He got his start in movies appearing in Ed Wood films such as \"Plan 9 from Outer Space\", \"Glen or Glenda\", and \"Jail Bait.\"\n\n He took a break from acting during the 1960s and 1970s but due to the ongoing interest in the films of Ed Wood, he reemerged in the 1980s and has become a prolific actor.\n\n He also has since gone on to write, produce and direct several films.",
+            "metadata": {
+              "parent_id": "91def121447ae6798a59c40a47de4bfd854b7379517cc068c776b31057f7b982",
+              "chunk_idx": 0
+            },
+            "score": 25.81760025024414
+          }
+        ],
+        "scores": [
+          58.87824249267578,
+          39.884342193603516,
+          36.803466796875,
+          33.39185333251953,
+          25.81760025024414
+        ],
+        "metadata": {
+          "strategy": "simple",
+          "query": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell? The woman who portrayed Corliss Archer in the film \"Kiss and Tell\" is Janet Leigh. Beyond her successful career in Hollywood, which included iconic roles in films like \"Psycho,\" Janet Leigh also had a notable connection to public service through her marriage to actor Tony Curtis. While she did not hold a formal government position herself, her influence in the entertainment industry and her philanthropic efforts contributed to various charitable initiatives and community outreach programs. Therefore, while Janet Leigh was primarily known as an actress, her impact extended beyond the screen into the realm of public engagement and social responsibility. The woman who portrayed Corliss Archer in the film \"Kiss and Tell\" was the talented actress, Janet Leigh. In addition to her successful acting career, Janet Leigh later held a significant government position as the Chairperson of the California Arts Council. This role allowed her to influence and promote the arts within the state, showcasing her dedication to the cultural landscape even after her time in the film industry. The woman who portrayed Corliss Archer in the film \"Kiss and Tell\" was Janet Leigh. Beyond her successful acting career, Janet Leigh later held a significant government position as a member of the California State Parks and Recreation Commission. This role allowed her to contribute to the preservation and promotion of California's natural beauty and recreational areas, showcasing her dedication to public service alongside her achievements in the film industry. The woman who portrayed Corliss Archer in the film \"Kiss and Tell\" is Janet Leigh, a celebrated actress known for her roles in classic films. Beyond her illustrious acting career, Janet Leigh also held a significant government position. In 1987, she was appointed as a member of the California Film Commission, where she played an active role in supporting and promoting the film industry within the state. This position allowed her to contribute her extensive experience in film and entertainment to help shape policies and initiatives that would benefit filmmakers and the creative community in California.",
+          "original_query": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+          "rewritten_query": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell? The woman who portrayed Corliss Archer in the film \"Kiss and Tell\" is Janet Leigh. Beyond her successful career in Hollywood, which included iconic roles in films like \"Psycho,\" Janet Leigh also had a notable connection to public service through her marriage to actor Tony Curtis. While she did not hold a formal government position herself, her influence in the entertainment industry and her philanthropic efforts contributed to various charitable initiatives and community outreach programs. Therefore, while Janet Leigh was primarily known as an actress, her impact extended beyond the screen into the realm of public engagement and social responsibility. The woman who portrayed Corliss Archer in the film \"Kiss and Tell\" was the talented actress, Janet Leigh. In addition to her successful acting career, Janet Leigh later held a significant government position as the Chairperson of the California Arts Council. This role allowed her to influence and promote the arts within the state, showcasing her dedication to the cultural landscape even after her time in the film industry. The woman who portrayed Corliss Archer in the film \"Kiss and Tell\" was Janet Leigh. Beyond her successful acting career, Janet Leigh later held a significant government position as a member of the California State Parks and Recreation Commission. This role allowed her to contribute to the preservation and promotion of California's natural beauty and recreational areas, showcasing her dedication to public service alongside her achievements in the film industry. The woman who portrayed Corliss Archer in the film \"Kiss and Tell\" is Janet Leigh, a celebrated actress known for her roles in classic films. Beyond her illustrious acting career, Janet Leigh also held a significant government position. In 1987, she was appointed as a member of the California Film Commission, where she played an active role in supporting and promoting the film industry within the state. This position allowed her to contribute her extensive experience in film and entertainment to help shape policies and initiatives that would benefit filmmakers and the creative community in California."
+        }
+      }
+    },
+    "per_elapsed": 8.9808
+  },
+  {
+    "id": "test_3",
+    "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+    "golden_answers": [
+      "Animorphs"
+    ],
+    "pred": "Animorphs",
+    "metric_scores": {
+      "em": 1.0,
+      "f1": 1.0,
+      "acc": 1.0,
+      "recall@4": 1.0
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "f3a2b2d572ddc0cbf52ea5d7e5fb924e534be0480abc442170f6c083b65d07fd_chunk_0",
+            "contents": "Animorphs\nAnimorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic.\n\n It is told in first person, with all six main characters taking turns narrating the books through their own perspectives.\n\n Horror, war, dehumanization, sanity, morality, innocence, leadership, freedom and growing up are the core themes of the series.",
+            "metadata": {
+              "parent_id": "f3a2b2d572ddc0cbf52ea5d7e5fb924e534be0480abc442170f6c083b65d07fd",
+              "chunk_idx": 0
+            },
+            "score": 75.73458862304688
+          },
+          {
+            "id": "28e024bab6cacddbb6d7ef113c676dfdcc16af8996f82f7e937692f5e9d39517_chunk_0",
+            "contents": "The Hork-Bajir Chronicles\nThe Hork-Bajir Chronicles is the second companion book to the \"Animorphs\" series, written by K. A. Applegate.\n\n With respect to continuity within the series, it takes place before book #23, \"The Pretender\", although the events told in the story occur between the time of \"The Ellimist Chronicles\" and \"The Andalite Chronicles\".\n\n The book is introduced by Tobias, who flies to the valley of the free Hork-Bajir, where Jara Hamee tells him the story of how the Yeerks enslaved the Hork-Bajir, and how Aldrea, an Andalite, and her companion, Dak Hamee, a Hork-Bajir, tried to save their world from the invasion.\n\n Jara Hamee's story is narrated from the points of view of Aldrea, Dak Hamee, and Esplin 9466, alternating in similar fashion to the \"Megamorphs\" books.",
+            "metadata": {
+              "parent_id": "28e024bab6cacddbb6d7ef113c676dfdcc16af8996f82f7e937692f5e9d39517",
+              "chunk_idx": 0
+            },
+            "score": 61.25360107421875
+          },
+          {
+            "id": "ddc2b1103e8ee4f97c885d7808cd0d35e1075097072cf79fbe717c396112b18c_chunk_0",
+            "contents": "List of Square Enix companion books\nDozens of Square Enix companion books have been produced since 1998, when video game developer Square began to produce books that focused on artwork, developer interviews, and background information on the fictional worlds and characters in its games rather than on gameplay details.\n\n The first series of these books was the \"Perfect Works\" series, written and published by Square subsidiary DigiCube.\n\n They produced three books between 1998 and 1999 before the line was stopped in favor of the \"Ultimania\" (アルティマニア , Arutimania ) series, a portmanteau of ultimate and mania.\n\n This series of books is written by Studio BentStuff, which had previously written game guides for Square for \"Final Fantasy VII\".\n\n They were published by DigiCube until the company was dissolved in 2003.\n\n Square merged with video game publisher Enix on April 1, 2003 to form Square Enix, which resumed publication of the companion books.",
+            "metadata": {
+              "parent_id": "ddc2b1103e8ee4f97c885d7808cd0d35e1075097072cf79fbe717c396112b18c",
+              "chunk_idx": 0
+            },
+            "score": 47.743408203125
+          },
+          {
+            "id": "7208778313035d480e384d194ca2d0f0ccfc87f14abb2b43d48287059ce079ba_chunk_0",
+            "contents": "Victoria Hanley\nVictoria Hanley is an American young adult fantasy novelist.\n\n Her first three books, \"The Seer And The Sword\", \"The Healer's Keep\" and \"The Light Of The Oracle\" are companion books to one another.\n\n Her newest book (released March 2012) is the sequel of a series, called \"Indigo Magic\", published by Egmont USA.\n\n She's also published two non-fiction books through Cotton Wood Press; called \"Seize the Story: A Handbook For Teens Who Like To Write\", and \"Wild Ink: A Grownups Guide To Writing Fiction For Teens\".",
+            "metadata": {
+              "parent_id": "7208778313035d480e384d194ca2d0f0ccfc87f14abb2b43d48287059ce079ba",
+              "chunk_idx": 0
+            },
+            "score": 46.96192169189453
+          },
+          {
+            "id": "807724ce4314af6e3115bb688e731087dd9023732c48c2045b7e35532540c23c_chunk_0",
+            "contents": "Left Behind: The Kids\n\"Left Behind: The Kids (stylized as LEFT BEHIND >THE KIDS<)\" is a series written by Jerry B. Jenkins, Tim LaHaye, and Chris Fabry.\n\n The series consists of 40 short novels aimed primarily at the young adult market based on the adult series Left Behind also written by Jerry B. Jenkins.\n\n It follows a core group of teenagers as they experience the rapture and tribulation, based on scriptures found in the Bible, and background plots introduced in the adult novels.\n\n Like the adult series, the books were published by Tyndale House Publishing, and released over the 7 year period of 1997-2004.\n\n The series has sold over 11 million copies worldwide.",
+            "metadata": {
+              "parent_id": "807724ce4314af6e3115bb688e731087dd9023732c48c2045b7e35532540c23c",
+              "chunk_idx": 0
+            },
+            "score": 40.62298583984375
+          }
+        ],
+        "scores": [
+          75.73458862304688,
+          61.25360107421875,
+          47.743408203125,
+          46.96192169189453,
+          40.62298583984375
+        ],
+        "metadata": {
+          "strategy": "simple",
+          "query": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species? The series you’re referring to is likely \"The Illuminae Files\" by Amie Kaufman and Jay Kristoff. This young adult science fantasy series is told in a unique style, primarily through a mix of first-person accounts, documents, and reports, immersing readers in a futuristic universe filled with interstellar conflict and advanced technology. Complementing the main trilogy, the companion books explore the narratives of enslaved worlds and various alien species, delving deeper into the rich lore and socio-political dynamics of the universe. These companion stories not only enhance the overarching narrative but also provide insight into the experiences of marginalized groups within the galaxy, making the series a multifaceted exploration of freedom, identity, and resistance. The \"Parable of the Sower\" series by Octavia Butler is a captivating example of a science fantasy young adult series that explores themes of survival, resilience, and social justice. Told in first person, the protagonist, Lauren Olamina, navigates a dystopian future marked by societal collapse and environmental disasters. Accompanying this main series, Butler's companion works delve deeper into the lives of enslaved worlds and alien species, offering rich narratives that expand the universe and provide insight into the struggles and triumphs of marginalized groups. These companion books serve to enhance the reader's understanding of the complex dynamics at play within the series, making it a thought-provoking journey through both human and extraterrestrial experiences. The series you're looking for is the \"Parable\" series by Octavia Butler, which is often celebrated for its profound exploration of societal issues through a science fantasy lens. The narrative is primarily told in the first person, allowing readers to deeply connect with the protagonist's struggles and experiences. Alongside the main storyline, there are companion books that delve into the histories and stories of enslaved worlds and alien species, enriching the universe Butler has created. These companion works provide crucial context and highlight the themes of oppression, resilience, and the quest for freedom that resonate throughout the series, making it a powerful read for young adults and beyond. The \"Parable\" series by Octavia Butler is a notable example of science fantasy in the young adult genre that features a first-person narrative. However, for a series that specifically includes companion books focusing on enslaved worlds and alien species, one should look to \"The Expanse\" series by James S.A. Corey. Although primarily categorized as science fiction, it incorporates elements of fantasy and is rich in world-building. The series is narrated from multiple perspectives, immersing readers in the complexities of interstellar politics, societal struggles, and the plight of various alien civilizations. The companion books, such as \"The Churn\" and \"Strange Dogs,\" delve deeper into the histories of different factions and species, expanding on the themes of enslavement and resistance within the universe. These companion stories enhance the understanding of the broader narrative and the characters' motivations, making it a captivating exploration of the intersection between humanity and alien life.",
+          "original_query": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+          "rewritten_query": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species? The series you’re referring to is likely \"The Illuminae Files\" by Amie Kaufman and Jay Kristoff. This young adult science fantasy series is told in a unique style, primarily through a mix of first-person accounts, documents, and reports, immersing readers in a futuristic universe filled with interstellar conflict and advanced technology. Complementing the main trilogy, the companion books explore the narratives of enslaved worlds and various alien species, delving deeper into the rich lore and socio-political dynamics of the universe. These companion stories not only enhance the overarching narrative but also provide insight into the experiences of marginalized groups within the galaxy, making the series a multifaceted exploration of freedom, identity, and resistance. The \"Parable of the Sower\" series by Octavia Butler is a captivating example of a science fantasy young adult series that explores themes of survival, resilience, and social justice. Told in first person, the protagonist, Lauren Olamina, navigates a dystopian future marked by societal collapse and environmental disasters. Accompanying this main series, Butler's companion works delve deeper into the lives of enslaved worlds and alien species, offering rich narratives that expand the universe and provide insight into the struggles and triumphs of marginalized groups. These companion books serve to enhance the reader's understanding of the complex dynamics at play within the series, making it a thought-provoking journey through both human and extraterrestrial experiences. The series you're looking for is the \"Parable\" series by Octavia Butler, which is often celebrated for its profound exploration of societal issues through a science fantasy lens. The narrative is primarily told in the first person, allowing readers to deeply connect with the protagonist's struggles and experiences. Alongside the main storyline, there are companion books that delve into the histories and stories of enslaved worlds and alien species, enriching the universe Butler has created. These companion works provide crucial context and highlight the themes of oppression, resilience, and the quest for freedom that resonate throughout the series, making it a powerful read for young adults and beyond. The \"Parable\" series by Octavia Butler is a notable example of science fantasy in the young adult genre that features a first-person narrative. However, for a series that specifically includes companion books focusing on enslaved worlds and alien species, one should look to \"The Expanse\" series by James S.A. Corey. Although primarily categorized as science fiction, it incorporates elements of fantasy and is rich in world-building. The series is narrated from multiple perspectives, immersing readers in the complexities of interstellar politics, societal struggles, and the plight of various alien civilizations. The companion books, such as \"The Churn\" and \"Strange Dogs,\" delve deeper into the histories of different factions and species, expanding on the themes of enslavement and resistance within the universe. These companion stories enhance the understanding of the broader narrative and the characters' motivations, making it a captivating exploration of the intersection between humanity and alien life."
+        }
+      }
+    },
+    "per_elapsed": 13.2328
+  },
+  {
+    "id": "test_4",
+    "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+    "golden_answers": [
+      "no"
+    ],
+    "pred": "No.",
+    "metric_scores": {
+      "em": 1.0,
+      "f1": 1.0,
+      "acc": 1.0,
+      "recall@4": 1.0
+    },
+    "logs": {
+      "retrieval_result": {
+        "documents": [
+          {
+            "id": "e45696a7ce3276d7f032ec5b2e379887045aff382c483b5bd22984c390e6c574_chunk_0",
+            "contents": "Esma Sultan Mansion\nThe Esma Sultan Mansion (Turkish: \"Esma Sultan Yalısı\" ), a historical yalı (English: waterside mansion ) located at Bosphorus in Ortaköy neighborhood of Istanbul, Turkey and named after its original owner Esma Sultan, is used today as a cultural center after being redeveloped.",
+            "metadata": {
+              "parent_id": "e45696a7ce3276d7f032ec5b2e379887045aff382c483b5bd22984c390e6c574",
+              "chunk_idx": 0
+            },
+            "score": 112.32120513916016
+          },
+          {
+            "id": "4e34fde3d478bc36a644cfb15e082fe3571707a1e0045af76e8cc63b738160af_chunk_0",
+            "contents": "Laleli Mosque\nThe Laleli Mosque (Turkish: \"Laleli Camii, or Tulip Mosque\" ) is an 18th-century Ottoman imperial mosque located in Laleli, Fatih, Istanbul, Turkey.",
+            "metadata": {
+              "parent_id": "4e34fde3d478bc36a644cfb15e082fe3571707a1e0045af76e8cc63b738160af",
+              "chunk_idx": 0
+            },
+            "score": 78.78768157958984
+          },
+          {
+            "id": "87f4485eae276c59e629e45d5398e2e1bbba2dc26bbf685df76f0d2ba6e60aca_chunk_0",
+            "contents": "Sultan Ahmed Mosque\nThe Sultan Ahmed Mosque or Sultan Ahmet Mosque (Turkish: \"Sultan Ahmet Camii\" ) is a historic mosque located in Istanbul, Turkey.\n\n A popular tourist site, the Sultan Ahmed Mosque continues to function as a mosque today; men still kneel in prayer on the mosque's lush red carpet after the call to prayer.\n\n The Blue Mosque, as it is popularly known, was constructed between 1609 and 1616 during the rule of Ahmed I.\n\n Its Külliye contains Ahmed's tomb, a madrasah and a hospice.\n\n Hand-painted blue tiles adorn the mosque’s interior walls, and at night the mosque is bathed in blue as lights frame the mosque’s five main domes, six minarets and eight secondary domes.\n\n It sits next to the Hagia Sophia, another popular tourist site.",
+            "metadata": {
+              "parent_id": "87f4485eae276c59e629e45d5398e2e1bbba2dc26bbf685df76f0d2ba6e60aca",
+              "chunk_idx": 0
+            },
+            "score": 63.79154968261719
+          },
+          {
+            "id": "e9e3cfe9ecd0650cf9aeeb965194bdb7f7e001372bab4bec47ebfb1f2fbc1ee8_chunk_0",
+            "contents": "Djamaâ el Kebir\nThe Great Mosque of Algiers (Arabic: الجامع الكبير‎ ‎ , \"Jemaa Kebir\") or “Djama’a al-Kebir” (meaning Great Mosque) is a mosque in Algiers, Algeria, located very close to Algiers Harbor.\n\n An inscription on the minbar (منبر) or the pulpit testifies to fact that the mosque was built in 1097.\n\n It is also known by several other names such as Grand Mosque d'Alger, Djamaa al-Kebir, El Kebir Mosque and Jami Masjid.\n\n It is one of the few remaining examples of Almoravid architecture.\n\n It is the oldest mosque in Algiers and is said to be the oldest mosque in Algeria after Sidi Okba Mosque.\n\n It was built under sultan Ali ibn Yusuf.\n\n Its minaret dates from 1332 (1324 in some sources) and was built by the Ziyyanid Sultan of Tlemcen.\n\n The gallery at the outside of the mosque was built in 1840.\n\n Its construction was a consequence of a complete reconstruction of the street by the French.",
+            "metadata": {
+              "parent_id": "e9e3cfe9ecd0650cf9aeeb965194bdb7f7e001372bab4bec47ebfb1f2fbc1ee8",
+              "chunk_idx": 0
+            },
+            "score": 44.86338806152344
+          },
+          {
+            "id": "68c99ff83308fcbfb9f051305ffb9629a8a17b43febb01cf40603dcff15c1ca5_chunk_0",
+            "contents": "Esma Sultan\nEsma Sultan is the name of three daughters of three Ottoman Sultans:",
+            "metadata": {
+              "parent_id": "68c99ff83308fcbfb9f051305ffb9629a8a17b43febb01cf40603dcff15c1ca5",
+              "chunk_idx": 0
+            },
+            "score": 22.922761917114258
+          }
+        ],
+        "scores": [
+          112.32120513916016,
+          78.78768157958984,
+          63.79154968261719,
+          44.86338806152344,
+          22.922761917114258
+        ],
+        "metadata": {
+          "strategy": "simple",
+          "query": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood? The Laleli Mosque and Esma Sultan Mansion are not located in the same neighborhood. The Laleli Mosque is situated in the Laleli district of Istanbul, known for its vibrant atmosphere and historical significance. In contrast, Esma Sultan Mansion is located in the Beşiktaş district, which is a more upscale area along the Bosphorus. While both landmarks are prominent in Istanbul and reflect the city's rich cultural heritage, they are distinct and separated by several kilometers, each contributing to the diverse tapestry of neighborhoods in this historic city. The Laleli Mosque and Esma Sultan Mansion are both situated in Istanbul, Turkey, but they are not located in the same neighborhood. The Laleli Mosque is found in the Laleli district, which is known for its vibrant atmosphere and historical significance. On the other hand, Esma Sultan Mansion is located in the Ortaköy area, famous for its picturesque views of the Bosphorus and its lively waterfront. While both sites are part of Istanbul's rich cultural heritage, they belong to different neighborhoods, each offering a unique experience to visitors. The Laleli Mosque and Esma Sultan Mansion are not located in the same neighborhood. The Laleli Mosque, an important historical site, is situated in the Laleli district of Istanbul, known for its vibrant atmosphere and proximity to various shopping areas and cafes. On the other hand, the Esma Sultan Mansion is located in the Ortaköy neighborhood, which is famous for its picturesque views along the Bosphorus and its lively waterfront scene. While both sites are significant cultural landmarks in Istanbul, they are distinct and separated by several kilometers, reflecting the diverse character of the city's neighborhoods. The Laleli Mosque and Esma Sultan Mansion are not located in the same neighborhood. The Laleli Mosque, an important historical site, is situated in the Laleli district of Istanbul, known for its vibrant market and architectural heritage. In contrast, the Esma Sultan Mansion is located in the Ortaköy neighborhood, which is famous for its picturesque waterfront views along the Bosphorus and its lively social scene. While both sites are notable landmarks in Istanbul, they belong to different areas, each with its unique charm and attractions.",
+          "original_query": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+          "rewritten_query": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood? The Laleli Mosque and Esma Sultan Mansion are not located in the same neighborhood. The Laleli Mosque is situated in the Laleli district of Istanbul, known for its vibrant atmosphere and historical significance. In contrast, Esma Sultan Mansion is located in the Beşiktaş district, which is a more upscale area along the Bosphorus. While both landmarks are prominent in Istanbul and reflect the city's rich cultural heritage, they are distinct and separated by several kilometers, each contributing to the diverse tapestry of neighborhoods in this historic city. The Laleli Mosque and Esma Sultan Mansion are both situated in Istanbul, Turkey, but they are not located in the same neighborhood. The Laleli Mosque is found in the Laleli district, which is known for its vibrant atmosphere and historical significance. On the other hand, Esma Sultan Mansion is located in the Ortaköy area, famous for its picturesque views of the Bosphorus and its lively waterfront. While both sites are part of Istanbul's rich cultural heritage, they belong to different neighborhoods, each offering a unique experience to visitors. The Laleli Mosque and Esma Sultan Mansion are not located in the same neighborhood. The Laleli Mosque, an important historical site, is situated in the Laleli district of Istanbul, known for its vibrant atmosphere and proximity to various shopping areas and cafes. On the other hand, the Esma Sultan Mansion is located in the Ortaköy neighborhood, which is famous for its picturesque views along the Bosphorus and its lively waterfront scene. While both sites are significant cultural landmarks in Istanbul, they are distinct and separated by several kilometers, reflecting the diverse character of the city's neighborhoods. The Laleli Mosque and Esma Sultan Mansion are not located in the same neighborhood. The Laleli Mosque, an important historical site, is situated in the Laleli district of Istanbul, known for its vibrant market and architectural heritage. In contrast, the Esma Sultan Mansion is located in the Ortaköy neighborhood, which is famous for its picturesque waterfront views along the Bosphorus and its lively social scene. While both sites are notable landmarks in Istanbul, they belong to different areas, each with its unique charm and attractions."
+        }
+      }
+    },
+    "per_elapsed": 9.156
+  }
+]

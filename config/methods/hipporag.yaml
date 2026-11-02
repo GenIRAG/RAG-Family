@@ -1,0 +1,34 @@
+index:
+  paths:
+    graph_index_path: "indexes/storage/hipporag_hotpot_hippo"
+    index_path: "indexes/storage/HFEncoder_hotpot_hippo_c1200_flat"
+
+inference:
+  ppr:
+    ppr_top_k: 5
+    ppr_damping: 0.1
+    use_node_specificity: true
+
+roles:
+  retriever:
+    HFEncoder:
+      top_k: 5
+  reasoner:
+    OpenAIGenerator:
+      entity_llm:
+        max_tokens: 256
+        temperature: 0.0
+      answer_reasoner:
+        prompt_name: "hipporag_qa"
+        answer_prefix: "Answer: "
+        max_tokens: 256
+        temperature: 0.0
+
+evaluation:
+  data_file: "data/evalute/hotpot_hippotest.jsonl"
+  sample_num: 4
+  random_sample: false
+  metrics:
+    - "em"
+    - "f1"
+    - "acc"

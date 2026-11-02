@@ -1,0 +1,32 @@
+index:
+  paths:
+    graph_index_path: "indexes/storage/graphrag_hotpot_hippo"
+
+inference:
+  graphrag:
+    level: 2
+    response_type: "A short answer only. Return only the final answer, with no explanation or extra text."
+    local_max_token_for_text_unit: 4000
+    local_max_token_for_community_report: 3200
+    local_community_single_one: false
+    max_token_for_local_context: 4800
+    global_min_community_rating: 0
+    global_max_consider_community: 512
+    global_max_token_for_community_report: 16384
+
+roles:
+  reasoner:
+    OpenAIGenerator:
+    
+      prompt_name: "graphrag_global_reduce_qa"
+      max_tokens: 256
+      temperature: 0.0
+
+evaluation:
+  data_file: "data/evalute/hotpot_hippotest.jsonl"
+  sample_num: 4
+  random_sample: false
+  metrics:
+    - "em"
+    - "f1"
+    - "acc"

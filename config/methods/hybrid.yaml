@@ -1,0 +1,34 @@
+index:
+  paths:
+    bm25_index_path: "indexes/storage/BM25Model_hotpot_hippo_c1200"
+    dense_index_path: "indexes/storage/HFEncoder_hotpot_hippo_c1200_flat"
+
+inference:
+  hybrid:
+    rrf_k: 60
+    retrieve_top_k: 10
+    return_top_k: 5
+
+roles:
+  retriever:
+    BM25Model:
+      top_k: 5
+    HFEncoder:
+      top_k: 5
+  reasoner:
+    OpenAIGenerator:
+      prompt_name: "naive_rag"
+      max_tokens: 256
+      temperature: 0.0
+
+evaluation:
+  data_file: "data/evalute/hotpot_hippotest.jsonl"
+  sample_num: 4
+  random_sample: false
+  metrics:
+    - "em"
+    - "f1"
+    - "acc"
+    - "recall@4"
+
+

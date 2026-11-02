@@ -1,0 +1,1100 @@
+{
+  "2": {
+    "level": 0,
+    "title": "Cluster 2",
+    "edges": [
+      [
+        "2012",
+        "sinister"
+      ],
+      [
+        "american",
+        "scott derrickson"
+      ],
+      [
+        "c  robert cargill",
+        "sinister"
+      ],
+      [
+        "deliver us from evil",
+        "scott derrickson"
+      ],
+      [
+        "doctor strange",
+        "scott derrickson"
+      ],
+      [
+        "ellison oswalt",
+        "ethan hawke"
+      ],
+      [
+        "ellison oswalt",
+        "home movies"
+      ],
+      [
+        "ethan hawke",
+        "sinister"
+      ],
+      [
+        "horror films",
+        "scott derrickson"
+      ],
+      [
+        "los angeles",
+        "scott derrickson"
+      ],
+      [
+        "love in the ruins",
+        "scott derrickson"
+      ],
+      [
+        "marvel cinematic universe",
+        "scott derrickson"
+      ],
+      [
+        "scott derrickson",
+        "sinister"
+      ],
+      [
+        "scott derrickson",
+        "the exorcism of emily rose"
+      ],
+      [
+        "scott derrickson",
+        "tyler bates"
+      ]
+    ],
+    "nodes": [
+      "2012",
+      "american",
+      "c  robert cargill",
+      "ellison oswalt",
+      "ethan hawke",
+      "home movies",
+      "horror films",
+      "scott derrickson",
+      "sinister",
+      "the exorcism of emily rose"
+    ],
+    "chunk_ids": [
+      "26fc9b7ced3ead7e3ff3c97acaa6a70cbaaf1101f57232d7c3764606a31e1ef8_chunk_0",
+      "34b72246a9d3f37981adbdbe53e097d9ec79fd7cf222a44df679a6b8f03b1054_chunk_0",
+      "5d29ea3f8dcc653be39a1e512b9582c4d7bbf653492276abc758067339073f3f_chunk_0",
+      "dd3bb12dcd55a06387ec7e3b80dcf4fabc34c4af086ea1143f447d2f60edf3c6_chunk_0",
+      "e4289d8c558d892cd978d0a940821856d3a5e77b860d585eda30c9f18ebc0500_chunk_0",
+      "f22e802bcc30dca6103d3911bba8904f9db4a4f3aaccfb4d5c10714d4f5e89ea_chunk_0"
+    ],
+    "occurrence": 1.0,
+    "sub_communities": [
+      "10",
+      "11",
+      "12"
+    ]
+  },
+  "11": {
+    "level": 1,
+    "title": "Cluster 11",
+    "edges": [
+      [
+        "american",
+        "scott derrickson"
+      ],
+      [
+        "deliver us from evil",
+        "scott derrickson"
+      ],
+      [
+        "doctor strange",
+        "scott derrickson"
+      ],
+      [
+        "horror films",
+        "scott derrickson"
+      ],
+      [
+        "los angeles",
+        "scott derrickson"
+      ],
+      [
+        "love in the ruins",
+        "scott derrickson"
+      ],
+      [
+        "marvel cinematic universe",
+        "scott derrickson"
+      ],
+      [
+        "scott derrickson",
+        "sinister"
+      ],
+      [
+        "scott derrickson",
+        "the exorcism of emily rose"
+      ],
+      [
+        "scott derrickson",
+        "tyler bates"
+      ]
+    ],
+    "nodes": [
+      "american",
+      "horror films",
+      "scott derrickson",
+      "the exorcism of emily rose"
+    ],
+    "chunk_ids": [
+      "26fc9b7ced3ead7e3ff3c97acaa6a70cbaaf1101f57232d7c3764606a31e1ef8_chunk_0",
+      "34b72246a9d3f37981adbdbe53e097d9ec79fd7cf222a44df679a6b8f03b1054_chunk_0",
+      "5d29ea3f8dcc653be39a1e512b9582c4d7bbf653492276abc758067339073f3f_chunk_0",
+      "dd3bb12dcd55a06387ec7e3b80dcf4fabc34c4af086ea1143f447d2f60edf3c6_chunk_0",
+      "e4289d8c558d892cd978d0a940821856d3a5e77b860d585eda30c9f18ebc0500_chunk_0",
+      "f22e802bcc30dca6103d3911bba8904f9db4a4f3aaccfb4d5c10714d4f5e89ea_chunk_0"
+    ],
+    "occurrence": 1.0,
+    "sub_communities": []
+  },
+  "5": {
+    "level": 0,
+    "title": "Cluster 5",
+    "edges": [
+      [
+        "california",
+        "los angeles"
+      ],
+      [
+        "charles craft",
+        "flipper s new adventure"
+      ],
+      [
+        "charles craft",
+        "hampshire"
+      ],
+      [
+        "charles craft",
+        "highway patrol"
+      ],
+      [
+        "charles craft",
+        "hollywood"
+      ],
+      [
+        "charles craft",
+        "los angeles"
+      ],
+      [
+        "charles craft",
+        "meet corliss archer"
+      ],
+      [
+        "charles craft",
+        "painting the town"
+      ],
+      [
+        "charles craft",
+        "racket squad"
+      ],
+      [
+        "charles craft",
+        "science fiction theatre"
+      ],
+      [
+        "charles craft",
+        "sea hunt"
+      ],
+      [
+        "flipper",
+        "flipper s new adventure"
+      ],
+      [
+        "lloyd bridges",
+        "sea hunt"
+      ],
+      [
+        "los angeles",
+        "scott derrickson"
+      ]
+    ],
+    "nodes": [
+      "california",
+      "charles craft",
+      "flipper",
+      "flipper s new adventure",
+      "hampshire",
+      "highway patrol",
+      "hollywood",
+      "lloyd bridges",
+      "los angeles",
+      "painting the town",
+      "racket squad",
+      "science fiction theatre",
+      "sea hunt"
+    ],
+    "chunk_ids": [
+      "34b72246a9d3f37981adbdbe53e097d9ec79fd7cf222a44df679a6b8f03b1054_chunk_0",
+      "a4f325b4459f7eacbe175ec955d8f348a715983f9a95f141d1d6517125d10c30_chunk_0"
+    ],
+    "occurrence": 0.3333333333333333,
+    "sub_communities": [
+      "15",
+      "16",
+      "17",
+      "18"
+    ]
+  },
+  "15": {
+    "level": 1,
+    "title": "Cluster 15",
+    "edges": [
+      [
+        "california",
+        "los angeles"
+      ],
+      [
+        "charles craft",
+        "los angeles"
+      ],
+      [
+        "los angeles",
+        "scott derrickson"
+      ]
+    ],
+    "nodes": [
+      "california",
+      "los angeles"
+    ],
+    "chunk_ids": [
+      "34b72246a9d3f37981adbdbe53e097d9ec79fd7cf222a44df679a6b8f03b1054_chunk_0",
+      "a4f325b4459f7eacbe175ec955d8f348a715983f9a95f141d1d6517125d10c30_chunk_0"
+    ],
+    "occurrence": 0.3333333333333333,
+    "sub_communities": []
+  },
+  "10": {
+    "level": 1,
+    "title": "Cluster 10",
+    "edges": [
+      [
+        "2012",
+        "sinister"
+      ],
+      [
+        "c  robert cargill",
+        "sinister"
+      ],
+      [
+        "ethan hawke",
+        "sinister"
+      ],
+      [
+        "scott derrickson",
+        "sinister"
+      ]
+    ],
+    "nodes": [
+      "2012",
+      "c  robert cargill",
+      "sinister"
+    ],
+    "chunk_ids": [
+      "34b72246a9d3f37981adbdbe53e097d9ec79fd7cf222a44df679a6b8f03b1054_chunk_0",
+      "e4289d8c558d892cd978d0a940821856d3a5e77b860d585eda30c9f18ebc0500_chunk_0"
+    ],
+    "occurrence": 0.3333333333333333,
+    "sub_communities": []
+  },
+  "4": {
+    "level": 0,
+    "title": "Cluster 4",
+    "edges": [
+      [
+        "2014",
+        "deliver us from evil"
+      ],
+      [
+        "beware the night",
+        "deliver us from evil"
+      ],
+      [
+        "deliver us from evil",
+        "dgar ram rez"
+      ],
+      [
+        "deliver us from evil",
+        "eric bana"
+      ],
+      [
+        "deliver us from evil",
+        "horror film"
+      ],
+      [
+        "deliver us from evil",
+        "jerry bruckheimer"
+      ],
+      [
+        "deliver us from evil",
+        "joel mchale"
+      ],
+      [
+        "deliver us from evil",
+        "lisa collier cool"
+      ],
+      [
+        "deliver us from evil",
+        "olivia munn"
+      ],
+      [
+        "deliver us from evil",
+        "ralph sarchie"
+      ],
+      [
+        "deliver us from evil",
+        "scott derrickson"
+      ],
+      [
+        "deliver us from evil",
+        "sean harris"
+      ]
+    ],
+    "nodes": [
+      "2014",
+      "beware the night",
+      "deliver us from evil",
+      "dgar ram rez",
+      "eric bana",
+      "horror film",
+      "jerry bruckheimer",
+      "joel mchale",
+      "lisa collier cool",
+      "olivia munn",
+      "ralph sarchie",
+      "sean harris"
+    ],
+    "chunk_ids": [
+      "34b72246a9d3f37981adbdbe53e097d9ec79fd7cf222a44df679a6b8f03b1054_chunk_0",
+      "f22e802bcc30dca6103d3911bba8904f9db4a4f3aaccfb4d5c10714d4f5e89ea_chunk_0"
+    ],
+    "occurrence": 0.3333333333333333,
+    "sub_communities": []
+  },
+  "0": {
+    "level": 0,
+    "title": "Cluster 0",
+    "edges": [
+      [
+        "2016",
+        "doctor strange"
+      ],
+      [
+        "benedict cumberbatch",
+        "doctor strange"
+      ],
+      [
+        "benedict wong",
+        "doctor strange"
+      ],
+      [
+        "benjamin bratt",
+        "doctor strange"
+      ],
+      [
+        "chiwetel ejiofor",
+        "doctor strange"
+      ],
+      [
+        "doctor strange",
+        "mads mikkelsen"
+      ],
+      [
+        "doctor strange",
+        "marvel cinematic universe"
+      ],
+      [
+        "doctor strange",
+        "marvel studios"
+      ],
+      [
+        "doctor strange",
+        "michael stuhlbarg"
+      ],
+      [
+        "doctor strange",
+        "rachel mcadams"
+      ],
+      [
+        "doctor strange",
+        "scott adkins"
+      ],
+      [
+        "doctor strange",
+        "scott derrickson"
+      ],
+      [
+        "doctor strange",
+        "stephen strange"
+      ],
+      [
+        "doctor strange",
+        "tilda swinton"
+      ],
+      [
+        "doctor strange",
+        "walt disney studios motion pictures"
+      ],
+      [
+        "marvel cinematic universe",
+        "scott derrickson"
+      ]
+    ],
+    "nodes": [
+      "2016",
+      "benedict cumberbatch",
+      "benedict wong",
+      "benjamin bratt",
+      "chiwetel ejiofor",
+      "doctor strange",
+      "mads mikkelsen",
+      "marvel cinematic universe",
+      "marvel studios",
+      "michael stuhlbarg",
+      "rachel mcadams",
+      "scott adkins",
+      "stephen strange",
+      "tilda swinton",
+      "walt disney studios motion pictures"
+    ],
+    "chunk_ids": [
+      "34b72246a9d3f37981adbdbe53e097d9ec79fd7cf222a44df679a6b8f03b1054_chunk_0",
+      "5d29ea3f8dcc653be39a1e512b9582c4d7bbf653492276abc758067339073f3f_chunk_0"
+    ],
+    "occurrence": 0.3333333333333333,
+    "sub_communities": []
+  },
+  "1": {
+    "level": 0,
+    "title": "Cluster 1",
+    "edges": [
+      [
+        "300",
+        "tyler bates"
+      ],
+      [
+        "action and horror genres",
+        "marilyn manson"
+      ],
+      [
+        "action and horror genres",
+        "tyler bates"
+      ],
+      [
+        "dawn of the dead",
+        "tyler bates"
+      ],
+      [
+        "film scoring",
+        "tyler bates"
+      ],
+      [
+        "guardians of the galaxy",
+        "james gunn"
+      ],
+      [
+        "guardians of the galaxy vol  2",
+        "james gunn"
+      ],
+      [
+        "heaven upside down",
+        "marilyn manson"
+      ],
+      [
+        "james gunn",
+        "tyler bates"
+      ],
+      [
+        "john wick",
+        "tyler bates"
+      ],
+      [
+        "marilyn manson",
+        "the pale emperor"
+      ],
+      [
+        "marilyn manson",
+        "tyler bates"
+      ],
+      [
+        "music production",
+        "tyler bates"
+      ],
+      [
+        "neil marshall",
+        "tyler bates"
+      ],
+      [
+        "rob zombie",
+        "tyler bates"
+      ],
+      [
+        "scott derrickson",
+        "tyler bates"
+      ],
+      [
+        "sucker punch",
+        "tyler bates"
+      ],
+      [
+        "tyler bates",
+        "william friedkin"
+      ],
+      [
+        "tyler bates",
+        "zack snyder"
+      ]
+    ],
+    "nodes": [
+      "300",
+      "action and horror genres",
+      "dawn of the dead",
+      "film scoring",
+      "guardians of the galaxy",
+      "guardians of the galaxy vol  2",
+      "heaven upside down",
+      "james gunn",
+      "john wick",
+      "marilyn manson",
+      "music production",
+      "neil marshall",
+      "rob zombie",
+      "sucker punch",
+      "the pale emperor",
+      "tyler bates",
+      "william friedkin",
+      "zack snyder"
+    ],
+    "chunk_ids": [
+      "26fc9b7ced3ead7e3ff3c97acaa6a70cbaaf1101f57232d7c3764606a31e1ef8_chunk_0"
+    ],
+    "occurrence": 0.16666666666666666,
+    "sub_communities": [
+      "7",
+      "8",
+      "9"
+    ]
+  },
+  "7": {
+    "level": 1,
+    "title": "Cluster 7",
+    "edges": [
+      [
+        "300",
+        "tyler bates"
+      ],
+      [
+        "action and horror genres",
+        "tyler bates"
+      ],
+      [
+        "dawn of the dead",
+        "tyler bates"
+      ],
+      [
+        "film scoring",
+        "tyler bates"
+      ],
+      [
+        "james gunn",
+        "tyler bates"
+      ],
+      [
+        "john wick",
+        "tyler bates"
+      ],
+      [
+        "marilyn manson",
+        "tyler bates"
+      ],
+      [
+        "music production",
+        "tyler bates"
+      ],
+      [
+        "neil marshall",
+        "tyler bates"
+      ],
+      [
+        "rob zombie",
+        "tyler bates"
+      ],
+      [
+        "scott derrickson",
+        "tyler bates"
+      ],
+      [
+        "sucker punch",
+        "tyler bates"
+      ],
+      [
+        "tyler bates",
+        "william friedkin"
+      ],
+      [
+        "tyler bates",
+        "zack snyder"
+      ]
+    ],
+    "nodes": [
+      "300",
+      "dawn of the dead",
+      "film scoring",
+      "john wick",
+      "music production",
+      "neil marshall",
+      "rob zombie",
+      "sucker punch",
+      "tyler bates",
+      "william friedkin",
+      "zack snyder"
+    ],
+    "chunk_ids": [
+      "26fc9b7ced3ead7e3ff3c97acaa6a70cbaaf1101f57232d7c3764606a31e1ef8_chunk_0"
+    ],
+    "occurrence": 0.16666666666666666,
+    "sub_communities": []
+  },
+  "9": {
+    "level": 1,
+    "title": "Cluster 9",
+    "edges": [
+      [
+        "guardians of the galaxy",
+        "james gunn"
+      ],
+      [
+        "guardians of the galaxy vol  2",
+        "james gunn"
+      ],
+      [
+        "james gunn",
+        "tyler bates"
+      ]
+    ],
+    "nodes": [
+      "guardians of the galaxy",
+      "guardians of the galaxy vol  2",
+      "james gunn"
+    ],
+    "chunk_ids": [
+      "26fc9b7ced3ead7e3ff3c97acaa6a70cbaaf1101f57232d7c3764606a31e1ef8_chunk_0"
+    ],
+    "occurrence": 0.16666666666666666,
+    "sub_communities": []
+  },
+  "8": {
+    "level": 1,
+    "title": "Cluster 8",
+    "edges": [
+      [
+        "action and horror genres",
+        "marilyn manson"
+      ],
+      [
+        "action and horror genres",
+        "tyler bates"
+      ],
+      [
+        "heaven upside down",
+        "marilyn manson"
+      ],
+      [
+        "marilyn manson",
+        "the pale emperor"
+      ],
+      [
+        "marilyn manson",
+        "tyler bates"
+      ]
+    ],
+    "nodes": [
+      "action and horror genres",
+      "heaven upside down",
+      "marilyn manson",
+      "the pale emperor"
+    ],
+    "chunk_ids": [
+      "26fc9b7ced3ead7e3ff3c97acaa6a70cbaaf1101f57232d7c3764606a31e1ef8_chunk_0"
+    ],
+    "occurrence": 0.16666666666666666,
+    "sub_communities": []
+  },
+  "6": {
+    "level": 0,
+    "title": "Cluster 6",
+    "edges": [
+      [
+        "adam collis",
+        "duke university"
+      ],
+      [
+        "adam collis",
+        "hundred percent"
+      ],
+      [
+        "adam collis",
+        "love in the ruins"
+      ],
+      [
+        "adam collis",
+        "university of california  los angeles"
+      ],
+      [
+        "adam collis",
+        "university of southern california"
+      ],
+      [
+        "eric koyanagi",
+        "hundred percent"
+      ],
+      [
+        "love in the ruins",
+        "scott derrickson"
+      ]
+    ],
+    "nodes": [
+      "adam collis",
+      "duke university",
+      "eric koyanagi",
+      "hundred percent",
+      "love in the ruins",
+      "university of california  los angeles",
+      "university of southern california"
+    ],
+    "chunk_ids": [
+      "dd3bb12dcd55a06387ec7e3b80dcf4fabc34c4af086ea1143f447d2f60edf3c6_chunk_0"
+    ],
+    "occurrence": 0.16666666666666666,
+    "sub_communities": []
+  },
+  "12": {
+    "level": 1,
+    "title": "Cluster 12",
+    "edges": [
+      [
+        "ellison oswalt",
+        "ethan hawke"
+      ],
+      [
+        "ellison oswalt",
+        "home movies"
+      ],
+      [
+        "ethan hawke",
+        "sinister"
+      ]
+    ],
+    "nodes": [
+      "ellison oswalt",
+      "ethan hawke",
+      "home movies"
+    ],
+    "chunk_ids": [
+      "e4289d8c558d892cd978d0a940821856d3a5e77b860d585eda30c9f18ebc0500_chunk_0"
+    ],
+    "occurrence": 0.16666666666666666,
+    "sub_communities": []
+  },
+  "3": {
+    "level": 0,
+    "title": "Cluster 3",
+    "edges": [
+      [
+        "american television sitcom",
+        "meet corliss archer"
+      ],
+      [
+        "april 1954",
+        "meet corliss archer"
+      ],
+      [
+        "august 10  1951",
+        "meet corliss archer"
+      ],
+      [
+        "charles craft",
+        "meet corliss archer"
+      ],
+      [
+        "december 1954",
+        "meet corliss archer"
+      ],
+      [
+        "janet waldo",
+        "josie"
+      ],
+      [
+        "janet waldo",
+        "josie and the pussycats"
+      ],
+      [
+        "janet waldo",
+        "judy jetson"
+      ],
+      [
+        "janet waldo",
+        "meet corliss archer"
+      ],
+      [
+        "janet waldo",
+        "nancy"
+      ],
+      [
+        "janet waldo",
+        "penelope pitstop"
+      ],
+      [
+        "janet waldo",
+        "shazzan"
+      ],
+      [
+        "janet waldo",
+        "the jetsons"
+      ],
+      [
+        "july 13  1951",
+        "meet corliss archer"
+      ]
+    ],
+    "nodes": [
+      "american television sitcom",
+      "april 1954",
+      "august 10  1951",
+      "december 1954",
+      "janet waldo",
+      "josie",
+      "josie and the pussycats",
+      "judy jetson",
+      "july 13  1951",
+      "meet corliss archer",
+      "nancy",
+      "penelope pitstop",
+      "shazzan",
+      "the jetsons"
+    ],
+    "chunk_ids": [
+      "1457313bbd3b7a24221bc943c2c0882a6bd10515d770c3ad58aa49a0ed246d35_chunk_0",
+      "856aba870c38b3c264537c83e33a879ef3939735e3735df5eaf7a6f4c1ae7cbf_chunk_0",
+      "a4f325b4459f7eacbe175ec955d8f348a715983f9a95f141d1d6517125d10c30_chunk_0"
+    ],
+    "occurrence": 0.5,
+    "sub_communities": [
+      "13",
+      "14"
+    ]
+  },
+  "14": {
+    "level": 1,
+    "title": "Cluster 14",
+    "edges": [
+      [
+        "janet waldo",
+        "josie"
+      ],
+      [
+        "janet waldo",
+        "josie and the pussycats"
+      ],
+      [
+        "janet waldo",
+        "judy jetson"
+      ],
+      [
+        "janet waldo",
+        "meet corliss archer"
+      ],
+      [
+        "janet waldo",
+        "nancy"
+      ],
+      [
+        "janet waldo",
+        "penelope pitstop"
+      ],
+      [
+        "janet waldo",
+        "shazzan"
+      ],
+      [
+        "janet waldo",
+        "the jetsons"
+      ]
+    ],
+    "nodes": [
+      "janet waldo",
+      "josie",
+      "josie and the pussycats",
+      "judy jetson",
+      "nancy",
+      "penelope pitstop",
+      "shazzan",
+      "the jetsons"
+    ],
+    "chunk_ids": [
+      "856aba870c38b3c264537c83e33a879ef3939735e3735df5eaf7a6f4c1ae7cbf_chunk_0"
+    ],
+    "occurrence": 0.16666666666666666,
+    "sub_communities": []
+  },
+  "13": {
+    "level": 1,
+    "title": "Cluster 13",
+    "edges": [
+      [
+        "american television sitcom",
+        "meet corliss archer"
+      ],
+      [
+        "april 1954",
+        "meet corliss archer"
+      ],
+      [
+        "august 10  1951",
+        "meet corliss archer"
+      ],
+      [
+        "charles craft",
+        "meet corliss archer"
+      ],
+      [
+        "december 1954",
+        "meet corliss archer"
+      ],
+      [
+        "janet waldo",
+        "meet corliss archer"
+      ],
+      [
+        "july 13  1951",
+        "meet corliss archer"
+      ]
+    ],
+    "nodes": [
+      "american television sitcom",
+      "april 1954",
+      "august 10  1951",
+      "december 1954",
+      "july 13  1951",
+      "meet corliss archer"
+    ],
+    "chunk_ids": [
+      "1457313bbd3b7a24221bc943c2c0882a6bd10515d770c3ad58aa49a0ed246d35_chunk_0",
+      "856aba870c38b3c264537c83e33a879ef3939735e3735df5eaf7a6f4c1ae7cbf_chunk_0",
+      "a4f325b4459f7eacbe175ec955d8f348a715983f9a95f141d1d6517125d10c30_chunk_0"
+    ],
+    "occurrence": 0.5,
+    "sub_communities": []
+  },
+  "16": {
+    "level": 1,
+    "title": "Cluster 16",
+    "edges": [
+      [
+        "charles craft",
+        "flipper s new adventure"
+      ],
+      [
+        "charles craft",
+        "hampshire"
+      ],
+      [
+        "charles craft",
+        "highway patrol"
+      ],
+      [
+        "charles craft",
+        "hollywood"
+      ],
+      [
+        "charles craft",
+        "los angeles"
+      ],
+      [
+        "charles craft",
+        "meet corliss archer"
+      ],
+      [
+        "charles craft",
+        "painting the town"
+      ],
+      [
+        "charles craft",
+        "racket squad"
+      ],
+      [
+        "charles craft",
+        "science fiction theatre"
+      ],
+      [
+        "charles craft",
+        "sea hunt"
+      ]
+    ],
+    "nodes": [
+      "charles craft",
+      "hampshire",
+      "highway patrol",
+      "hollywood",
+      "painting the town",
+      "racket squad",
+      "science fiction theatre"
+    ],
+    "chunk_ids": [
+      "a4f325b4459f7eacbe175ec955d8f348a715983f9a95f141d1d6517125d10c30_chunk_0"
+    ],
+    "occurrence": 0.16666666666666666,
+    "sub_communities": []
+  },
+  "18": {
+    "level": 1,
+    "title": "Cluster 18",
+    "edges": [
+      [
+        "charles craft",
+        "sea hunt"
+      ],
+      [
+        "lloyd bridges",
+        "sea hunt"
+      ]
+    ],
+    "nodes": [
+      "lloyd bridges",
+      "sea hunt"
+    ],
+    "chunk_ids": [
+      "a4f325b4459f7eacbe175ec955d8f348a715983f9a95f141d1d6517125d10c30_chunk_0"
+    ],
+    "occurrence": 0.16666666666666666,
+    "sub_communities": []
+  },
+  "17": {
+    "level": 1,
+    "title": "Cluster 17",
+    "edges": [
+      [
+        "charles craft",
+        "flipper s new adventure"
+      ],
+      [
+        "flipper",
+        "flipper s new adventure"
+      ]
+    ],
+    "nodes": [
+      "flipper",
+      "flipper s new adventure"
+    ],
+    "chunk_ids": [
+      "a4f325b4459f7eacbe175ec955d8f348a715983f9a95f141d1d6517125d10c30_chunk_0"
+    ],
+    "occurrence": 0.16666666666666666,
+    "sub_communities": []
+  }
+}

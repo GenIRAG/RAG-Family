@@ -1,0 +1,693 @@
+[
+  {
+    "id": "test_0",
+    "question": "What is the cause of death of director of film Vrijdag?",
+    "golden_answers": [
+      "Euthanasia",
+      "euthanasia"
+    ],
+    "pred": "euthanasia",
+    "metric_scores": {
+      "f1": 1.0,
+      "plan_score": 1.0,
+      "step_score": 1.0,
+      "pse_g": 1.0
+    },
+    "logs": {
+      "type": "Bridge",
+      "predicted_plan": {
+        "Q1": [
+          "Who is the director of the film Vrijdag?",
+          "<A1>"
+        ],
+        "Q2": [
+          "What is the cause of death of <A1>?",
+          "<A2>"
+        ]
+      },
+      "have_candidate": "[SINGLE]",
+      "intermediate_logs": {
+        "Q1_1": {
+          "template": "Who is the director of the film Vrijdag?",
+          "previous": [],
+          "query": "Who is the director of the film Vrijdag?",
+          "rewrite_query": null,
+          "supports": [
+            {
+              "title": "Vrijdag",
+              "contents": "Vrijdag (Dutch for \"Friday\") is a 1980 Belgian-Dutch drama film directed by Hugo Claus, based on his 1969 play (a \"classic\" Dutch play)."
+            },
+            {
+              "title": "H. R. Bhargava",
+              "contents": "Hunsur Ramachandra Bhagyachandra , known mononymously as Bhargava, is an Indian film director who worked primarily in Kannada cinema."
+            },
+            {
+              "title": "Khoa Do",
+              "contents": "Đỗ Khoa\"), is a film director, screenwriter, professional speaker and philanthropist who received the Young Australian of the Year Award in 2005."
+            },
+            {
+              "title": "P. Neelakantan",
+              "contents": "Palaniyaandi Neelakantan (2 October 1916 Villupuram – 3 September 1992 Chennai) was a Tamil film director, who was active for nearly four decades."
+            },
+            {
+              "title": "Kamal G",
+              "contents": "Kamal G (born 22 July 1989) is an Indian film director, film editor and film producer from Kovilpatti in Thoothukudi District, Tamil Nadu, who works in the South Indian film industry."
+            }
+          ],
+          "tag": "<A1>",
+          "answer": "Hugo Claus"
+        },
+        "Q2_1": {
+          "template": "What is the cause of death of <A1>?",
+          "previous": [
+            "Q1"
+          ],
+          "query": "What is the cause of death of Hugo Claus?",
+          "rewrite_query": null,
+          "supports": [
+            {
+              "title": "Hugo Claus",
+              "contents": "His death by euthanasia, which is legal in Belgium, led to considerable controversy."
+            },
+            {
+              "title": "Vrijdag",
+              "contents": "Vrijdag (Dutch for \"Friday\") is a 1980 Belgian-Dutch drama film directed by Hugo Claus, based on his 1969 play (a \"classic\" Dutch play)."
+            },
+            {
+              "title": "Drusus Julius Caesar",
+              "contents": "Drusus died suddenly 14 September 23, seemingly from natural causes."
+            },
+            {
+              "title": "Walter Hugo Khouri",
+              "contents": "Walter Hugo Khouri (São Paulo, 21 October 1929 – São Paulo, 27 June 2003) was a Brazilian film director and producer of Lebanese and Italian descent."
+            },
+            {
+              "title": "Charles B. Griffith",
+              "contents": "Griffith died on September 28, 2007 in San Diego, aged 77, from undisclosed causes."
+            }
+          ],
+          "tag": "<A2>",
+          "answer": "euthanasia"
+        }
+      },
+      "candidate_graphs": [
+        {
+          "Q1": {
+            "template": "Who is the director of the film Vrijdag?",
+            "previous": [],
+            "query": "Who is the director of the film Vrijdag?",
+            "rewrite_query": null,
+            "supports": [
+              {
+                "title": "Vrijdag",
+                "contents": "Vrijdag (Dutch for \"Friday\") is a 1980 Belgian-Dutch drama film directed by Hugo Claus, based on his 1969 play (a \"classic\" Dutch play)."
+              },
+              {
+                "title": "H. R. Bhargava",
+                "contents": "Hunsur Ramachandra Bhagyachandra , known mononymously as Bhargava, is an Indian film director who worked primarily in Kannada cinema."
+              },
+              {
+                "title": "Khoa Do",
+                "contents": "Đỗ Khoa\"), is a film director, screenwriter, professional speaker and philanthropist who received the Young Australian of the Year Award in 2005."
+              },
+              {
+                "title": "P. Neelakantan",
+                "contents": "Palaniyaandi Neelakantan (2 October 1916 Villupuram – 3 September 1992 Chennai) was a Tamil film director, who was active for nearly four decades."
+              },
+              {
+                "title": "Kamal G",
+                "contents": "Kamal G (born 22 July 1989) is an Indian film director, film editor and film producer from Kovilpatti in Thoothukudi District, Tamil Nadu, who works in the South Indian film industry."
+              }
+            ],
+            "tag": "<A1>",
+            "answer": "Hugo Claus"
+          },
+          "Q2": {
+            "template": "What is the cause of death of <A1>?",
+            "previous": [
+              "Q1"
+            ],
+            "query": "What is the cause of death of Hugo Claus?",
+            "rewrite_query": null,
+            "supports": [
+              {
+                "title": "Hugo Claus",
+                "contents": "His death by euthanasia, which is legal in Belgium, led to considerable controversy."
+              },
+              {
+                "title": "Vrijdag",
+                "contents": "Vrijdag (Dutch for \"Friday\") is a 1980 Belgian-Dutch drama film directed by Hugo Claus, based on his 1969 play (a \"classic\" Dutch play)."
+              },
+              {
+                "title": "Drusus Julius Caesar",
+                "contents": "Drusus died suddenly 14 September 23, seemingly from natural causes."
+              },
+              {
+                "title": "Walter Hugo Khouri",
+                "contents": "Walter Hugo Khouri (São Paulo, 21 October 1929 – São Paulo, 27 June 2003) was a Brazilian film director and producer of Lebanese and Italian descent."
+              },
+              {
+                "title": "Charles B. Griffith",
+                "contents": "Griffith died on September 28, 2007 in San Diego, aged 77, from undisclosed causes."
+              }
+            ],
+            "tag": "<A2>",
+            "answer": "euthanasia"
+          }
+        }
+      ],
+      "incomplete_graphs": [],
+      "final_graphs": [
+        [
+          {
+            "Q1": {
+              "template": "Who is the director of the film Vrijdag?",
+              "previous": [],
+              "query": "Who is the director of the film Vrijdag?",
+              "rewrite_query": null,
+              "supports": [
+                {
+                  "title": "Vrijdag",
+                  "contents": "Vrijdag (Dutch for \"Friday\") is a 1980 Belgian-Dutch drama film directed by Hugo Claus, based on his 1969 play (a \"classic\" Dutch play)."
+                },
+                {
+                  "title": "H. R. Bhargava",
+                  "contents": "Hunsur Ramachandra Bhagyachandra , known mononymously as Bhargava, is an Indian film director who worked primarily in Kannada cinema."
+                },
+                {
+                  "title": "Khoa Do",
+                  "contents": "Đỗ Khoa\"), is a film director, screenwriter, professional speaker and philanthropist who received the Young Australian of the Year Award in 2005."
+                },
+                {
+                  "title": "P. Neelakantan",
+                  "contents": "Palaniyaandi Neelakantan (2 October 1916 Villupuram – 3 September 1992 Chennai) was a Tamil film director, who was active for nearly four decades."
+                },
+                {
+                  "title": "Kamal G",
+                  "contents": "Kamal G (born 22 July 1989) is an Indian film director, film editor and film producer from Kovilpatti in Thoothukudi District, Tamil Nadu, who works in the South Indian film industry."
+                }
+              ],
+              "tag": "<A1>",
+              "answer": "Hugo Claus"
+            },
+            "Q2": {
+              "template": "What is the cause of death of <A1>?",
+              "previous": [
+                "Q1"
+              ],
+              "query": "What is the cause of death of Hugo Claus?",
+              "rewrite_query": null,
+              "supports": [
+                {
+                  "title": "Hugo Claus",
+                  "contents": "His death by euthanasia, which is legal in Belgium, led to considerable controversy."
+                },
+                {
+                  "title": "Vrijdag",
+                  "contents": "Vrijdag (Dutch for \"Friday\") is a 1980 Belgian-Dutch drama film directed by Hugo Claus, based on his 1969 play (a \"classic\" Dutch play)."
+                },
+                {
+                  "title": "Drusus Julius Caesar",
+                  "contents": "Drusus died suddenly 14 September 23, seemingly from natural causes."
+                },
+                {
+                  "title": "Walter Hugo Khouri",
+                  "contents": "Walter Hugo Khouri (São Paulo, 21 October 1929 – São Paulo, 27 June 2003) was a Brazilian film director and producer of Lebanese and Italian descent."
+                },
+                {
+                  "title": "Charles B. Griffith",
+                  "contents": "Griffith died on September 28, 2007 in San Diego, aged 77, from undisclosed causes."
+                }
+              ],
+              "tag": "<A2>",
+              "answer": "euthanasia"
+            }
+          },
+          "euthanasia"
+        ]
+      ]
+    },
+    "per_elapsed": 8.8912
+  },
+  {
+    "id": "test_1",
+    "question": "When did Publius Aelius Hadrianus Afer's father die?",
+    "golden_answers": [
+      "c. 91 AD",
+      "91"
+    ],
+    "pred": "c. 91 AD",
+    "metric_scores": {
+      "f1": 1.0,
+      "plan_score": 1.0,
+      "step_score": 1.0,
+      "pse_g": 1.0
+    },
+    "logs": {
+      "type": "Bridge",
+      "predicted_plan": {
+        "Q1": [
+          "Who was Publius Aelius Hadrianus Afer's father?",
+          "<A1>"
+        ],
+        "Q2": [
+          "When did <A1> die?",
+          "<A2>"
+        ]
+      },
+      "have_candidate": "[SINGLE]",
+      "intermediate_logs": {
+        "Q1_1": {
+          "template": "Who was Publius Aelius Hadrianus Afer's father?",
+          "previous": [],
+          "query": "Who was Publius Aelius Hadrianus Afer's father?",
+          "rewrite_query": null,
+          "supports": [
+            {
+              "title": "Publius Aelius Hadrianus Afer",
+              "contents": "He was the son of the noble Roman woman called Ulpia and his father was a Roman Senator called Publius Aelius Hadrianus Marullinus."
+            },
+            {
+              "title": "Aelius Hadrianus Marullinus",
+              "contents": "Publius Aelius Hadrianus Marullinus (c. 31 – c. 91 AD), also known as Aelius Hadrianus Marullinus or Aelius Marullinus was a Roman Senator of Praetorian rank from Hispania that lived during the Roman Empire in the 1st century."
+            },
+            {
+              "title": "Jacques Bizet",
+              "contents": "The composer Georges Bizet (who died in 1875 when Jacques was not quite three) was his father."
+            },
+            {
+              "title": "Eduardo Frei Ruiz-Tagle",
+              "contents": "His father was Eduardo Frei Montalva, who was President of Chile from 1964 to 1970."
+            },
+            {
+              "title": "Heraclius (son of Constans II)",
+              "contents": "He was the son of Emperor Constans II and Fausta, who was elevated in 659, before his father departed for Italy."
+            }
+          ],
+          "tag": "<A1>",
+          "answer": "Publius Aelius Hadrianus Marullinus"
+        },
+        "Q2_1": {
+          "template": "When did <A1> die?",
+          "previous": [
+            "Q1"
+          ],
+          "query": "When did Publius Aelius Hadrianus Marullinus die?",
+          "rewrite_query": null,
+          "supports": [
+            {
+              "title": "Aelius Hadrianus Marullinus",
+              "contents": "Publius Aelius Hadrianus Marullinus (c. 31 – c. 91 AD), also known as Aelius Hadrianus Marullinus or Aelius Marullinus was a Roman Senator of Praetorian rank from Hispania that lived during the Roman Empire in the 1st century."
+            },
+            {
+              "title": "Publius Aelius Hadrianus Afer",
+              "contents": "He was the son of the noble Roman woman called Ulpia and his father was a Roman Senator called Publius Aelius Hadrianus Marullinus."
+            },
+            {
+              "title": "Jacques Bizet",
+              "contents": "The composer Georges Bizet (who died in 1875 when Jacques was not quite three) was his father."
+            },
+            {
+              "title": "When the North Wind Blows",
+              "contents": "When the North Wind Blows is a 1974 American film written and directed by Stewart Raffill."
+            },
+            {
+              "title": "Yin Lihua",
+              "contents": "(Liu Xiu), even though she married him as his wife before his first empress, Guo Shengtong, did."
+            }
+          ],
+          "tag": "<A2>",
+          "answer": "c. 91 AD"
+        }
+      },
+      "candidate_graphs": [
+        {
+          "Q1": {
+            "template": "Who was Publius Aelius Hadrianus Afer's father?",
+            "previous": [],
+            "query": "Who was Publius Aelius Hadrianus Afer's father?",
+            "rewrite_query": null,
+            "supports": [
+              {
+                "title": "Publius Aelius Hadrianus Afer",
+                "contents": "He was the son of the noble Roman woman called Ulpia and his father was a Roman Senator called Publius Aelius Hadrianus Marullinus."
+              },
+              {
+                "title": "Aelius Hadrianus Marullinus",
+                "contents": "Publius Aelius Hadrianus Marullinus (c. 31 – c. 91 AD), also known as Aelius Hadrianus Marullinus or Aelius Marullinus was a Roman Senator of Praetorian rank from Hispania that lived during the Roman Empire in the 1st century."
+              },
+              {
+                "title": "Jacques Bizet",
+                "contents": "The composer Georges Bizet (who died in 1875 when Jacques was not quite three) was his father."
+              },
+              {
+                "title": "Eduardo Frei Ruiz-Tagle",
+                "contents": "His father was Eduardo Frei Montalva, who was President of Chile from 1964 to 1970."
+              },
+              {
+                "title": "Heraclius (son of Constans II)",
+                "contents": "He was the son of Emperor Constans II and Fausta, who was elevated in 659, before his father departed for Italy."
+              }
+            ],
+            "tag": "<A1>",
+            "answer": "Publius Aelius Hadrianus Marullinus"
+          },
+          "Q2": {
+            "template": "When did <A1> die?",
+            "previous": [
+              "Q1"
+            ],
+            "query": "When did Publius Aelius Hadrianus Marullinus die?",
+            "rewrite_query": null,
+            "supports": [
+              {
+                "title": "Aelius Hadrianus Marullinus",
+                "contents": "Publius Aelius Hadrianus Marullinus (c. 31 – c. 91 AD), also known as Aelius Hadrianus Marullinus or Aelius Marullinus was a Roman Senator of Praetorian rank from Hispania that lived during the Roman Empire in the 1st century."
+              },
+              {
+                "title": "Publius Aelius Hadrianus Afer",
+                "contents": "He was the son of the noble Roman woman called Ulpia and his father was a Roman Senator called Publius Aelius Hadrianus Marullinus."
+              },
+              {
+                "title": "Jacques Bizet",
+                "contents": "The composer Georges Bizet (who died in 1875 when Jacques was not quite three) was his father."
+              },
+              {
+                "title": "When the North Wind Blows",
+                "contents": "When the North Wind Blows is a 1974 American film written and directed by Stewart Raffill."
+              },
+              {
+                "title": "Yin Lihua",
+                "contents": "(Liu Xiu), even though she married him as his wife before his first empress, Guo Shengtong, did."
+              }
+            ],
+            "tag": "<A2>",
+            "answer": "c. 91 AD"
+          }
+        }
+      ],
+      "incomplete_graphs": [],
+      "final_graphs": [
+        [
+          {
+            "Q1": {
+              "template": "Who was Publius Aelius Hadrianus Afer's father?",
+              "previous": [],
+              "query": "Who was Publius Aelius Hadrianus Afer's father?",
+              "rewrite_query": null,
+              "supports": [
+                {
+                  "title": "Publius Aelius Hadrianus Afer",
+                  "contents": "He was the son of the noble Roman woman called Ulpia and his father was a Roman Senator called Publius Aelius Hadrianus Marullinus."
+                },
+                {
+                  "title": "Aelius Hadrianus Marullinus",
+                  "contents": "Publius Aelius Hadrianus Marullinus (c. 31 – c. 91 AD), also known as Aelius Hadrianus Marullinus or Aelius Marullinus was a Roman Senator of Praetorian rank from Hispania that lived during the Roman Empire in the 1st century."
+                },
+                {
+                  "title": "Jacques Bizet",
+                  "contents": "The composer Georges Bizet (who died in 1875 when Jacques was not quite three) was his father."
+                },
+                {
+                  "title": "Eduardo Frei Ruiz-Tagle",
+                  "contents": "His father was Eduardo Frei Montalva, who was President of Chile from 1964 to 1970."
+                },
+                {
+                  "title": "Heraclius (son of Constans II)",
+                  "contents": "He was the son of Emperor Constans II and Fausta, who was elevated in 659, before his father departed for Italy."
+                }
+              ],
+              "tag": "<A1>",
+              "answer": "Publius Aelius Hadrianus Marullinus"
+            },
+            "Q2": {
+              "template": "When did <A1> die?",
+              "previous": [
+                "Q1"
+              ],
+              "query": "When did Publius Aelius Hadrianus Marullinus die?",
+              "rewrite_query": null,
+              "supports": [
+                {
+                  "title": "Aelius Hadrianus Marullinus",
+                  "contents": "Publius Aelius Hadrianus Marullinus (c. 31 – c. 91 AD), also known as Aelius Hadrianus Marullinus or Aelius Marullinus was a Roman Senator of Praetorian rank from Hispania that lived during the Roman Empire in the 1st century."
+                },
+                {
+                  "title": "Publius Aelius Hadrianus Afer",
+                  "contents": "He was the son of the noble Roman woman called Ulpia and his father was a Roman Senator called Publius Aelius Hadrianus Marullinus."
+                },
+                {
+                  "title": "Jacques Bizet",
+                  "contents": "The composer Georges Bizet (who died in 1875 when Jacques was not quite three) was his father."
+                },
+                {
+                  "title": "When the North Wind Blows",
+                  "contents": "When the North Wind Blows is a 1974 American film written and directed by Stewart Raffill."
+                },
+                {
+                  "title": "Yin Lihua",
+                  "contents": "(Liu Xiu), even though she married him as his wife before his first empress, Guo Shengtong, did."
+                }
+              ],
+              "tag": "<A2>",
+              "answer": "c. 91 AD"
+            }
+          },
+          "c. 91 AD"
+        ]
+      ]
+    },
+    "per_elapsed": 6.9348
+  },
+  {
+    "id": "test_2",
+    "question": "Where did the director of film The Boy Who Cried Werewolf (1973 Film) die?",
+    "golden_answers": [
+      "Palos Verdes Estates, California, USA",
+      "Palos Verdes",
+      "Palos Verdes Peninsula"
+    ],
+    "pred": "Palos Verdes Estates, California",
+    "metric_scores": {
+      "f1": 0.8889,
+      "plan_score": 1.0,
+      "step_score": 0.9444,
+      "pse_g": 0.9714
+    },
+    "logs": {
+      "type": "Bridge",
+      "predicted_plan": {
+        "Q1": [
+          "Who was the director of the film The Boy Who Cried Werewolf (1973 Film)?",
+          "<A1>"
+        ],
+        "Q2": [
+          "Where did <A1> die?",
+          "<A2>"
+        ]
+      },
+      "have_candidate": "[SINGLE]",
+      "intermediate_logs": {
+        "Q1_1": {
+          "template": "Who was the director of the film The Boy Who Cried Werewolf (1973 Film)?",
+          "previous": [],
+          "query": "Who was the director of the film The Boy Who Cried Werewolf (1973 Film)?",
+          "rewrite_query": null,
+          "supports": [
+            {
+              "title": "The Boy Who Cried Werewolf (1973 film)",
+              "contents": "The Boy Who Cried Werewolf is a 1973 Technicolor horror film directed by Nathan H. Juran."
+            },
+            {
+              "title": "Boys and Girls (2000 film)",
+              "contents": "Boys and Girls is a 2000 American romantic comedy film directed by Robert Iscove."
+            },
+            {
+              "title": "She Who Must Burn",
+              "contents": "She Who Must Burn is a 2015 horror film that was directed by Larry Kent."
+            },
+            {
+              "title": "H. R. Bhargava",
+              "contents": "Hunsur Ramachandra Bhagyachandra , known mononymously as Bhargava, is an Indian film director who worked primarily in Kannada cinema."
+            },
+            {
+              "title": "Kamal G",
+              "contents": "Kamal G (born 22 July 1989) is an Indian film director, film editor and film producer from Kovilpatti in Thoothukudi District, Tamil Nadu, who works in the South Indian film industry."
+            }
+          ],
+          "tag": "<A1>",
+          "answer": "Nathan H. Juran"
+        },
+        "Q2_1": {
+          "template": "Where did <A1> die?",
+          "previous": [
+            "Q1"
+          ],
+          "query": "Where did Nathan H. Juran die?",
+          "rewrite_query": null,
+          "supports": [
+            {
+              "title": "Nathan Juran",
+              "contents": "Naftuli \"Nathan\" Hertz Juran (Gura Humorului – , Palos Verdes Estates, California, USA) was an American film art director, and later film and television director."
+            },
+            {
+              "title": "Gunsmoke (film)",
+              "contents": "Gunsmoke is a 1953 Western film directed by Nathan Juran and starring Audie Murphy, Susan Cabot, and Paul Kelly."
+            },
+            {
+              "title": "The Boy Who Cried Werewolf (1973 film)",
+              "contents": "The Boy Who Cried Werewolf is a 1973 Technicolor horror film directed by Nathan H. Juran."
+            },
+            {
+              "title": "Highway Dragnet",
+              "contents": "Highway Dragnet is a 1954 film noir B film crime film directed by Nathan Juran from a story by U.S. Anderson and Roger Corman."
+            },
+            {
+              "title": "Hellcats of the Navy",
+              "contents": "Hellcats of the Navy is a 1957 black-and-white World War II submarine film drama from Columbia Pictures, produced by Charles H. Schneer and directed by Nathan Juran."
+            }
+          ],
+          "tag": "<A2>",
+          "answer": "Palos Verdes Estates, California"
+        }
+      },
+      "candidate_graphs": [
+        {
+          "Q1": {
+            "template": "Who was the director of the film The Boy Who Cried Werewolf (1973 Film)?",
+            "previous": [],
+            "query": "Who was the director of the film The Boy Who Cried Werewolf (1973 Film)?",
+            "rewrite_query": null,
+            "supports": [
+              {
+                "title": "The Boy Who Cried Werewolf (1973 film)",
+                "contents": "The Boy Who Cried Werewolf is a 1973 Technicolor horror film directed by Nathan H. Juran."
+              },
+              {
+                "title": "Boys and Girls (2000 film)",
+                "contents": "Boys and Girls is a 2000 American romantic comedy film directed by Robert Iscove."
+              },
+              {
+                "title": "She Who Must Burn",
+                "contents": "She Who Must Burn is a 2015 horror film that was directed by Larry Kent."
+              },
+              {
+                "title": "H. R. Bhargava",
+                "contents": "Hunsur Ramachandra Bhagyachandra , known mononymously as Bhargava, is an Indian film director who worked primarily in Kannada cinema."
+              },
+              {
+                "title": "Kamal G",
+                "contents": "Kamal G (born 22 July 1989) is an Indian film director, film editor and film producer from Kovilpatti in Thoothukudi District, Tamil Nadu, who works in the South Indian film industry."
+              }
+            ],
+            "tag": "<A1>",
+            "answer": "Nathan H. Juran"
+          },
+          "Q2": {
+            "template": "Where did <A1> die?",
+            "previous": [
+              "Q1"
+            ],
+            "query": "Where did Nathan H. Juran die?",
+            "rewrite_query": null,
+            "supports": [
+              {
+                "title": "Nathan Juran",
+                "contents": "Naftuli \"Nathan\" Hertz Juran (Gura Humorului – , Palos Verdes Estates, California, USA) was an American film art director, and later film and television director."
+              },
+              {
+                "title": "Gunsmoke (film)",
+                "contents": "Gunsmoke is a 1953 Western film directed by Nathan Juran and starring Audie Murphy, Susan Cabot, and Paul Kelly."
+              },
+              {
+                "title": "The Boy Who Cried Werewolf (1973 film)",
+                "contents": "The Boy Who Cried Werewolf is a 1973 Technicolor horror film directed by Nathan H. Juran."
+              },
+              {
+                "title": "Highway Dragnet",
+                "contents": "Highway Dragnet is a 1954 film noir B film crime film directed by Nathan Juran from a story by U.S. Anderson and Roger Corman."
+              },
+              {
+                "title": "Hellcats of the Navy",
+                "contents": "Hellcats of the Navy is a 1957 black-and-white World War II submarine film drama from Columbia Pictures, produced by Charles H. Schneer and directed by Nathan Juran."
+              }
+            ],
+            "tag": "<A2>",
+            "answer": "Palos Verdes Estates, California"
+          }
+        }
+      ],
+      "incomplete_graphs": [],
+      "final_graphs": [
+        [
+          {
+            "Q1": {
+              "template": "Who was the director of the film The Boy Who Cried Werewolf (1973 Film)?",
+              "previous": [],
+              "query": "Who was the director of the film The Boy Who Cried Werewolf (1973 Film)?",
+              "rewrite_query": null,
+              "supports": [
+                {
+                  "title": "The Boy Who Cried Werewolf (1973 film)",
+                  "contents": "The Boy Who Cried Werewolf is a 1973 Technicolor horror film directed by Nathan H. Juran."
+                },
+                {
+                  "title": "Boys and Girls (2000 film)",
+                  "contents": "Boys and Girls is a 2000 American romantic comedy film directed by Robert Iscove."
+                },
+                {
+                  "title": "She Who Must Burn",
+                  "contents": "She Who Must Burn is a 2015 horror film that was directed by Larry Kent."
+                },
+                {
+                  "title": "H. R. Bhargava",
+                  "contents": "Hunsur Ramachandra Bhagyachandra , known mononymously as Bhargava, is an Indian film director who worked primarily in Kannada cinema."
+                },
+                {
+                  "title": "Kamal G",
+                  "contents": "Kamal G (born 22 July 1989) is an Indian film director, film editor and film producer from Kovilpatti in Thoothukudi District, Tamil Nadu, who works in the South Indian film industry."
+                }
+              ],
+              "tag": "<A1>",
+              "answer": "Nathan H. Juran"
+            },
+            "Q2": {
+              "template": "Where did <A1> die?",
+              "previous": [
+                "Q1"
+              ],
+              "query": "Where did Nathan H. Juran die?",
+              "rewrite_query": null,
+              "supports": [
+                {
+                  "title": "Nathan Juran",
+                  "contents": "Naftuli \"Nathan\" Hertz Juran (Gura Humorului – , Palos Verdes Estates, California, USA) was an American film art director, and later film and television director."
+                },
+                {
+                  "title": "Gunsmoke (film)",
+                  "contents": "Gunsmoke is a 1953 Western film directed by Nathan Juran and starring Audie Murphy, Susan Cabot, and Paul Kelly."
+                },
+                {
+                  "title": "The Boy Who Cried Werewolf (1973 film)",
+                  "contents": "The Boy Who Cried Werewolf is a 1973 Technicolor horror film directed by Nathan H. Juran."
+                },
+                {
+                  "title": "Highway Dragnet",
+                  "contents": "Highway Dragnet is a 1954 film noir B film crime film directed by Nathan Juran from a story by U.S. Anderson and Roger Corman."
+                },
+                {
+                  "title": "Hellcats of the Navy",
+                  "contents": "Hellcats of the Navy is a 1957 black-and-white World War II submarine film drama from Columbia Pictures, produced by Charles H. Schneer and directed by Nathan Juran."
+                }
+              ],
+              "tag": "<A2>",
+              "answer": "Palos Verdes Estates, California"
+            }
+          },
+          "Palos Verdes Estates, California"
+        ]
+      ]
+    },
+    "per_elapsed": 6.4249
+  }
+]

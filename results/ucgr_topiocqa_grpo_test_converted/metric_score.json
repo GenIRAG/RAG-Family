@@ -1,0 +1,10 @@
+{
+  "metrics": {
+    "acc4r": 0.7,
+    "recall@5": 1.0,
+    "mrr@5": 0.85,
+    "ndcg@3": 0.8893
+  },
+  "num_samples": 10,
+  "elapsed_time": 127.9115
+}
