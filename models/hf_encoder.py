@@ -6,6 +6,8 @@ from RoleRAG.models.models_base import BaseEncoder, BaseCrossEncoder
 
 class HFEncoder(BaseEncoder):
 
+    capabilities = frozenset({"encode"})
+
     def __init__(
         self,
         model_name: str = "BAAI/bge-base-en-v1.5",
@@ -83,6 +85,8 @@ class HFEncoder(BaseEncoder):
 
 
 class HFReranker(BaseCrossEncoder):
+
+    capabilities = frozenset({"rerank"})
 
     def __init__(
         self,

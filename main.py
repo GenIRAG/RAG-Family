@@ -6,6 +6,7 @@ import logging
 import os
 import shutil
 import sys
+import traceback
 from pathlib import Path
 
 logging.basicConfig(
@@ -24,6 +25,7 @@ os.chdir(BASE_DIR)
 _default_config_dir = BASE_DIR / "config"
 
 from RoleRAG.config.config import Config
+from RoleRAG.errors import format_cli_error
 from RoleRAG.indexes import make_index_name
 
 _EXTRACTION_REGISTRY = {}
@@ -393,7 +395,7 @@ def run_evaluation(config):
     return results
 
 
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser(description="RoleRAG Framework CLI")
 
     parser.add_argument("--build_index", type=str, choices=["bm25", "dense", "fmindex", "hipporag", "graphrag"], help="Build the specified index type")
@@ -418,9 +420,26 @@ def main():
     parser.add_argument("--fm_index_name", type=str, help="Override index.fm.index_name, the optional FMIndex output file name under storage_dir")
     parser.add_argument("--fm_lowercase", action="store_true", help="Override index.fm.lowercase to lowercase FMIndex titles before indexing")
     parser.add_argument("--fm_keep_duplicates", action="store_true", help="Override index.fm.keep_duplicates to keep duplicate Target_psg ids in FMIndex")
+    parser.add_argument("--debug", action="store_true", help="Show the full exception traceback when a command fails")
 
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
+    try:
+        _run_commands(args)
+    except KeyboardInterrupt:
+        print("RoleRAG interrupted by user.", file=sys.stderr)
+        return 130
+    except Exception as exc:
+        if args.debug:
+            traceback.print_exc()
+        else:
+            print(f"RoleRAG failed.\n{format_cli_error(exc)}", file=sys.stderr)
+            print("Use --debug to show the full traceback.", file=sys.stderr)
+        return 1
+    return 0
+
+
+def _run_commands(args):
     config = Config(str(_default_config_dir), pipeline_name=args.pipeline)
 
     if args.corpus:
@@ -520,4 +539,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

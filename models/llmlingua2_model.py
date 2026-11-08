@@ -3,6 +3,8 @@ from typing import Any, Dict, List, Optional
 
 class LLMLingua2Model:
 
+    capabilities = frozenset({"compress"})
+
     def __init__(
         self,
         model_name: str = "microsoft/llmlingua-2-xlm-roberta-large-meetingbank",

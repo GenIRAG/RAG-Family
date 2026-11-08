@@ -1,9 +1,35 @@
-from typing import Any, List, Optional
+import inspect
+from typing import Any, Dict, List, Optional, Type
 
+from RoleRAG.errors import error_context
 from RoleRAG.roles.reasoner import ReasonerRoleAdapter
+from RoleRAG.roles.registry import register_role
 from RoleRAG.roles.role_base import BaseRewriterContract
+from RoleRAG.roles.validation import validate_model_capability
 
 
+_REWRITE_METHODS: Dict[str, Type] = {}
+
+
+def register_rewrite_method(name: str):
+    def decorator(cls: Type) -> Type:
+        key = str(name).lower()
+        if key in _REWRITE_METHODS:
+            raise KeyError(
+                f"Duplicate rewrite method registration: '{key}' "
+                f"(already registered as {_REWRITE_METHODS[key].__name__})"
+            )
+        _REWRITE_METHODS[key] = cls
+        return cls
+
+    return decorator
+
+
+def registered_rewrite_methods() -> List[str]:
+    return sorted(_REWRITE_METHODS)
+
+
+@register_rewrite_method("hyde")
 class HyDERewriter:
 
     def __init__(
@@ -63,6 +89,7 @@ class HyDERewriter:
         return f"{query} {expanded_context}".strip()
 
 
+@register_role("rewriter")
 class RewriterRoleAdapter(BaseRewriterContract):
 
     def __init__(
@@ -75,9 +102,9 @@ class RewriterRoleAdapter(BaseRewriterContract):
         task: str = "web_search",
         language: str = "en",
         stop: Optional[List[str]] = None,
-        **kwargs,
     ):
-        self.method = method
+        validate_model_capability(model, "rewriter", "generate", "generate")
+        self.method = str(method).lower()
         self.num_hypotheses = num_hypotheses
         self.max_tokens = max_tokens
         self.temperature = temperature
@@ -85,24 +112,36 @@ class RewriterRoleAdapter(BaseRewriterContract):
         self.language = language
         self.stop = stop
 
-        if self.method == "hyde":
-            self._model = HyDERewriter(
-                reasoner=ReasonerRoleAdapter(
-                    model=model,
-                    max_tokens=max_tokens,
-                    temperature=temperature,
-                ),
-                task=task,
-                language=language,
-                num_hypotheses=num_hypotheses,
+        impl_cls = _REWRITE_METHODS.get(self.method)
+        if impl_cls is None:
+            raise ValueError(
+                f"Unknown rewriter method: {method}. "
+                f"Available methods: {registered_rewrite_methods()}"
+            )
+
+        impl_params = inspect.signature(impl_cls.__init__).parameters
+        base_kwargs = {
+            "task": task,
+            "language": language,
+            "num_hypotheses": num_hypotheses,
+            "max_tokens": max_tokens,
+            "temperature": temperature,
+            "stop": stop,
+        }
+        accepted_kwargs = {key: value for key, value in base_kwargs.items() if key in impl_params}
+
+        self._model = impl_cls(
+            reasoner=ReasonerRoleAdapter(
+                model=model,
                 max_tokens=max_tokens,
                 temperature=temperature,
-                stop=stop,
-            )
-        else:
-            raise ValueError(f"Unknown rewriter method: {self.method}")
+            ),
+            **accepted_kwargs,
+        )
 
     def rewrite(self, query: str, **kwargs) -> str:
-        if hasattr(self._model, "rewrite"):
-            return self._model.rewrite(query, **kwargs)
-        raise TypeError(f"Model {type(self._model).__name__} does not support rewrite")
+        with error_context(f"role=rewriter, method={self.method}, operation=rewrite"):
+            result = self._model.rewrite(query, **kwargs)
+            if not isinstance(result, str):
+                raise TypeError(f"rewrite() must return text; got {type(result).__name__}")
+            return result

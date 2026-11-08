@@ -19,7 +19,7 @@ class BaseRerankerContract(ABC):
         self,
         query: str,
         documents: Union[List[Document], List[str]],
-        top_k: int = 10,
+        top_k: Optional[int] = None,
         **kwargs
     ) -> List[Tuple[Union[Document, str], float]]:
 

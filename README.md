@@ -2,13 +2,6 @@
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/python-3.11.15-blue)
-![RAG](https://img.shields.io/badge/RAG-Modular-brightgreen)
-![Config](https://img.shields.io/badge/config-YAML%20%2B%20CLI-orange)
-![License](https://img.shields.io/badge/license-MIT-lightgrey)
-
-</div>
-
 **RoleRAG** is a highly modular, configuration-driven Retrieval-Augmented Generation (RAG) experimentation and development framework. It fully decouples low-level model capabilities from application roles: the same `HFEncoder` can serve as the underlying model for a dense retriever or a graph retriever; the same `OpenAIGenerator` can take on the responsibilities of a reasoner, rewriter, or graph-extraction LLM.
 
 The framework organizes experiment configuration through `global.yaml`, `index.yaml`, `config/methods/*.yaml`, and CLI override mechanisms, with 10 built-in pipelines including Naive RAG, Hybrid, Rerank, LLMLingua, LLMLingua-2, PERQA, HippoRAG, GraphRAG Local/Global, and UCGR, making it well suited for quickly reproducing experiments, combining new retrieval strategies, and validating cutting-edge RAG algorithms.
@@ -36,18 +29,18 @@ CLI / YAML configuration
 
 `rolerag/pipelines/__init__.py` currently registers 10 pipelines:
 
-| Pipeline name     | Description                                                  | Index / key dependency                                     |
-| ----------------- | ------------------------------------------------------------ | ---------------------------------------------------------- |
-| `naive`           | Basic RAG: BM25 retrieval + HyDE query rewrite + LLM generation | `BM25Model`, `bm25_index_path`                            |
-| `hybrid`          | Fuses BM25 and dense retrieval, merging results with RRF     | `BM25Model` + `HFEncoder`, BM25 index + dense FAISS index |
-| `rerank`          | Re-ranks BM25 candidates with a cross-encoder                | `BM25Model` + `HFReranker`                                |
-| `llmlingua`       | Compresses context with LLMLingua/LongLLMLingua after BM25 retrieval before generation | `BM25Model`, `bm25_index_path`, `LLMLinguaModel`           |
-| `llmlingua2`      | Compresses context with LLMLingua-2 after BM25 retrieval before generation | `BM25Model`, `bm25_index_path`, `LLMLingua2Model`          |
-| `perqa`           | Plan, execute, and candidate-graph aggregation flow for multi-hop questions | `BM25Model`, `bm25_index_path`                             |
-| `hipporag`        | HippoRAG retrieval based on entity-relation graph and PPR, followed by ordinary generation | graph index, `HFEncoder`, `OpenAIGenerator`               |
-| `graphrag_local`  | GraphRAG local retrieval, generating around local entities, text units, and community context | GraphRAG graph index, entity vector DB                    |
-| `graphrag_global` | GraphRAG global retrieval, global aggregation and generation based on community reports | GraphRAG graph index, community reports                   |
-| `ucgr`            | Constrained generative retrieval based on FMIndex, directly generating candidate passages/titles | SEAL FMIndex, `HFDecoder`                                 |
+| Pipeline name       | Description                                                                                      | Index / key dependency                                        |
+| ------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- |
+| `naive`           | Basic RAG: BM25 retrieval + HyDE query rewrite + LLM generation                                  | `BM25Model`, `bm25_index_path`                            |
+| `hybrid`          | Fuses BM25 and dense retrieval, merging results with RRF                                         | `BM25Model` + `HFEncoder`, BM25 index + dense FAISS index |
+| `rerank`          | Re-ranks BM25 candidates with a cross-encoder                                                    | `BM25Model` + `HFReranker`                                |
+| `llmlingua`       | Compresses context with LLMLingua/LongLLMLingua after BM25 retrieval before generation           | `BM25Model`, `bm25_index_path`, `LLMLinguaModel`        |
+| `llmlingua2`      | Compresses context with LLMLingua-2 after BM25 retrieval before generation                       | `BM25Model`, `bm25_index_path`, `LLMLingua2Model`       |
+| `perqa`           | Plan, execute, and candidate-graph aggregation flow for multi-hop questions                      | `BM25Model`, `bm25_index_path`                            |
+| `hipporag`        | HippoRAG retrieval based on entity-relation graph and PPR, followed by ordinary generation       | graph index, `HFEncoder`, `OpenAIGenerator`               |
+| `graphrag_local`  | GraphRAG local retrieval, generating around local entities, text units, and community context    | GraphRAG graph index, entity vector DB                        |
+| `graphrag_global` | GraphRAG global retrieval, global aggregation and generation based on community reports          | GraphRAG graph index, community reports                       |
+| `ucgr`            | Constrained generative retrieval based on FMIndex, directly generating candidate passages/titles | SEAL FMIndex, `HFDecoder`                                   |
 
 ## 🚀 Quick Start
 
@@ -63,12 +56,11 @@ Building the FMIndex for UCGR depends on SEAL, so `seal.index.FMIndex` must be i
 
 It is recommended to check the following configuration files before running:
 
-
-| File                             | Purpose                                                                     |
-| -------------------------------- | -------------------------------------------------------------------------- |
-| `config/global.yaml`             | Global settings, model default parameters, default `pipeline_type`, common evaluation parameters |
+| File                               | Purpose                                                                                                    |
+| ---------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| `config/global.yaml`             | Global settings, model default parameters, default `pipeline_type`, common evaluation parameters         |
 | `config/index.yaml`              | Shared index construction parameters, including corpus, chunking, BM25, dense, FMIndex, and graph building |
-| `config/methods/<pipeline>.yaml` | Index paths, `inference` parameters, `roles` parameters, and evaluation dataset for a single pipeline |
+| `config/methods/<pipeline>.yaml` | Index paths, `inference` parameters, `roles` parameters, and evaluation dataset for a single pipeline  |
 
 ### Build Index
 
@@ -197,6 +189,16 @@ results/<pipeline>_<dataset>/intermediate_logs.json
 
 ## ⚙️ Architecture and Configuration System
 
+When a command fails, the CLI prints the exception type, the boundary where it happened (model, role, pipeline, or configuration file) and a correction hint, then exits with code `1`. Append `--debug` to any command to get the full traceback; `--verbose` still controls per-sample evaluation output only.
+
+```bash
+python main.py --pipeline naive --run_pipeline "your question" --debug
+```
+
+Python callers keep the original exception type and chain; the location is attached to the exception's `__notes__`. YAML syntax errors report the file and line, misspelled role parameters list the accepted ones and suggest a correction, and incomplete dense index files fail immediately instead of surfacing later.
+
+`top_k` for reranking resolves as: explicit call argument > `top_k` in the method YAML role config > adapter default. Passing `None` falls back to the role default.
+
 The core design idea of RoleRAG is to separate "what a model is" from "what role the model plays in a pipeline":
 
 - **Model**: a low-level capability object, such as `BM25Model`, `HFEncoder`, `HFReranker`, `OpenAIGenerator`, `DeepSeekGenerator`, `HFDecoder`, `LLMLinguaModel`, or `LLMLingua2Model`.
@@ -204,18 +206,17 @@ The core design idea of RoleRAG is to separate "what a model is" from "what role
 
 The current model implementations are split by capability under `models/`:
 
-
-| File                            | Purpose                                                               |
-| ------------------------------- | -------------------------------------------------------------------- |
-| `models/BM25_model.py`          | BM25 low-level model                                                 |
-| `models/hf_encoder.py`          | `HFEncoder` and `HFReranker`                                         |
-| `models/api_decoder.py`         | API-based generation models, e.g. `OpenAIGenerator`, `DeepSeekGenerator` |
-| `models/hf_decoder.py`          | HuggingFace decoder-only generation model                            |
-| `models/hf_encoder_decoder.py`  | Reserved HuggingFace encoder-decoder generation model (not yet added to `_MODEL_REGISTRY`) |
-| `models/llmlingua_model.py`     | `LLMLinguaModel`, LLMLingua/LongLLMLingua context compression        |
-| `models/llmlingua2_model.py`    | `LLMLingua2Model`, LLMLingua-2 context compression                   |
-| `models/models_base.py`         | Abstract model base class                                            |
-| `models/utils.py`               | Model registry and `get_model()`                                     |
+| File                             | Purpose                                                                                      |
+| -------------------------------- | -------------------------------------------------------------------------------------------- |
+| `models/BM25_model.py`         | BM25 low-level model                                                                         |
+| `models/hf_encoder.py`         | `HFEncoder` and `HFReranker`                                                             |
+| `models/api_decoder.py`        | API-based generation models, e.g. `OpenAIGenerator`, `DeepSeekGenerator`                 |
+| `models/hf_decoder.py`         | HuggingFace decoder-only generation model                                                    |
+| `models/hf_encoder_decoder.py` | Reserved HuggingFace encoder-decoder generation model (not yet added to `_MODEL_REGISTRY`) |
+| `models/llmlingua_model.py`    | `LLMLinguaModel`, LLMLingua/LongLLMLingua context compression                              |
+| `models/llmlingua2_model.py`   | `LLMLingua2Model`, LLMLingua-2 context compression                                         |
+| `models/models_base.py`        | Abstract model base class                                                                    |
+| `models/utils.py`              | Model registry and `get_model()`                                                           |
 
 Prompt templates are managed by `rolerag/pipelines/prompts/prompt_manager.py`. Each prompt file only exposes a `PROMPTS` dictionary, and `PromptManager` handles automatic loading and template lookup by name.
 
@@ -265,7 +266,7 @@ Role parameters no longer use a separate `role_config.yaml`; instead, they are p
 <details>
 <summary>👉 How to Add a New Model</summary>
 
-1. Implement the low-level model class under `models/`. A generation model implements `generate()`, an encoder implements `encode()`, and a cross-encoder implements `rerank()`.
+1. Implement the low-level model class under `models/`. A generation model implements `generate()`, an encoder implements `encode()`, a cross-encoder implements `rerank()`, and a compressor implements `compress()`, each declared through `capabilities`.
 2. Import the class in `models/utils.py` and add it to `_MODEL_REGISTRY`.
 3. Add a configuration block with the same name under `global.models` in `config/global.yaml`.
 4. If the model will serve a role, add the model configuration under the corresponding role in the `roles` block of `config/methods/<pipeline>.yaml`.
@@ -275,6 +276,8 @@ Minimal example:
 
 ```python
 class MyEncoder:
+    capabilities = frozenset({"encode"})
+
     def __init__(self, model_name: str = "my-encoder", batch_size: int = 32):
         self.model_name = model_name
         self.batch_size = batch_size
@@ -282,6 +285,8 @@ class MyEncoder:
     def encode(self, texts, is_query: bool = False, **kwargs):
         ...
 ```
+
+The allowed capability values are `sparse_search`, `encode`, `rerank`, `generate`, and `compress`. The built-in adapters check the declared capability and the interface they actually call when they are constructed, so a mismatched model/role pair raises `TypeError` immediately, both through `assist_role()` and when an adapter is instantiated directly. `reasoner` and the built-in HyDE rewriter require `generate`, `reranker` requires `rerank`, `refiner` requires `compress`, and dense/graph retrievers require `encode`. The BM25 path retrieves through the indexer, so that model only declares `sparse_search`.
 
 Register it in `models/utils.py` (do not reassign the entire dictionary, or you will overwrite existing models):
 
@@ -306,7 +311,7 @@ global:
 
 1. Add a new abstract contract in `roles/role_base.py`, defining the unified interface that pipelines will depend on.
 2. Create the corresponding adapter file, e.g. `roles/my_role.py`, wrapping the low-level model into the role interface.
-3. Import the adapter in `roles/utils.py`, add the role name to `_ALLOWED_ROLES`, and add a branch in `assist_role()`.
+3. Decorate the adapter with `@register_role("my_role")`; the adapters imported by `roles/__init__.py` fill the registry, so `roles/utils.py` does not need to change.
 4. Add default role configuration under the `roles` block in `config/methods/<pipeline>.yaml`.
 5. If the role should be exported publicly, add the import and update `__all__` in `roles/__init__.py`.
 
@@ -316,16 +321,20 @@ The currently available roles include:
 retriever, reranker, reasoner, rewriter, refiner
 ```
 
-`assist_role()` branch illustration:
+Role registration illustration (`roles/utils.py` does not need to change):
 
 ```python
-if role == "reranker":
-    return RerankerRoleAdapter(
-        model=model,
-        top_k=merged_config.get("top_k", 10),
-        **kwargs
-    )
+from RoleRAG.roles.registry import register_role
+
+
+@register_role("my_role")
+class MyRoleAdapter(BaseMyRoleContract):
+    def __init__(self, model, limit: int = 5):
+        self._model = model
+        self.limit = limit
 ```
+
+`assist_role()` looks up the adapter class in the registry, checks the role parameters against its constructor signature, clones the model, and then constructs the adapter. A new role can reuse `roles.validation.validate_model_capability()` to check the capability it needs; the shared factory does not hardcode capability rules for new roles.
 
 </details>
 

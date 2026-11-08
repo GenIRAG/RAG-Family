@@ -3,6 +3,7 @@ from typing import Any, Dict, List, Optional
 
 class LLMLinguaModel:
     
+    capabilities = frozenset({"compress"})
     requires_question = True
     _METHODS = {"llmlingua", "longllmlingua"}
 

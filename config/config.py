@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 from typing import Any, Dict
 
-import yaml
+from RoleRAG.errors import error_context, load_yaml_mapping, require_mapping
 
 
 def deep_merge_dicts(base: Dict[str, Any], override: Dict[str, Any]) -> Dict[str, Any]:
@@ -44,13 +44,7 @@ class Config:
         return config_dir / "methods" / f"{pipeline_name}.yaml"
 
     def _load_yaml_file(self, path: Path) -> Dict[str, Any]:
-        if not path.exists():
-            raise ValueError(f"Required config file not found: {path}")
-        with open(path, "r", encoding="utf-8") as f:
-            data = yaml.safe_load(f.read())
-        if not isinstance(data, dict):
-            raise TypeError(f"Config file must contain a YAML mapping: {path}")
-        return data
+        return load_yaml_mapping(path)
 
     def _build_config_from_method_yaml(
         self,
@@ -83,14 +77,29 @@ class Config:
         index_path = self._resolve_index_path(config_dir_path)
         global_cfg = self._load_yaml_file(global_path)
         index_cfg = self._load_yaml_file(index_path)
-        selected_pipeline = pipeline_name or global_cfg["pipeline_type"]
-
-        return self._build_config_from_method_yaml(
-            global_cfg=global_cfg,
-            index_cfg=index_cfg,
-            method_cfg=self._load_yaml_file(self._resolve_method_config_path(config_dir_path, selected_pipeline)),
-            selected_pipeline=selected_pipeline,
-        )
+        global_block = require_mapping(global_cfg, "global", str(global_path))
+        require_mapping(global_cfg, "evaluation", str(global_path))
+        require_mapping(global_block, "models", f"{global_path}: global")
+        require_mapping(index_cfg, "paths", str(index_path))
+        selected_pipeline = pipeline_name or global_cfg.get("pipeline_type")
+        if not isinstance(selected_pipeline, str) or not selected_pipeline.strip():
+            raise ValueError(f"A non-empty pipeline_type is required in {global_path}, or pass --pipeline NAME.")
+        method_path = self._resolve_method_config_path(config_dir_path, selected_pipeline)
+        with error_context(
+            f"Loading pipeline={selected_pipeline}, method configuration={method_path}",
+            "Check the --pipeline name and its config/methods/<name>.yaml file.",
+        ):
+            method_cfg = self._load_yaml_file(method_path)
+            for block in ("index", "inference", "evaluation"):
+                require_mapping(method_cfg, block, str(method_path))
+            if "roles" in method_cfg:
+                require_mapping(method_cfg, "roles", str(method_path))
+            return self._build_config_from_method_yaml(
+                global_cfg=global_cfg,
+                index_cfg=index_cfg,
+                method_cfg=method_cfg,
+                selected_pipeline=selected_pipeline,
+            )
 
     def get(self, key: str) -> Any:
         if not key:

@@ -1,8 +1,12 @@
 from typing import List, Optional
 
+from RoleRAG.errors import error_context
+from RoleRAG.roles.registry import register_role
 from RoleRAG.roles.role_base import BaseRefinerContract
+from RoleRAG.roles.validation import validate_model_capability
 
 
+@register_role("refiner")
 class RefinerRoleAdapter(BaseRefinerContract):
 
     def __init__(
@@ -11,8 +15,8 @@ class RefinerRoleAdapter(BaseRefinerContract):
         rate: float = 0.33,
         method: Optional[str] = None,
         instruction: Optional[str] = None,
-        **kwargs,
     ):
+        validate_model_capability(model, "refiner", "compress", "compress")
         self._model = model
         self.rate = rate
         self.method = method
@@ -42,9 +46,13 @@ class RefinerRoleAdapter(BaseRefinerContract):
             options["instruction"] = instruction
         options.update(kwargs)
 
-        result = self._model.compress(context, **options)
-        
-        if isinstance(result, dict) and "compressed_prompt" in result:
-            return result["compressed_prompt"]
-        if isinstance(result, str):
+        with error_context(f"role=refiner, model={self.model_name}, operation=compress"):
+            result = self._model.compress(context, **options)
+            if isinstance(result, dict):
+                result = result.get("compressed_prompt")
+            if not isinstance(result, str):
+                raise TypeError(
+                    "compress() must return text or a dict containing a string 'compressed_prompt'; "
+                    f"got {type(result).__name__}"
+                )
             return result

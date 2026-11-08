@@ -2,6 +2,9 @@ from typing import List, Union, Optional
 
 
 class HFEncoderDecoder:
+
+    capabilities = frozenset({"generate"})
+
     def __init__(
         self,
         model_name: str = "google/flan-t5-base",

@@ -382,7 +382,7 @@ The following files usually require attention:
 
 - `roles/role_base.py`: Add a role contract that defines the stable interface on which pipelines can depend.
 - `roles/<new_role>.py`: Add an adapter that wraps a low-level model in the role interface.
-- `roles/utils.py`: Add the role to `_ALLOWED_ROLES` and add a branch to `assist_role()`.
+- `roles/utils.py`: No change needed; decorate the adapter with `@register_role("<name>")` and `assist_role()` looks it up in the registry.
 - `roles/__init__.py`: Add the import and update `__all__` if the role must be publicly exported.
 - `config/methods/<pipeline>.yaml`: Add the role's configuration block.
 

@@ -1,6 +1,7 @@
 import os
 from typing import Any, Dict, Optional
 
+from RoleRAG.errors import error_context, load_yaml_mapping, require_mapping, validate_constructor_kwargs
 from RoleRAG.models.BM25_model import BM25Model
 from RoleRAG.models.api_decoder import OpenAIGenerator, DeepSeekGenerator
 from RoleRAG.models.hf_decoder import HFDecoder
@@ -29,23 +30,15 @@ _GLOBAL_MODEL_CONFIG_CACHE: Optional[Dict[str, Dict[str, Any]]] = None
 def _load_global_model_defaults() -> Dict[str, Dict[str, Any]]:
     global _GLOBAL_MODEL_CONFIG_CACHE
     if _GLOBAL_MODEL_CONFIG_CACHE is None:
-        import yaml
-
         project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         config_path = os.path.join(project_root, "config", "global.yaml")
-        if not os.path.exists(config_path):
-            _GLOBAL_MODEL_CONFIG_CACHE = {}
-        else:
-            with open(config_path, "r", encoding="utf-8") as file:
-                config = yaml.safe_load(file) or {}
-            model_config = ((config.get("global", {}) or {}).get("models", {}) or {})
-            if not isinstance(model_config, dict):
-                raise TypeError("global.models must be a mapping")
-            _GLOBAL_MODEL_CONFIG_CACHE = {
-                name: values.copy()
-                for name, values in model_config.items()
-                if isinstance(values, dict)
-            }
+        config = load_yaml_mapping(config_path)
+        global_config = require_mapping(config, "global", str(config_path))
+        model_config = require_mapping(global_config, "models", f"{config_path}: global")
+        _GLOBAL_MODEL_CONFIG_CACHE = {
+            name: require_mapping(model_config, name, f"{config_path}: global.models").copy()
+            for name in model_config
+        }
     return _GLOBAL_MODEL_CONFIG_CACHE
 
 
@@ -53,6 +46,12 @@ def get_model(model_type: str, **kwargs) -> Any:
     if model_type not in _MODEL_REGISTRY:
         raise ValueError(f"Unknown model: {model_type}. Available: {list(_MODEL_REGISTRY.keys())}")
 
-    model_config = _load_global_model_defaults().get(model_type, {}).copy()
-    model_config.update(kwargs)
-    return _MODEL_REGISTRY[model_type](**model_config)
+    with error_context(
+        f"Creating model={model_type}",
+        f"Check config/global.yaml: global.models.{model_type} and explicit get_model() arguments.",
+    ):
+        model_config = _load_global_model_defaults().get(model_type, {}).copy()
+        model_config.update(kwargs)
+        model_cls = _MODEL_REGISTRY[model_type]
+        validate_constructor_kwargs(model_cls, model_config, f"global.models.{model_type}")
+        return model_cls(**model_config)

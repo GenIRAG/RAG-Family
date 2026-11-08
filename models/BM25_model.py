@@ -3,6 +3,8 @@ from typing import Any, List
 
 class BM25Model:
 
+    capabilities = frozenset({"sparse_search"})
+
     def __init__(
         self,
         k1: float = 1.5,

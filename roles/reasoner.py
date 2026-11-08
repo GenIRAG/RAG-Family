@@ -1,8 +1,12 @@
 from typing import Any, Dict, Optional
 
+from RoleRAG.errors import error_context
+from RoleRAG.roles.registry import register_role
 from RoleRAG.roles.role_base import BaseGeneratorContract
+from RoleRAG.roles.validation import validate_model_capability
 
 
+@register_role("reasoner")
 class ReasonerRoleAdapter(BaseGeneratorContract):
 
     def __init__(
@@ -16,8 +20,8 @@ class ReasonerRoleAdapter(BaseGeneratorContract):
         answer_prefix: Optional[str] = None,
         graph_index_path: Optional[str] = None,
         fm_index_path: Optional[str] = None,
-        **kwargs
     ):
+        validate_model_capability(model, "reasoner", "generate", "generate")
         self._model = model
         self.max_tokens = max_tokens
         self.temperature = temperature
@@ -50,8 +54,10 @@ class ReasonerRoleAdapter(BaseGeneratorContract):
         max_tokens = kwargs.pop("max_tokens", self.max_tokens)
         temperature = kwargs.pop("temperature", self.temperature)
         system = system_prompt or self.system_prompt
-        if hasattr(self._model, "generate"):
+        with error_context(f"role=reasoner, model={type(self._model).__name__}, operation=generate"):
             if system:
                 prompt = f"{system}\n\n{prompt}"
-            return self._model.generate(prompt, max_tokens=max_tokens, temperature=temperature, **kwargs)
-        raise TypeError(f"Model {type(self._model).__name__} does not support generate")
+            result = self._model.generate(prompt, max_tokens=max_tokens, temperature=temperature, **kwargs)
+            if not isinstance(result, str):
+                raise TypeError(f"generate() must return text; got {type(result).__name__}")
+            return result

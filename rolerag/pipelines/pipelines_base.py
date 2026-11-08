@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 from typing import List, Dict, Any, Optional, Union, Type
 
 from RoleRAG.config.types import EvalItem, RAGOutput
+from RoleRAG.errors import error_context
 
 
 _PIPELINE_REGISTRY: Dict[str, Type["BasePipeline"]] = {}
@@ -21,7 +22,11 @@ def create_pipeline(config: Dict[str, Any]) -> "BasePipeline":
             f"Available types: {list(_PIPELINE_REGISTRY.keys())}"
         )
 
-    return _PIPELINE_REGISTRY[pipeline_type](config)
+    with error_context(
+        f"Initializing pipeline={pipeline_type}",
+        f"Check config/methods/{pipeline_type}.yaml and this pipeline's model/role assembly.",
+    ):
+        return _PIPELINE_REGISTRY[pipeline_type](config)
 
 
 class BasePipeline(ABC):
@@ -81,12 +86,20 @@ class BasePipeline(ABC):
         )
 
     def run(self, query: Union[str, List[str]], **kwargs) -> Union[RAGOutput, List[RAGOutput]]:
+        pipeline_name = self.config.get("global", {}).get("pipeline_type", type(self).__name__)
         if isinstance(query, str):
-            return self._run_item(query, **kwargs)
-        return [self._run_item(q, **kwargs) for q in query]
+            with error_context(f"Running pipeline={pipeline_name}, operation=run"):
+                return self._run_item(query, **kwargs)
+        outputs = []
+        for index, item in enumerate(query):
+            with error_context(f"Running pipeline={pipeline_name}, batch item={index}"):
+                outputs.append(self._run_item(item, **kwargs))
+        return outputs
 
     def predict(self, sample: EvalItem, **kwargs) -> RAGOutput:
-        return self._run_item(sample.query, eval_item=sample, **kwargs)
+        pipeline_name = self.config.get("global", {}).get("pipeline_type", type(self).__name__)
+        with error_context(f"Running pipeline={pipeline_name}, evaluation sample={sample.id}"):
+            return self._run_item(sample.query, eval_item=sample, **kwargs)
 
     @abstractmethod
     def _run_item(self, query: str, **kwargs) -> RAGOutput:

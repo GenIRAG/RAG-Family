@@ -128,6 +128,16 @@ class DenseIndexing(BaseIndexing):
         index_file = next((f for f in files if f.endswith(".index")), None)
         json_file = next((f for f in files if f == "index.json"), None)
         meta_file = next((f for f in files if f == "index_meta.json"), None)
+        missing = []
+        if index_file is None:
+            missing.append("*.index")
+        if json_file is None:
+            missing.append("index.json")
+        if missing:
+            raise FileNotFoundError(
+                f"Incomplete dense index in {path}: missing {', '.join(missing)}. "
+                "Build the dense index or correct index.paths in the method YAML."
+            )
         if meta_file:
             with open(os.path.join(path, meta_file), "r", encoding="utf-8") as f:
                 meta = json.load(f)

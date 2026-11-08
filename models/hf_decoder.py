@@ -4,6 +4,9 @@ from RoleRAG.models.models_base import BaseModel
 
 
 class HFDecoder(BaseModel):
+
+    capabilities = frozenset({"generate"})
+
     def __init__(
         self,
         model_name: Optional[str] = None,
