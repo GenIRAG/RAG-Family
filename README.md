@@ -1,7 +1,5 @@
 # 🚀 RoleRAG
 
-<div align="center">
-
 **RoleRAG** is a highly modular, configuration-driven Retrieval-Augmented Generation (RAG) experimentation and development framework. It fully decouples low-level model capabilities from application roles: the same `HFEncoder` can serve as the underlying model for a dense retriever or a graph retriever; the same `OpenAIGenerator` can take on the responsibilities of a reasoner, rewriter, or graph-extraction LLM.
 
 The framework organizes experiment configuration through `global.yaml`, `index.yaml`, `config/methods/*.yaml`, and CLI override mechanisms, with 10 built-in pipelines including Naive RAG, Hybrid, Rerank, LLMLingua, LLMLingua-2, PERQA, HippoRAG, GraphRAG Local/Global, and UCGR, making it well suited for quickly reproducing experiments, combining new retrieval strategies, and validating cutting-edge RAG algorithms.
